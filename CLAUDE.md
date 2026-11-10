@@ -57,5 +57,6 @@ Open points:
 - **Texts need the owner's review**, especially the Dutch and the legal topics (adoption phase-out, OCI, nationality, tax treaty). All content was written from scratch.
 - **Contact address** `info@indiawijzer.nl` in `src/_data/site.js` is a placeholder; the owner must confirm it exists or remove it.
 - **Dutch news feed is loose**: it sometimes picks up stories unrelated to India–Netherlands. Tighten the query at the top of `scripts/fetch-data.mjs` if the owner finds it noisy.
+- **Restaurant list stays Indian cuisine only** (owner decision, 10 Nov 2026): do not add places tagged Surinamese. The "Rotishop bij mij in de buurt" search button covers roti shops.
 - 44 restaurants have no town in OpenStreetMap and show as "Plaats onbekend".
 - The owner was invited to name topics from the old site that are missing.
