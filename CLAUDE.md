@@ -4,6 +4,8 @@ Relaunch of **indiawijzer.nl**: a portal about everything Indian in the Netherla
 
 The owner is not a developer. Explain steps as clicks in the GitHub website, not as terminal commands.
 
+Product requirements document (a Claude doc owned by the owner, read it with the docs tools): https://claude.ai/artifact/VQTbvD29neg4aJpDDwco69
+
 ## Hard requirement: low to no maintenance
 
 No database, no CMS, no server, nothing that needs manual checking. Every design decision follows from this:
@@ -50,7 +52,7 @@ Waiting on the owner:
 4. Run the "Check links" workflow once and report what it flags.
 
 Open points:
-- **Homepage layout: decided and built.** Two halves side by side, no headline above them: saffron "India in Nederland" with an Indian skyline, Delft-blue "Nederland in India" with windmill, canal houses, cows and tulips, one sun shared across the seam. Which topics and sections appear in each half is set in `home` in `src/_data/site.js`; the drawings are `src/_includes/skyline-in.svg` and `skyline-nl.svg`; sections not assigned to a half (Zakendoen, Familie en recht) show as cards below with the news. Offered but not yet decided: a thin saffron block-print band or blue tile band at the top of inner pages to show which side a page belongs to.
+- **Homepage layout: decided and built.** Two halves side by side, no headline above them: saffron "India in Nederland" with an Indian skyline, Delft-blue "Nederland in India" with windmill, canal houses, cows and tulips, one sun shared across the seam. The Indian scene has a palace, palms, a tiger and marigolds; the owner had a tuk-tuk removed, do not add it back. Which topics and sections appear in each half is set in `home` in `src/_data/site.js`; the drawings are `src/_includes/skyline-in.svg` and `skyline-nl.svg`; sections not assigned to a half (Zakendoen, Familie en recht) show as cards below with the news. Offered but not yet decided: a thin saffron block-print band or blue tile band at the top of inner pages to show which side a page belongs to.
 - **Links are mostly unverified**: only a handful were confirmed by web search. Expect the first link check to flag some; fix them in `content/index.js`.
 - **Texts need the owner's review**, especially the Dutch and the legal topics (adoption phase-out, OCI, nationality, tax treaty). All content was written from scratch.
 - **Contact address** `info@indiawijzer.nl` in `src/_data/site.js` is a placeholder; the owner must confirm it exists or remove it.
