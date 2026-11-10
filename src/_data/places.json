@@ -1,167 +1,6 @@
 {
- "updated": "2026-11-10T09:29:14.282Z",
+ "updated": "2026-11-10T09:53:33.112Z",
  "restaurants": [
-  {
-   "n": "Anaya Foods",
-   "c": "'s-Gravenhage",
-   "a": "Duinstraat 1",
-   "w": "https://anayafoods.nl/",
-   "o": "node/1608895152"
-  },
-  {
-   "n": "Anjappar",
-   "c": "'s-Gravenhage",
-   "a": "Driehoekjes 7",
-   "w": "https://anjappar.nl/",
-   "o": "node/5272708904"
-  },
-  {
-   "n": "Atithi",
-   "c": "'s-Gravenhage",
-   "a": "Herengracht 7",
-   "w": "https://atithi.nl/den-haag/",
-   "o": "node/2718101180"
-  },
-  {
-   "n": "Bombay Palace",
-   "c": "'s-Gravenhage",
-   "a": "Gevers Deynootstraat 16",
-   "w": "https://bombay-palace.nl/",
-   "o": "node/2590919908"
-  },
-  {
-   "n": "Clay & Spice by Taj",
-   "c": "'s-Gravenhage",
-   "a": "Denneweg 5",
-   "w": "",
-   "o": "node/3750256482"
-  },
-  {
-   "n": "Elaichi",
-   "c": "'s-Gravenhage",
-   "a": "Aert van der Goesstraat 43",
-   "w": "",
-   "o": "node/2590943446"
-  },
-  {
-   "n": "Grill N Spice",
-   "c": "'s-Gravenhage",
-   "a": "Herengracht 38",
-   "w": "https://www.grillnspice.nl/",
-   "o": "node/2718100622"
-  },
-  {
-   "n": "Himalayan",
-   "c": "'s-Gravenhage",
-   "a": "Gortstraat 16A",
-   "w": "",
-   "o": "node/2722490526"
-  },
-  {
-   "n": "Indian Bay Dreams",
-   "c": "'s-Gravenhage",
-   "a": "Doctor Lelykade 222B",
-   "w": "https://www.indianbaydreams.nl/",
-   "o": "node/1775833959"
-  },
-  {
-   "n": "Indian By Nature",
-   "c": "'s-Gravenhage",
-   "a": "Lange Houtstraat 15",
-   "w": "https://indianbynature.nl/",
-   "o": "node/3649690111"
-  },
-  {
-   "n": "Indian Curry Club",
-   "c": "'s-Gravenhage",
-   "a": "Thomsonlaan 69",
-   "w": "",
-   "o": "node/2731786968"
-  },
-  {
-   "n": "Indian Foods Corner",
-   "c": "'s-Gravenhage",
-   "a": "Van Zeggelenlaan 76",
-   "w": "",
-   "o": "node/2709938025"
-  },
-  {
-   "n": "Jaipur of India",
-   "c": "'s-Gravenhage",
-   "a": "Fahrenheitstraat 273",
-   "w": "https://www.jaipurofindia.nl/",
-   "o": "node/7948610240"
-  },
-  {
-   "n": "Krishna Vilas",
-   "c": "'s-Gravenhage",
-   "a": "Hooikade 56",
-   "w": "https://krishnavilas.com/hague-reservation-best-south-indian-restaurant-in-netherlands/",
-   "o": "node/2723985082"
-  },
-  {
-   "n": "Mad'Ras",
-   "c": "'s-Gravenhage",
-   "a": "Piet Heinstraat 99",
-   "w": "https://madrasnl.com/",
-   "o": "node/2730106316"
-  },
-  {
-   "n": "Maharani",
-   "c": "'s-Gravenhage",
-   "a": "Noordeinde 93",
-   "w": "https://www.restaurantmaharani.nl/en/home/",
-   "o": "node/2722499598"
-  },
-  {
-   "n": "Ramna",
-   "c": "'s-Gravenhage",
-   "a": "Molenstraat 12",
-   "w": "",
-   "o": "node/2722489007"
-  },
-  {
-   "n": "Rani",
-   "c": "'s-Gravenhage",
-   "a": "Betje Wolffstraat 154",
-   "w": "https://ranitogo.nl/",
-   "o": "node/2732123681"
-  },
-  {
-   "n": "Spice Symphony",
-   "c": "'s-Gravenhage",
-   "a": "Van Bylandtstraat 91",
-   "w": "https://www.spicesymphony.nl/",
-   "o": "node/2731057447"
-  },
-  {
-   "n": "Taste of India",
-   "c": "'s-Gravenhage",
-   "a": "Zuiderparklaan 131",
-   "w": "",
-   "o": "node/2729604802"
-  },
-  {
-   "n": "The Bombay Street Food Company",
-   "c": "'s-Gravenhage",
-   "a": "Keizerstraat 301",
-   "w": "https://thebombaystreetfoodcompany.com/",
-   "o": "node/1608853297"
-  },
-  {
-   "n": "Prince of India",
-   "c": "'s-Hertogenbosch",
-   "a": "Orthenstraat 272",
-   "w": "https://princeofindia.nl/",
-   "o": "node/2739111905"
-  },
-  {
-   "n": "Tandoori",
-   "c": "'s-Hertogenbosch",
-   "a": "Molenstraat 23",
-   "w": "https://www.tandooridenbosch.nl/",
-   "o": "node/4714868584"
-  },
   {
    "n": "Himalaya Palace",
    "c": "Aalsmeer",
@@ -882,6 +721,167 @@
    "a": "Papsouwselaan 442",
    "w": "",
    "o": "node/2595423381"
+  },
+  {
+   "n": "Prince of India",
+   "c": "Den Bosch",
+   "a": "Orthenstraat 272",
+   "w": "https://princeofindia.nl/",
+   "o": "node/2739111905"
+  },
+  {
+   "n": "Tandoori",
+   "c": "Den Bosch",
+   "a": "Molenstraat 23",
+   "w": "https://www.tandooridenbosch.nl/",
+   "o": "node/4714868584"
+  },
+  {
+   "n": "Anaya Foods",
+   "c": "Den Haag",
+   "a": "Duinstraat 1",
+   "w": "https://anayafoods.nl/",
+   "o": "node/1608895152"
+  },
+  {
+   "n": "Anjappar",
+   "c": "Den Haag",
+   "a": "Driehoekjes 7",
+   "w": "https://anjappar.nl/",
+   "o": "node/5272708904"
+  },
+  {
+   "n": "Atithi",
+   "c": "Den Haag",
+   "a": "Herengracht 7",
+   "w": "https://atithi.nl/den-haag/",
+   "o": "node/2718101180"
+  },
+  {
+   "n": "Bombay Palace",
+   "c": "Den Haag",
+   "a": "Gevers Deynootstraat 16",
+   "w": "https://bombay-palace.nl/",
+   "o": "node/2590919908"
+  },
+  {
+   "n": "Clay & Spice by Taj",
+   "c": "Den Haag",
+   "a": "Denneweg 5",
+   "w": "",
+   "o": "node/3750256482"
+  },
+  {
+   "n": "Elaichi",
+   "c": "Den Haag",
+   "a": "Aert van der Goesstraat 43",
+   "w": "",
+   "o": "node/2590943446"
+  },
+  {
+   "n": "Grill N Spice",
+   "c": "Den Haag",
+   "a": "Herengracht 38",
+   "w": "https://www.grillnspice.nl/",
+   "o": "node/2718100622"
+  },
+  {
+   "n": "Himalayan",
+   "c": "Den Haag",
+   "a": "Gortstraat 16A",
+   "w": "",
+   "o": "node/2722490526"
+  },
+  {
+   "n": "Indian Bay Dreams",
+   "c": "Den Haag",
+   "a": "Doctor Lelykade 222B",
+   "w": "https://www.indianbaydreams.nl/",
+   "o": "node/1775833959"
+  },
+  {
+   "n": "Indian By Nature",
+   "c": "Den Haag",
+   "a": "Lange Houtstraat 15",
+   "w": "https://indianbynature.nl/",
+   "o": "node/3649690111"
+  },
+  {
+   "n": "Indian Curry Club",
+   "c": "Den Haag",
+   "a": "Thomsonlaan 69",
+   "w": "",
+   "o": "node/2731786968"
+  },
+  {
+   "n": "Indian Foods Corner",
+   "c": "Den Haag",
+   "a": "Van Zeggelenlaan 76",
+   "w": "",
+   "o": "node/2709938025"
+  },
+  {
+   "n": "Jaipur of India",
+   "c": "Den Haag",
+   "a": "Fahrenheitstraat 273",
+   "w": "https://www.jaipurofindia.nl/",
+   "o": "node/7948610240"
+  },
+  {
+   "n": "Krishna Vilas",
+   "c": "Den Haag",
+   "a": "Hooikade 56",
+   "w": "https://krishnavilas.com/hague-reservation-best-south-indian-restaurant-in-netherlands/",
+   "o": "node/2723985082"
+  },
+  {
+   "n": "Mad'Ras",
+   "c": "Den Haag",
+   "a": "Piet Heinstraat 99",
+   "w": "https://madrasnl.com/",
+   "o": "node/2730106316"
+  },
+  {
+   "n": "Maharani",
+   "c": "Den Haag",
+   "a": "Noordeinde 93",
+   "w": "https://www.restaurantmaharani.nl/en/home/",
+   "o": "node/2722499598"
+  },
+  {
+   "n": "Ramna",
+   "c": "Den Haag",
+   "a": "Molenstraat 12",
+   "w": "",
+   "o": "node/2722489007"
+  },
+  {
+   "n": "Rani",
+   "c": "Den Haag",
+   "a": "Betje Wolffstraat 154",
+   "w": "https://ranitogo.nl/",
+   "o": "node/2732123681"
+  },
+  {
+   "n": "Spice Symphony",
+   "c": "Den Haag",
+   "a": "Van Bylandtstraat 91",
+   "w": "https://www.spicesymphony.nl/",
+   "o": "node/2731057447"
+  },
+  {
+   "n": "Taste of India",
+   "c": "Den Haag",
+   "a": "Zuiderparklaan 131",
+   "w": "",
+   "o": "node/2729604802"
+  },
+  {
+   "n": "The Bombay Street Food Company",
+   "c": "Den Haag",
+   "a": "Keizerstraat 301",
+   "w": "https://thebombaystreetfoodcompany.com/",
+   "o": "node/1608853297"
   },
   {
    "n": "Annam Tandoori",
