@@ -1,1 +1,2765 @@
-{"updated":null,"restaurants":[],"worship":[]}
+{
+ "updated": "2026-11-10T09:24:57.031Z",
+ "restaurants": [
+  {
+   "n": "Anaya Foods",
+   "c": "'s-Gravenhage",
+   "a": "Duinstraat 1",
+   "w": "https://anayafoods.nl/",
+   "o": "node/1608895152"
+  },
+  {
+   "n": "Anjappar",
+   "c": "'s-Gravenhage",
+   "a": "Driehoekjes 7",
+   "w": "https://anjappar.nl/",
+   "o": "node/5272708904"
+  },
+  {
+   "n": "Atithi",
+   "c": "'s-Gravenhage",
+   "a": "Herengracht 7",
+   "w": "https://atithi.nl/den-haag/",
+   "o": "node/2718101180"
+  },
+  {
+   "n": "Bombay Palace",
+   "c": "'s-Gravenhage",
+   "a": "Gevers Deynootstraat 16",
+   "w": "https://bombay-palace.nl/",
+   "o": "node/2590919908"
+  },
+  {
+   "n": "Clay & Spice by Taj",
+   "c": "'s-Gravenhage",
+   "a": "Denneweg 5",
+   "w": "",
+   "o": "node/3750256482"
+  },
+  {
+   "n": "Elaichi",
+   "c": "'s-Gravenhage",
+   "a": "Aert van der Goesstraat 43",
+   "w": "",
+   "o": "node/2590943446"
+  },
+  {
+   "n": "Grill N Spice",
+   "c": "'s-Gravenhage",
+   "a": "Herengracht 38",
+   "w": "https://www.grillnspice.nl/",
+   "o": "node/2718100622"
+  },
+  {
+   "n": "Himalayan",
+   "c": "'s-Gravenhage",
+   "a": "Gortstraat 16A",
+   "w": "",
+   "o": "node/2722490526"
+  },
+  {
+   "n": "Indian Bay Dreams",
+   "c": "'s-Gravenhage",
+   "a": "Doctor Lelykade 222B",
+   "w": "https://www.indianbaydreams.nl/",
+   "o": "node/1775833959"
+  },
+  {
+   "n": "Indian By Nature",
+   "c": "'s-Gravenhage",
+   "a": "Lange Houtstraat 15",
+   "w": "https://indianbynature.nl/",
+   "o": "node/3649690111"
+  },
+  {
+   "n": "Indian Curry Club",
+   "c": "'s-Gravenhage",
+   "a": "Thomsonlaan 69",
+   "w": "",
+   "o": "node/2731786968"
+  },
+  {
+   "n": "Indian Foods Corner",
+   "c": "'s-Gravenhage",
+   "a": "Van Zeggelenlaan 76",
+   "w": "",
+   "o": "node/2709938025"
+  },
+  {
+   "n": "Jaipur of India",
+   "c": "'s-Gravenhage",
+   "a": "Fahrenheitstraat 273",
+   "w": "https://www.jaipurofindia.nl/",
+   "o": "node/7948610240"
+  },
+  {
+   "n": "Krishna Vilas",
+   "c": "'s-Gravenhage",
+   "a": "Hooikade 56",
+   "w": "https://krishnavilas.com/hague-reservation-best-south-indian-restaurant-in-netherlands/",
+   "o": "node/2723985082"
+  },
+  {
+   "n": "Mad'Ras",
+   "c": "'s-Gravenhage",
+   "a": "Piet Heinstraat 99",
+   "w": "https://madrasnl.com/",
+   "o": "node/2730106316"
+  },
+  {
+   "n": "Maharani",
+   "c": "'s-Gravenhage",
+   "a": "Noordeinde 93",
+   "w": "https://www.restaurantmaharani.nl/en/home/",
+   "o": "node/2722499598"
+  },
+  {
+   "n": "Ramna",
+   "c": "'s-Gravenhage",
+   "a": "Molenstraat 12",
+   "w": "",
+   "o": "node/2722489007"
+  },
+  {
+   "n": "Rani",
+   "c": "'s-Gravenhage",
+   "a": "Betje Wolffstraat 154",
+   "w": "https://ranitogo.nl/",
+   "o": "node/2732123681"
+  },
+  {
+   "n": "Spice Symphony",
+   "c": "'s-Gravenhage",
+   "a": "Van Bylandtstraat 91",
+   "w": "https://www.spicesymphony.nl/",
+   "o": "node/2731057447"
+  },
+  {
+   "n": "Taste of India",
+   "c": "'s-Gravenhage",
+   "a": "Zuiderparklaan 131",
+   "w": "",
+   "o": "node/2729604802"
+  },
+  {
+   "n": "The Bombay Street Food Company",
+   "c": "'s-Gravenhage",
+   "a": "Keizerstraat 301",
+   "w": "https://thebombaystreetfoodcompany.com/",
+   "o": "node/1608853297"
+  },
+  {
+   "n": "Prince of India",
+   "c": "'s-Hertogenbosch",
+   "a": "Orthenstraat 272",
+   "w": "https://princeofindia.nl/",
+   "o": "node/2739111905"
+  },
+  {
+   "n": "Tandoori",
+   "c": "'s-Hertogenbosch",
+   "a": "Molenstraat 23",
+   "w": "https://www.tandooridenbosch.nl/",
+   "o": "node/4714868584"
+  },
+  {
+   "n": "Himalaya Palace",
+   "c": "Aalsmeer",
+   "a": "Marktstraat 32",
+   "w": "https://www.himalayapalace.nl/",
+   "o": "node/2767063322"
+  },
+  {
+   "n": "Indian Grill Restaurant",
+   "c": "Aalsmeer",
+   "a": "Dorpsstraat 4",
+   "w": "https://www.indiangrill.nl/",
+   "o": "node/2767063542"
+  },
+  {
+   "n": "Indian Hut",
+   "c": "Aalsmeer",
+   "a": "Oosteinderweg 387",
+   "w": "https://indianhut.nl/",
+   "o": "node/2777032022"
+  },
+  {
+   "n": "Indian Fusion",
+   "c": "Almere",
+   "a": "Belfort 136",
+   "w": "https://www.indianfusion.nl/",
+   "o": "node/2839702408"
+  },
+  {
+   "n": "Kessariya",
+   "c": "Almere",
+   "a": "Zadelmakerstraat 56",
+   "w": "https://kessariya.nl/",
+   "o": "node/9080336529"
+  },
+  {
+   "n": "Payal",
+   "c": "Almere",
+   "a": "Deventerpad 10",
+   "w": "",
+   "o": "node/2839701404"
+  },
+  {
+   "n": "Rasamayi Foods",
+   "c": "Almere",
+   "a": "Traverse 5",
+   "w": "",
+   "o": "node/2839715837"
+  },
+  {
+   "n": "Restaurant Indian Tandoori King",
+   "c": "Almere",
+   "a": "Thorstraat 3",
+   "w": "https://restaurantindiantandooriking.nl/",
+   "o": "node/2834451088"
+  },
+  {
+   "n": "Royal Curry House",
+   "c": "Almere",
+   "a": "Baltimoreplein 25",
+   "w": "https://www.royal-curryhouse.nl/",
+   "o": "node/10282691130"
+  },
+  {
+   "n": "Tamarinde",
+   "c": "Alphen aan den Rijn",
+   "a": "Pieter Doelmanstraat 12",
+   "w": "https://www.tamarinderestaurant.nl/",
+   "o": "node/2932714851"
+  },
+  {
+   "n": "Bindicafé",
+   "c": "Amersfoort",
+   "a": "Bergstraat 6",
+   "w": "https://bindicafe.nu/",
+   "o": "node/2683046834"
+  },
+  {
+   "n": "Diwali",
+   "c": "Amersfoort",
+   "a": "Piet Mondriaanplein 189-193",
+   "w": "https://www.diwalipalace.nl/",
+   "o": "node/1809803244"
+  },
+  {
+   "n": "Indian Accent",
+   "c": "Amersfoort",
+   "a": "Eemplein 20",
+   "w": "",
+   "o": "node/1973681975"
+  },
+  {
+   "n": "Taste of India Akbar",
+   "c": "Amersfoort",
+   "a": "Achter het Oude Stadhuis 1",
+   "w": "https://tasteofindia-akbar.nl/",
+   "o": "node/2672765738"
+  },
+  {
+   "n": "7 Spices",
+   "c": "Amstelveen",
+   "a": "De Beerebijt 8",
+   "w": "",
+   "o": "node/2807131684"
+  },
+  {
+   "n": "Atchaya",
+   "c": "Amstelveen",
+   "a": "Amsterdamseweg 503",
+   "w": "https://www.atchayarestaurantamstelveen.nl/",
+   "o": "node/2781452703"
+  },
+  {
+   "n": "Diwali Palace",
+   "c": "Amstelveen",
+   "a": "Amsterdamseweg 114",
+   "w": "https://www.diwalipalace.nl/",
+   "o": "node/2783660143"
+  },
+  {
+   "n": "India Port",
+   "c": "Amstelveen",
+   "a": "Amstelzijde 53",
+   "w": "https://www.indiaport.nl/",
+   "o": "node/2799309749"
+  },
+  {
+   "n": "Indian Street Food & Co",
+   "c": "Amstelveen",
+   "a": "Karel Doormanweg 16",
+   "w": "https://www.indian-streetfood-co-amstelveen.nl/",
+   "o": "node/10946182305"
+  },
+  {
+   "n": "Kasturi",
+   "c": "Amstelveen",
+   "a": "Kostverlorenhof 62",
+   "w": "https://kasturi.nl/",
+   "o": "node/2807254041"
+  },
+  {
+   "n": "Pakwaan",
+   "c": "Amstelveen",
+   "a": "Rembrandtweg 689",
+   "w": "https://pakwaan.nl/",
+   "o": "node/2807131122"
+  },
+  {
+   "n": "Tahoor Fastfood",
+   "c": "Amstelveen",
+   "a": "Buitenplein 78",
+   "w": "",
+   "o": "node/2807399652"
+  },
+  {
+   "n": "The Indian Kitchen",
+   "c": "Amstelveen",
+   "a": "Karel Doormanweg 6",
+   "w": "https://www.theindiankitchen.nl/",
+   "o": "node/5352724057"
+  },
+  {
+   "n": "Tummy Treats",
+   "c": "Amstelveen",
+   "a": "Westwijkplein 88",
+   "w": "https://tummytreats.nl/",
+   "o": "node/2809480389"
+  },
+  {
+   "n": "Wah India",
+   "c": "Amstelveen",
+   "a": "Augustinuspark 14",
+   "w": "",
+   "o": "node/2808318824"
+  },
+  {
+   "n": "Aarti2",
+   "c": "Amsterdam",
+   "a": "Tweede Hugo de Grootstraat 20",
+   "w": "https://aarti2.nl/",
+   "o": "node/2809579791"
+  },
+  {
+   "n": "Anjappar",
+   "c": "Amsterdam",
+   "a": "Van Baerlestraat 134-H",
+   "w": "https://anjappar.nl/",
+   "o": "node/2816569720"
+  },
+  {
+   "n": "Annavilaas",
+   "c": "Amsterdam",
+   "a": "Van Woustraat 117-119",
+   "w": "https://www.annavilaas.com/nl/",
+   "o": "node/2507159711"
+  },
+  {
+   "n": "Ashoka",
+   "c": "Amsterdam",
+   "a": "Spuistraat 54D",
+   "w": "https://www.ashokarestaurant.nl/",
+   "o": "node/2721522291"
+  },
+  {
+   "n": "Balraj",
+   "c": "Amsterdam",
+   "a": "Haarlemmerdijk 28",
+   "w": "https://www.balraj.nl/",
+   "o": "node/10922165565"
+  },
+  {
+   "n": "Chadni Chowk",
+   "c": "Amsterdam",
+   "a": "Admiraal De Ruijterweg 464-472",
+   "w": "https://www.chandnichowk.nl/",
+   "o": "node/11916295422"
+  },
+  {
+   "n": "Cuisine of India",
+   "c": "Amsterdam",
+   "a": "Binnen Bantammerstraat 9",
+   "w": "",
+   "o": "node/866385078"
+  },
+  {
+   "n": "Deep Indian",
+   "c": "Amsterdam",
+   "a": "Van Moerkerkenstraat 65",
+   "w": "https://www.deepindianline.nl/",
+   "o": "node/2405210769"
+  },
+  {
+   "n": "Dilbar",
+   "c": "Amsterdam",
+   "a": "Rokin 18",
+   "w": "",
+   "o": "node/4212657883"
+  },
+  {
+   "n": "Dot In",
+   "c": "Amsterdam",
+   "a": "IJdok 35",
+   "w": "https://dotin.restaurant/",
+   "o": "node/4016646489"
+  },
+  {
+   "n": "Gandhi",
+   "c": "Amsterdam",
+   "a": "Damrak 54",
+   "w": "https://www.indianrestaurantgandhi.com/",
+   "o": "node/3130935029"
+  },
+  {
+   "n": "Gandhi",
+   "c": "Amsterdam",
+   "a": "Lange Leidsedwarsstraat 56",
+   "w": "https://indianrestaurantgandhi.com/leidseplein/",
+   "o": "node/7948867642"
+  },
+  {
+   "n": "Golden Thali",
+   "c": "Amsterdam",
+   "a": "Olympiaplein 118",
+   "w": "https://goldenthali.nl/",
+   "o": "node/2816745560"
+  },
+  {
+   "n": "Himalayan Kitchen",
+   "c": "Amsterdam",
+   "a": "Ten Katestraat 45",
+   "w": "https://www.himalayankitchen.nl/",
+   "o": "node/8727834780"
+  },
+  {
+   "n": "Holi Indian Restaurant",
+   "c": "Amsterdam",
+   "a": "Kastelenstraat 105",
+   "w": "https://holiamsterdam.nl/",
+   "o": "node/2818782230"
+  },
+  {
+   "n": "Indian Express",
+   "c": "Amsterdam",
+   "a": "Pieter Langendijkstraat 37-H",
+   "w": "https://www.indianexpress.nl/",
+   "o": "node/508047069"
+  },
+  {
+   "n": "Indian Spices & Vibes",
+   "c": "Amsterdam",
+   "a": "Ferdinand Bolstraat 172-H",
+   "w": "https://indianspicesandvibes.nl/",
+   "o": "node/332598830"
+  },
+  {
+   "n": "Kamasutra",
+   "c": "Amsterdam",
+   "a": "Lange Niezel 9",
+   "w": "https://www.restaurantkamasutra.nl/",
+   "o": "node/2415573533"
+  },
+  {
+   "n": "Kathmandu Kitchen",
+   "c": "Amsterdam",
+   "a": "Balboastraat 24",
+   "w": "https://www.kathmandukitchen.nl/",
+   "o": "node/2721825437"
+  },
+  {
+   "n": "Kesar Indian restaurant",
+   "c": "Amsterdam",
+   "a": "Prinsengracht 126-H",
+   "w": "",
+   "o": "node/2720970002"
+  },
+  {
+   "n": "Koh-I-Noor",
+   "c": "Amsterdam",
+   "a": "Westermarkt 29",
+   "w": "https://www.koh-i-noor-restaurant.nl/",
+   "o": "node/4862660321"
+  },
+  {
+   "n": "Lumbini",
+   "c": "Amsterdam",
+   "a": "Amstel 32",
+   "w": "https://lumbinirestaurant.nl/",
+   "o": "node/9077856383"
+  },
+  {
+   "n": "Manzil",
+   "c": "Amsterdam",
+   "a": "Rijnstraat 81-H",
+   "w": "https://www.manzilrestaurant.nl/",
+   "o": "node/2818225699"
+  },
+  {
+   "n": "Mayur",
+   "c": "Amsterdam",
+   "a": "Korte Leidsedwarsstraat 203",
+   "w": "https://www.mayur.nl/",
+   "o": "node/1477529632"
+  },
+  {
+   "n": "Meghna",
+   "c": "Amsterdam",
+   "a": "Utrechtsestraat 28-2",
+   "w": "https://meghna.nl/",
+   "o": "node/2737805688"
+  },
+  {
+   "n": "Memories of India",
+   "c": "Amsterdam",
+   "a": "Reguliersdwarsstraat 88",
+   "w": "https://memoriesofindia.nl/",
+   "o": "node/4071739222"
+  },
+  {
+   "n": "Miri Mary",
+   "c": "Amsterdam",
+   "a": "Van der Helstplein 15-H",
+   "w": "https://www.mirimary.com/",
+   "o": "node/2817777568"
+  },
+  {
+   "n": "Mount Everest",
+   "c": "Amsterdam",
+   "a": "Spreeuwenpark 3D",
+   "w": "https://mteveresttandoori.nl/",
+   "o": "node/2848703893"
+  },
+  {
+   "n": "Naan",
+   "c": "Amsterdam",
+   "a": "Buitenveldertselaan 28",
+   "w": "https://indiannaan.nl/",
+   "o": "node/2818966289"
+  },
+  {
+   "n": "Namaskar",
+   "c": "Amsterdam",
+   "a": "Haarlemmerstraat 47",
+   "w": "http://www.namaskaramsterdam.nl/",
+   "o": "node/1223236794"
+  },
+  {
+   "n": "Namaste",
+   "c": "Amsterdam",
+   "a": "Van Woustraat 173-H",
+   "w": "https://www.namasteindiaamsterdam.nl/",
+   "o": "node/2817853997"
+  },
+  {
+   "n": "Natraj",
+   "c": "Amsterdam",
+   "a": "Transvaalstraat 5",
+   "w": "",
+   "o": "node/393136932"
+  },
+  {
+   "n": "Neetu Da Dhaba",
+   "c": "Amsterdam",
+   "a": "Overtoom 482",
+   "w": "http://www.neetudhaba-amsterdam.nl/",
+   "o": "node/4861657468"
+  },
+  {
+   "n": "Raina SR",
+   "c": "Amsterdam",
+   "a": "Admiraal De Ruijterweg 468",
+   "w": "https://rainaamsterdam.nl/",
+   "o": "node/5810048604"
+  },
+  {
+   "n": "Rangla Punjab",
+   "c": "Amsterdam",
+   "a": "Overtoom 350-O",
+   "w": "https://www.ranglapunjab.nl/",
+   "o": "node/2809964781"
+  },
+  {
+   "n": "Rangoli",
+   "c": "Amsterdam",
+   "a": "Haarlemmerstraat 11",
+   "w": "https://www.rangoli.nl/",
+   "o": "node/1223236797"
+  },
+  {
+   "n": "Rasoi",
+   "c": "Amsterdam",
+   "a": "Maasstraat 10-H",
+   "w": "https://www.rasoiamsterdam.nl/",
+   "o": "node/13101044522"
+  },
+  {
+   "n": "Restaurant Shiva",
+   "c": "Amsterdam",
+   "a": "Reguliersdwarsstraat 72-H",
+   "w": "https://www.shivarestaurant.nl/",
+   "o": "node/2725879843"
+  },
+  {
+   "n": "Roopram Roti",
+   "c": "Amsterdam",
+   "a": "Van Woustraat 37A",
+   "w": "https://www.roopramroti.nl/vestigingen/amsterdam-oude-pijp",
+   "o": "node/2817535143"
+  },
+  {
+   "n": "Royal Fook Long",
+   "c": "Amsterdam",
+   "a": "Hageland 61-69",
+   "w": "https://royalfooklong.com/",
+   "o": "node/746910425"
+  },
+  {
+   "n": "Saravanaa Bhavan",
+   "c": "Amsterdam",
+   "a": "Stadhouderskade 123",
+   "w": "https://saravanaa-bhavan.nl/",
+   "o": "node/1310554569"
+  },
+  {
+   "n": "Shahjahan",
+   "c": "Amsterdam",
+   "a": "Eerste Anjeliersdwarsstraat 18-H",
+   "w": "",
+   "o": "node/2720877649"
+  },
+  {
+   "n": "Sherpa",
+   "c": "Amsterdam",
+   "a": "Korte Leidsedwarsstraat 58",
+   "w": "https://www.sherparestaurant.nl/",
+   "o": "node/1477529657"
+  },
+  {
+   "n": "Sizz",
+   "c": "Amsterdam",
+   "a": "Weteringschans 187C-H",
+   "w": "https://sizzrestaurant.nl/",
+   "o": "node/2737949139"
+  },
+  {
+   "n": "Suriwood",
+   "c": "Amsterdam",
+   "a": "Damstraat 38",
+   "w": "",
+   "o": "node/2724250177"
+  },
+  {
+   "n": "Surya",
+   "c": "Amsterdam",
+   "a": "Ceintuurbaan 147-H",
+   "w": "https://suryarestaurant.nl/nl/indiaas-restaurant-amsterdam/",
+   "o": "node/2817611189"
+  },
+  {
+   "n": "Swagat",
+   "c": "Amsterdam",
+   "a": "Stadionweg 247-H",
+   "w": "https://www.indianrestaurantswagat.com/",
+   "o": "node/2816953161"
+  },
+  {
+   "n": "Taj",
+   "c": "Amsterdam",
+   "a": "Marie Heinekenplein 1",
+   "w": "https://taj-indian-restaurant.nl/",
+   "o": "node/2165936477"
+  },
+  {
+   "n": "Tandoori 2 Go",
+   "c": "Amsterdam",
+   "a": "Jan van Galenstraat 78",
+   "w": "https://tandoori2go.nl/",
+   "o": "node/9032950265"
+  },
+  {
+   "n": "Tandoori Express",
+   "c": "Amsterdam",
+   "a": "Kinkerstraat 43-H",
+   "w": "https://tandooriexpress.nl/",
+   "o": "node/2809441379"
+  },
+  {
+   "n": "The Madras Diaries",
+   "c": "Amsterdam",
+   "a": "Lange Leidsedwarsstraat 37-H",
+   "w": "https://themadrasdiaries.nl/amsterdam/",
+   "o": "node/2730036651"
+  },
+  {
+   "n": "Tulp Indian restaurant",
+   "c": "Amsterdam",
+   "a": "Amstelveenseweg 71-H",
+   "w": "https://tulipindianrestaurant.nl/",
+   "o": "node/2816113194"
+  },
+  {
+   "n": "Man Wah",
+   "c": "Anna Paulowna",
+   "a": "Molenvaart 3",
+   "w": "",
+   "o": "node/2746411711"
+  },
+  {
+   "n": "De Indiase Keuken",
+   "c": "Apeldoorn",
+   "a": "Hoofdstraat 168",
+   "w": "https://deindiasekeuken.nl/",
+   "o": "node/2686311012"
+  },
+  {
+   "n": "Hong Kong",
+   "c": "Apeldoorn",
+   "a": "Valkenweg 77",
+   "w": "https://www.hongkong-apeldoorn.nl/",
+   "o": "node/2686869515"
+  },
+  {
+   "n": "India Palace",
+   "c": "Apeldoorn",
+   "a": "Van Kinsbergenstraat 7",
+   "w": "https://indiapalace-apeldoorn.nl/",
+   "o": "node/2686320962"
+  },
+  {
+   "n": "Keuken Van India",
+   "c": "Appingedam",
+   "a": "Wijkstraat 23",
+   "w": "https://keukenvanindiappingedam.sitedish.shop/",
+   "o": "node/2835402491"
+  },
+  {
+   "n": "Batavia",
+   "c": "Arnhem",
+   "a": "Willemsplein 31",
+   "w": "https://batavia-restaurant.nl/",
+   "o": "node/1473430749"
+  },
+  {
+   "n": "Dhamaka",
+   "c": "Arnhem",
+   "a": "Jansplein 48",
+   "w": "https://www.dhamaka.nl/",
+   "o": "node/2725649288"
+  },
+  {
+   "n": "King of India",
+   "c": "Arnhem",
+   "a": "Kortestraat 8",
+   "w": "https://www.kingofindia.nl/",
+   "o": "node/2725651926"
+  },
+  {
+   "n": "Kohinoor Indian Streetfood",
+   "c": "Arnhem",
+   "a": "Rijnkade 49",
+   "w": "https://www.foodhallarnhem.nl/foodstands/kohinoor-streetfood",
+   "o": "node/13898467756"
+  },
+  {
+   "n": "Kohinoor of India",
+   "c": "Arnhem",
+   "a": "Oude Oeverstraat 7",
+   "w": "https://www.kohinoorofindia.nl/",
+   "o": "node/2882703709"
+  },
+  {
+   "n": "New Delhi",
+   "c": "Assen",
+   "a": "Brink 23",
+   "w": "https://www.new-delhi.nl/",
+   "o": "node/2117868421"
+  },
+  {
+   "n": "Peking",
+   "c": "Baarn",
+   "a": "Stationsweg 39",
+   "w": "https://peking-baarn.nl/",
+   "o": "node/2740308457"
+  },
+  {
+   "n": "Anmool",
+   "c": "Bennebroek",
+   "a": "Bennebroekerlaan 85",
+   "w": "https://anmool.nl/",
+   "o": "node/885813778"
+  },
+  {
+   "n": "Surya",
+   "c": "Bodegraven",
+   "a": "Wilhelminastraat 23",
+   "w": "https://suryarestaurant.nl/nl/indiaas-restaurant-bodegraven/",
+   "o": "node/2820596241"
+  },
+  {
+   "n": "Curry Inn",
+   "c": "Breda",
+   "a": "Schorsmolenstraat 2",
+   "w": "https://www.curryinn-breda.nl/",
+   "o": "node/2731463695"
+  },
+  {
+   "n": "Laya",
+   "c": "Breda",
+   "a": "Nieuwe Ginnekenstraat 20C",
+   "w": "https://www.layabreda.nl/",
+   "o": "node/2731466692"
+  },
+  {
+   "n": "Taj Mahal",
+   "c": "Breda",
+   "a": "Prinsenkade 11",
+   "w": "https://www.tajmahalbreda.nl/index.php?lang=eng",
+   "o": "node/2731448723"
+  },
+  {
+   "n": "Thali & Tandoori",
+   "c": "Breda",
+   "a": "Kalshoven 36",
+   "w": "https://thali-and-tandoori-breda.nl/",
+   "o": "node/2736491370"
+  },
+  {
+   "n": "Cuisine of India",
+   "c": "Bussum",
+   "a": "Herenstraat 1",
+   "w": "https://cuisineofindia.nl/",
+   "o": "node/2889056942"
+  },
+  {
+   "n": "Diwali Palace",
+   "c": "Bussum",
+   "a": "Kapelstraat 15",
+   "w": "https://diwalipalace.nl/",
+   "o": "node/2889119319"
+  },
+  {
+   "n": "Annapurna",
+   "c": "Castricum",
+   "a": "Dorpsstraat 66a",
+   "w": "https://www.restaurantannapurna.nl/",
+   "o": "node/2811909937"
+  },
+  {
+   "n": "Taj Mahal",
+   "c": "De Koog",
+   "a": "Badweg 2",
+   "w": "https://tajmahal-texel.nl/",
+   "o": "node/1917163630"
+  },
+  {
+   "n": "Bombay Corner",
+   "c": "Delft",
+   "a": "Wateringsevest 36",
+   "w": "https://www.bombaycorner.nl/",
+   "o": "node/2599511672"
+  },
+  {
+   "n": "India Garden",
+   "c": "Delft",
+   "a": "Kerkstraat 15",
+   "w": "",
+   "o": "node/2599518221"
+  },
+  {
+   "n": "Maharaja",
+   "c": "Delft",
+   "a": "Nieuwe Langendijk 59",
+   "w": "https://restaurantmaharajadelft.nl/",
+   "o": "node/2599513779"
+  },
+  {
+   "n": "Tesi Boen afhaalcentrum",
+   "c": "Delft",
+   "a": "Papsouwselaan 442",
+   "w": "",
+   "o": "node/2595423381"
+  },
+  {
+   "n": "Annam Tandoori",
+   "c": "Den Helder",
+   "a": "Keizerstraat 50",
+   "w": "https://annam-tandoori.nl/",
+   "o": "node/4620144947"
+  },
+  {
+   "n": "Mitho",
+   "c": "Den Helder",
+   "a": "Kroonstraat 45",
+   "w": "",
+   "o": "node/2860618974"
+  },
+  {
+   "n": "Kohinoor of India",
+   "c": "Deventer",
+   "a": "Zandpoort 15",
+   "w": "https://kohinoorofindiadeventer.nl/",
+   "o": "node/2678757894"
+  },
+  {
+   "n": "Queen of India",
+   "c": "Deventer",
+   "a": "Grote Overstraat 58",
+   "w": "",
+   "o": "node/2678765849"
+  },
+  {
+   "n": "Delhi-cious",
+   "c": "Diemen",
+   "a": "Dalsteindreef 3008",
+   "w": "https://www.delhi-cious.nl/",
+   "o": "node/3994256246"
+  },
+  {
+   "n": "Indian Cuisine To Go",
+   "c": "Diemen",
+   "a": "Burgemeester de Kievietstraat 9",
+   "w": "https://indiantogo.nl/",
+   "o": "node/4844078125"
+  },
+  {
+   "n": "Biryani House Dordrecht",
+   "c": "Dordrecht",
+   "a": "Voorstraat 394",
+   "w": "https://biryanihousedordrecht.com/",
+   "o": "node/2796111142"
+  },
+  {
+   "n": "Ming Palace",
+   "c": "Duiven",
+   "a": "Rijksweg 4",
+   "w": "https://www.mingpalaceduiven.nl/",
+   "o": "node/1853030701"
+  },
+  {
+   "n": "De Pannenfabriek",
+   "c": "Echt",
+   "a": "Aasterbergerweg 2",
+   "w": "https://depannenfabriek.com/",
+   "o": "way/1388318679"
+  },
+  {
+   "n": "Atithi",
+   "c": "Eindhoven",
+   "a": "Nieuwe Emmasingel 60",
+   "w": "https://atithi.nl/atithi-eindhoven/",
+   "o": "node/2765449042"
+  },
+  {
+   "n": "Chaska",
+   "c": "Eindhoven",
+   "a": "Kruisstraat 87",
+   "w": "https://www.chaska.restaurant/",
+   "o": "node/1898876329"
+  },
+  {
+   "n": "Dhol & Soul",
+   "c": "Eindhoven",
+   "a": "Willemstraat 61",
+   "w": "https://dholandsoul.com/",
+   "o": "node/2764377719"
+  },
+  {
+   "n": "Foodgasm Delivery",
+   "c": "Eindhoven",
+   "a": "Grote Berg 23",
+   "w": "https://www.foodgasm.cafe/",
+   "o": "node/2764285157"
+  },
+  {
+   "n": "Krishna Aahar",
+   "c": "Eindhoven",
+   "a": "Dommelstraat 36",
+   "w": "https://www.krishnavilas-eindhoven.nl/",
+   "o": "node/2765159645"
+  },
+  {
+   "n": "Lekker India",
+   "c": "Eindhoven",
+   "a": "Hoogstraat 49",
+   "w": "",
+   "o": "node/2748519247"
+  },
+  {
+   "n": "Love My Curry",
+   "c": "Eindhoven",
+   "a": "High Tech Campus 1",
+   "w": "https://www.hightechcampus.com/facilities/love-my-curry",
+   "o": "node/3347570010"
+  },
+  {
+   "n": "Ma-nee tasty bytes",
+   "c": "Eindhoven",
+   "a": "Heezerweg 347B",
+   "w": "https://www.ma-nee-tastybytes-eindhoven.nl/",
+   "o": "node/2742839873"
+  },
+  {
+   "n": "Manju",
+   "c": "Eindhoven",
+   "a": "Nieuwe Emmasingel 42",
+   "w": "https://www.manju-streetfood.nl/",
+   "o": "node/2765448557"
+  },
+  {
+   "n": "Mt. Everest",
+   "c": "Eindhoven",
+   "a": "Gestelsestraat 9B",
+   "w": "https://restaurantmteverest.nl/",
+   "o": "node/2748520300"
+  },
+  {
+   "n": "Pakshala",
+   "c": "Eindhoven",
+   "a": "Tongelresestraat 87",
+   "w": "http://flavoursofindia.nl/",
+   "o": "node/2762155614"
+  },
+  {
+   "n": "Pyaar Restaurant",
+   "c": "Eindhoven",
+   "a": "Winkelcentrum Woensel 314",
+   "w": "https://pyaarrestaurant.nl/",
+   "o": "node/2751969749"
+  },
+  {
+   "n": "Rasamayi Foods",
+   "c": "Eindhoven",
+   "a": "Bleekweg 67",
+   "w": "https://rasamayifoods.com/",
+   "o": "node/2759558722"
+  },
+  {
+   "n": "Sri Ganesh",
+   "c": "Eindhoven",
+   "a": "Kruisstraat 92A",
+   "w": "https://www.sriganesh.nl/",
+   "o": "node/876479786"
+  },
+  {
+   "n": "Surya",
+   "c": "Eindhoven",
+   "a": "Geldropseweg 20A",
+   "w": "https://suryarestaurant.nl/nl/indiaas-restaurant-eindhoven/",
+   "o": "node/13460261902"
+  },
+  {
+   "n": "Fook Sing",
+   "c": "Emmeloord",
+   "a": "Haarlemmermeer 8",
+   "w": "https://fooksing.nl/",
+   "o": "node/2720057728"
+  },
+  {
+   "n": "Indian Spices",
+   "c": "Emmen",
+   "a": "Weerdingerstraat 14A",
+   "w": "https://www.indianspicesemmen.nl/",
+   "o": "node/2630173272"
+  },
+  {
+   "n": "India Roti Room",
+   "c": "Enkhuizen",
+   "a": "Nieuwstraat 15",
+   "w": "https://india-rotiroom.nl/",
+   "o": "node/1437640177"
+  },
+  {
+   "n": "indian summer",
+   "c": "Enschede",
+   "a": "Walstraat 15",
+   "w": "",
+   "o": "node/9161309037"
+  },
+  {
+   "n": "Light of India",
+   "c": "Enschede",
+   "a": "Noorderhagen 9",
+   "w": "https://lightofindia-enschede.nl/",
+   "o": "node/2139375693"
+  },
+  {
+   "n": "Spice King India",
+   "c": "Enschede",
+   "a": "Stadsgravenstraat 55",
+   "w": "",
+   "o": "node/8016129440"
+  },
+  {
+   "n": "Azie Geldrop",
+   "c": "Geldrop",
+   "a": "Heuvel 15",
+   "w": "https://www.azie-geldrop.nl/",
+   "o": "node/2872354064"
+  },
+  {
+   "n": "New Tandoor",
+   "c": "Gouda",
+   "a": "Lange Tiendeweg 49",
+   "w": "https://www.newtandoor.nl/",
+   "o": "node/2787986044"
+  },
+  {
+   "n": "Curry Me",
+   "c": "Groningen",
+   "a": "Rademarkt 10",
+   "w": "https://curryme.nl/",
+   "o": "node/2752212511"
+  },
+  {
+   "n": "De Kleine Moghul",
+   "c": "Groningen",
+   "a": "Nieuwe Boteringestraat 62",
+   "w": "https://www.moghul.nl/",
+   "o": "node/1130865560"
+  },
+  {
+   "n": "Idli Cooker",
+   "c": "Groningen",
+   "a": "Herestraat 96",
+   "w": "https://www.idlicooker.nl/",
+   "o": "node/2752228067"
+  },
+  {
+   "n": "Indian Summer",
+   "c": "Groningen",
+   "a": "Nieuwe Sint Jansstraat 1",
+   "w": "https://www.indiansummerrestaurant.online/",
+   "o": "node/2751589690"
+  },
+  {
+   "n": "Kohinoor van India",
+   "c": "Groningen",
+   "a": "Oostersingel 112",
+   "w": "https://www.kohinoorvanindia.nl/",
+   "o": "node/1817712186"
+  },
+  {
+   "n": "Namaskar",
+   "c": "Groningen",
+   "a": "Nieuwe Ebbingestraat 89",
+   "w": "",
+   "o": "node/2752134038"
+  },
+  {
+   "n": "Restaurant Taj Mahal",
+   "c": "Groningen",
+   "a": "Veemarktstraat 94",
+   "w": "https://www.tajmahalgroningen.nl/",
+   "o": "node/2748536261"
+  },
+  {
+   "n": "Spices",
+   "c": "Groningen",
+   "a": "Westersingel 23",
+   "w": "https://www.spicesgroningen.nl/",
+   "o": "node/1825615665"
+  },
+  {
+   "n": "Gandhi",
+   "c": "Haarlem",
+   "a": "Houtplein 2B",
+   "w": "",
+   "o": "node/2378944647"
+  },
+  {
+   "n": "Indian Corner",
+   "c": "Haarlem",
+   "a": "Houtplein 30",
+   "w": "https://www.indiacorner.nl/",
+   "o": "node/1121485976"
+  },
+  {
+   "n": "Roti Queen",
+   "c": "Haarlem",
+   "a": "Generaal Cronjéstraat 57",
+   "w": "https://rotiqueen.nl/",
+   "o": "node/2715841347"
+  },
+  {
+   "n": "Royal Pokhara",
+   "c": "Haarlem",
+   "a": "Gedempte Oude Gracht 21",
+   "w": "https://www.royalpokhara.nl/",
+   "o": "node/2709465683"
+  },
+  {
+   "n": "Shree",
+   "c": "Haarlem",
+   "a": "Kruisweg 53",
+   "w": "https://shreefoods.nl/",
+   "o": "node/1159305462"
+  },
+  {
+   "n": "Taste of India",
+   "c": "Haarlem",
+   "a": "Gedempte Oude Gracht 53",
+   "w": "",
+   "o": "node/1186114350"
+  },
+  {
+   "n": "Warung to go",
+   "c": "Haarlem",
+   "a": "Casablancastraat 4",
+   "w": "",
+   "o": "node/1828426104"
+  },
+  {
+   "n": "Kota Radja",
+   "c": "Hardenberg",
+   "a": "Stationsstraat 24",
+   "w": "",
+   "o": "node/2293576709"
+  },
+  {
+   "n": "Sher E Bangla",
+   "c": "Haren Gn",
+   "a": "Rijksstraatweg 127-1",
+   "w": "https://sherebanglaharen.nl/",
+   "o": "node/1947486128"
+  },
+  {
+   "n": "Tandoor & More",
+   "c": "Harmelen",
+   "a": "Dorpsstraat 111",
+   "w": "https://www.tandoormoreharmelen.nl/",
+   "o": "node/2876795269"
+  },
+  {
+   "n": "Chinees-Indisch Restaurant Azië",
+   "c": "Hasselt",
+   "a": "Hoogstraat 7",
+   "w": "",
+   "o": "node/10012787785"
+  },
+  {
+   "n": "Kam Hoo",
+   "c": "Heel",
+   "a": "Heerbaan 34",
+   "w": "",
+   "o": "node/2815565109"
+  },
+  {
+   "n": "Smaak Van India",
+   "c": "Heemskerk",
+   "a": "Helmlaan 21",
+   "w": "",
+   "o": "node/2905207039"
+  },
+  {
+   "n": "Kubera",
+   "c": "Heemstede",
+   "a": "Zandvoortselaan 145",
+   "w": "https://kuberarestaurant.nl/",
+   "o": "node/2777934144"
+  },
+  {
+   "n": "Het Verre Oosten",
+   "c": "Heerlen",
+   "a": "Bautscherweg 39",
+   "w": "",
+   "o": "node/2848496939"
+  },
+  {
+   "n": "Zafran",
+   "c": "Heerlen",
+   "a": "Wilhelminaplein 20",
+   "w": "https://www.zafranheerlen.nl/",
+   "o": "node/2844641661"
+  },
+  {
+   "n": "Kailash Bhavan",
+   "c": "Helvoirt",
+   "a": "Rijksweg 26",
+   "w": "https://www.kailashbhavan.nl/",
+   "o": "node/2773912107"
+  },
+  {
+   "n": "Curry Fusion",
+   "c": "Hengelo",
+   "a": "Castorweg 374",
+   "w": "https://curryfusion.nl/",
+   "o": "node/2781701651"
+  },
+  {
+   "n": "The Bombay Spice",
+   "c": "Hengelo",
+   "a": "Wemenstraat 59",
+   "w": "https://bombayspice.nl/",
+   "o": "node/1337634644"
+  },
+  {
+   "n": "Gorkha Restaurant Nepalees & Indiaas",
+   "c": "Hilversum",
+   "a": "Havenstraat 10",
+   "w": "https://gorkharestaurant.nl/",
+   "o": "node/11486625749"
+  },
+  {
+   "n": "Shanthy",
+   "c": "Hilversum",
+   "a": "Havenstraat 36",
+   "w": "https://shanthy.nl/",
+   "o": "node/2879083023"
+  },
+  {
+   "n": "Surya",
+   "c": "Hilversum",
+   "a": "Langestraat 126",
+   "w": "https://suryarestaurant.nl/nl/indiaas-restaurant-hilversum/",
+   "o": "node/2653648520"
+  },
+  {
+   "n": "Darbaar",
+   "c": "Hoofddorp",
+   "a": "Kruisweg 969A",
+   "w": "https://darbaar.nl/",
+   "o": "node/7948610239"
+  },
+  {
+   "n": "Indian Lounge",
+   "c": "Hoofddorp",
+   "a": "Rijksweg A4 1",
+   "w": "https://indianlounge.nl/",
+   "o": "node/2733770748"
+  },
+  {
+   "n": "Indian Taste",
+   "c": "Hoofddorp",
+   "a": "Tuinweg 14B",
+   "w": "https://www.indiantastehoofddorp.nl/",
+   "o": "node/2733560760"
+  },
+  {
+   "n": "Joyce Foodcorner",
+   "c": "Hoofddorp",
+   "a": "Kruisweg 644A",
+   "w": "https://www.joycefoodcorner.nl/",
+   "o": "node/2733563493"
+  },
+  {
+   "n": "Krishna Vilas",
+   "c": "Hoofddorp",
+   "a": "Marktplein 106",
+   "w": "https://krishnavilas.com/hoofddorp-reservation-best-south-indian-restaurant-in-netherlands/",
+   "o": "node/2733560521"
+  },
+  {
+   "n": "Nooristan Restaurant",
+   "c": "Hoofddorp",
+   "a": "Tussenweg 37",
+   "w": "https://nooristan.nl/",
+   "o": "node/9858550283"
+  },
+  {
+   "n": "Tandoori Lounge",
+   "c": "Hoofddorp",
+   "a": "Concourslaan 19",
+   "w": "https://www.tandoorilounge.nl/",
+   "o": "node/2733560915"
+  },
+  {
+   "n": "Himalaya Hoorn",
+   "c": "Hoorn",
+   "a": "Breed 32",
+   "w": "https://himalayarestaurant.nl/",
+   "o": "node/2791241442"
+  },
+  {
+   "n": "Aroma of India",
+   "c": "Houten",
+   "a": "Achterom 22-01",
+   "w": "https://aromaofindia.nl/",
+   "o": "node/12900446757"
+  },
+  {
+   "n": "Ho Dun",
+   "c": "Houten",
+   "a": "Burgemeester Wallerweg 9",
+   "w": "https://hodun.nl/",
+   "o": "node/2525199974"
+  },
+  {
+   "n": "Indian Tandoori King",
+   "c": "IJmuiden",
+   "a": "Lange Nieuwstraat 493A",
+   "w": "https://www.indiantandooriking.nl/",
+   "o": "node/2773763170"
+  },
+  {
+   "n": "Kota Radja",
+   "c": "IJmuiden",
+   "a": "Lange Nieuwstraat 425",
+   "w": "https://kotaradjaijmuiden.nl/",
+   "o": "node/2773761799"
+  },
+  {
+   "n": "KingsDish",
+   "c": "IJsselstein",
+   "a": "IJsselstraat 2",
+   "w": "https://www.kingsdish.nl/",
+   "o": "node/2921211795"
+  },
+  {
+   "n": "Sunita's Restaurant",
+   "c": "IJsselstein",
+   "a": "Utrechtsestraat 34",
+   "w": "https://sunitarestaurant.nl/",
+   "o": "node/2921215236"
+  },
+  {
+   "n": "Swagat",
+   "c": "Kampen",
+   "a": "Oudestraat 194",
+   "w": "https://www.swagat.nl/",
+   "o": "node/2732472810"
+  },
+  {
+   "n": "Tasty House Bistro",
+   "c": "Kollum",
+   "a": "Voorstraat 67",
+   "w": "https://www.tastyhousebistro.nl/",
+   "o": "node/2798638028"
+  },
+  {
+   "n": "Sinsi",
+   "c": "Leerdam",
+   "a": "Vlietskant 21a",
+   "w": "https://sinsileerdam.foodticket.nl/",
+   "o": "node/2746021299"
+  },
+  {
+   "n": "Jamuna",
+   "c": "Leeuwarden",
+   "a": "Weerd 26",
+   "w": "https://www.jamuna.nl/",
+   "o": "node/2102849472"
+  },
+  {
+   "n": "Sher E Bangla",
+   "c": "Leeuwarden",
+   "a": "Eewal 54",
+   "w": "https://sherebangla-leeuwarden.nl/",
+   "o": "node/3066736026"
+  },
+  {
+   "n": "Taj Palace",
+   "c": "Leeuwarden",
+   "a": "Nieuwe Oosterstraat 9",
+   "w": "https://www.tajpalace.nl/",
+   "o": "node/3066739860"
+  },
+  {
+   "n": "Everest Tandoori",
+   "c": "Leiden",
+   "a": "Noordeinde 15",
+   "w": "https://everesttandoorirestaurantleiden.nl/",
+   "o": "node/990376128"
+  },
+  {
+   "n": "India way",
+   "c": "Leiden",
+   "a": "Vrouwenkerkkoorstraat 7",
+   "w": "https://www.india-way.nl/",
+   "o": "node/297043950"
+  },
+  {
+   "n": "Indian Royal Food",
+   "c": "Leiden",
+   "a": "Haven 38",
+   "w": "https://www.indianroyalfood.nl/",
+   "o": "node/2907986110"
+  },
+  {
+   "n": "Food Gasm",
+   "c": "Leidschendam",
+   "a": "Damlaan 25",
+   "w": "",
+   "o": "node/2711565470"
+  },
+  {
+   "n": "Punjabi Food",
+   "c": "Leidschendam",
+   "a": "Kornoelje 102",
+   "w": "https://www.punjabifood.nl/",
+   "o": "node/6473815298"
+  },
+  {
+   "n": "Sher-E-Punjab",
+   "c": "Lelystad",
+   "a": "Stadhuisplein 57",
+   "w": "https://sherepunjab.nl/",
+   "o": "node/2922520073"
+  },
+  {
+   "n": "Het Wokje",
+   "c": "Lieshout",
+   "a": "Dorpsstraat 15",
+   "w": "",
+   "o": "node/2898994427"
+  },
+  {
+   "n": "Kashmir Kitchen",
+   "c": "Maarssen",
+   "a": "Harmonieplein 41",
+   "w": "https://kashmirkitchen.nl/",
+   "o": "node/4496762898"
+  },
+  {
+   "n": "Dr. & Dr. SaMosa",
+   "c": "Maastricht",
+   "a": "Grote Gracht 40",
+   "w": "https://www.rollwithsamosa.com/",
+   "o": "node/2808615977"
+  },
+  {
+   "n": "Spice of India",
+   "c": "Maastricht",
+   "a": "Achter het Vleeshuis 27",
+   "w": "https://www.spiceofindia.nl/",
+   "o": "node/2804896054"
+  },
+  {
+   "n": "Danny Leung",
+   "c": "Medemblik",
+   "a": "Nieuwstraat 64",
+   "w": "https://danny-leung.nl/",
+   "o": "node/521298752"
+  },
+  {
+   "n": "India Roti Room - Indian Restaurant",
+   "c": "Medemblik",
+   "a": "Bagijnhof 3",
+   "w": "https://indiarotiroommedemblik.nl/",
+   "o": "node/2817949825"
+  },
+  {
+   "n": "Bollywood",
+   "c": "Meppel",
+   "a": "Molenstraat 15",
+   "w": "https://www.bollywood-eetcafe.nl/",
+   "o": "node/2732857911"
+  },
+  {
+   "n": "The Punjabi's",
+   "c": "Nieuw-Vennep",
+   "a": "Venneperhof 36",
+   "w": "https://thepunjabis.nl/",
+   "o": "node/2734784190"
+  },
+  {
+   "n": "Kurundu",
+   "c": "Nieuwegein",
+   "a": "Dorpsstraat 49",
+   "w": "https://kurundu.nl/",
+   "o": "node/3005286698"
+  },
+  {
+   "n": "Tandoori Hut",
+   "c": "Nieuwegein",
+   "a": "Nedereindseweg 5",
+   "w": "",
+   "o": "node/3003460360"
+  },
+  {
+   "n": "Meydani",
+   "c": "Nijkerk",
+   "a": "Vetkamp 8",
+   "w": "https://meydani.nl/",
+   "o": "node/2718960940"
+  },
+  {
+   "n": "Basmati",
+   "c": "Nijmegen",
+   "a": "van Welderenstraat 105",
+   "w": "https://basmatinijmegen.nl/",
+   "o": "node/3172978388"
+  },
+  {
+   "n": "China Garden",
+   "c": "Nijmegen",
+   "a": "Meijhorst 7027",
+   "w": "http://www.chinagarden-meijhorst.nl/",
+   "o": "node/2855901580"
+  },
+  {
+   "n": "Chinees-Indisch restaurant Lotus",
+   "c": "Nijmegen",
+   "a": "Oude Molenweg 148",
+   "w": "http://www.lotusnijmegen.nl/",
+   "o": "node/2851755905"
+  },
+  {
+   "n": "Foe Ho",
+   "c": "Nijmegen",
+   "a": "Couwenbergstraat 125",
+   "w": "https://www.chinees-indisch-bezorgcentrum-foe-ho.nl/",
+   "o": "node/2851991561"
+  },
+  {
+   "n": "India Gate",
+   "c": "Nijmegen",
+   "a": "Molenstraat 136",
+   "w": "https://restaurantindiagate.nl/",
+   "o": "node/2847380050"
+  },
+  {
+   "n": "Indian Way",
+   "c": "Nijmegen",
+   "a": "Sint Jorisstraat 30",
+   "w": "https://www.restaurantindianway.nl/",
+   "o": "node/2847404100"
+  },
+  {
+   "n": "Shanghai",
+   "c": "Nijmegen",
+   "a": "Molenweg 145",
+   "w": "https://chineesrestaurantshanghai.nl/",
+   "o": "node/2953083407"
+  },
+  {
+   "n": "Sunand",
+   "c": "Noordwijk",
+   "a": "Bomstraat 46",
+   "w": "https://www.sunand.nl/",
+   "o": "node/2918533117"
+  },
+  {
+   "n": "Taj Mahal",
+   "c": "Noordwijk",
+   "a": "Parallel Boulevard 2A",
+   "w": "https://tajmahalnoordwijk.nl/",
+   "o": "node/1083356480"
+  },
+  {
+   "n": "Lotus",
+   "c": "Ossendrecht",
+   "a": "De Brouwerij 6",
+   "w": "https://chineesindischrestaurantlotus.wordpress.com/",
+   "o": "node/2829623889"
+  },
+  {
+   "n": "Restaurant China",
+   "c": "Overloon",
+   "a": "Vierlingsbeekseweg 4",
+   "w": "https://china-overloon.nl/",
+   "o": "node/8569257653"
+  },
+  {
+   "n": "Anand",
+   "c": "Philipsburg",
+   "a": "Hotel Steeg",
+   "w": "",
+   "o": "way/362865310"
+  },
+  {
+   "n": "Jonha Indian Restaurant",
+   "c": "Philipsburg",
+   "a": "Hendrikstraat",
+   "w": "",
+   "o": "node/3706011200"
+  },
+  {
+   "n": "Newa Chop Stix Restaurant",
+   "c": "Philipsburg",
+   "a": "Hotel Steeg",
+   "w": "",
+   "o": "node/3705983212"
+  },
+  {
+   "n": "Shiv Shasti",
+   "c": "Philipsburg",
+   "a": "Front Street",
+   "w": "",
+   "o": "node/3706130436"
+  },
+  {
+   "n": "Paradijs",
+   "c": "Putten",
+   "a": "Garderenseweg 25",
+   "w": "",
+   "o": "node/1463041525"
+  },
+  {
+   "n": "Suka Suka",
+   "c": "Raamsdonksveer",
+   "a": "Keizersdijk 1",
+   "w": "https://sukasuka.nl/",
+   "o": "node/2910412945"
+  },
+  {
+   "n": "Golden India",
+   "c": "Rhenen",
+   "a": "Frederik van de Paltshof 35",
+   "w": "https://goldenindia.nl/",
+   "o": "node/2783520831"
+  },
+  {
+   "n": "Golden House",
+   "c": "Rijswijk",
+   "a": "Waldhoornplein 2-5",
+   "w": "",
+   "o": "node/1347257100"
+  },
+  {
+   "n": "Little Nepal",
+   "c": "Rijswijk",
+   "a": "Lindelaan 229",
+   "w": "https://littlenepal.nl/",
+   "o": "node/2713073368"
+  },
+  {
+   "n": "The Clay Oven",
+   "c": "Rijswijk",
+   "a": "Herenstraat 87A",
+   "w": "https://www.theclayoven.nl/",
+   "o": "node/3608468772"
+  },
+  {
+   "n": "Aroma Huis",
+   "c": "Roermond",
+   "a": "Roerkade 39",
+   "w": "",
+   "o": "node/2933472594"
+  },
+  {
+   "n": "Restaurant Po Shan",
+   "c": "Roermond",
+   "a": "Raadhuisstraat 27",
+   "w": "",
+   "o": "node/2671348079"
+  },
+  {
+   "n": "Curry Masala",
+   "c": "Roosendaal",
+   "a": "Raadhuisstraat 48",
+   "w": "https://currymasala.nl/",
+   "o": "node/2818032302"
+  },
+  {
+   "n": "Curry Masala",
+   "c": "Roosendaal",
+   "a": "Nieuwe Markt 75d",
+   "w": "https://currymasala.nl/",
+   "o": "node/2818056808"
+  },
+  {
+   "n": "91Spices",
+   "c": "Rotterdam",
+   "a": "Gelderseplein 46",
+   "w": "https://91spices.nl/",
+   "o": "node/6344440485"
+  },
+  {
+   "n": "Atithi",
+   "c": "Rotterdam",
+   "a": "Vasteland 5A",
+   "w": "https://atithi.nl/atithi-rotterdam/",
+   "o": "node/2610267734"
+  },
+  {
+   "n": "Curry's",
+   "c": "Rotterdam",
+   "a": "Oudedijk 152",
+   "w": "https://www.currys.nl/",
+   "o": "node/1743186800"
+  },
+  {
+   "n": "Gate of India",
+   "c": "Rotterdam",
+   "a": "Beukelsdijk 98",
+   "w": "https://gateofindia-rotterdam.nl/",
+   "o": "node/2798555732"
+  },
+  {
+   "n": "Indian treats",
+   "c": "Rotterdam",
+   "a": "Mariniersweg 34",
+   "w": "",
+   "o": "node/2610250614"
+  },
+  {
+   "n": "Light of India",
+   "c": "Rotterdam",
+   "a": "Kortekade 1",
+   "w": "https://lightofindia.nl/",
+   "o": "node/582056342"
+  },
+  {
+   "n": "Namaste",
+   "c": "Rotterdam",
+   "a": "Oudedijk 154",
+   "w": "",
+   "o": "node/1743158248"
+  },
+  {
+   "n": "Panj Tara",
+   "c": "Rotterdam",
+   "a": "Mariniersweg 18",
+   "w": "https://panjtara.nl/",
+   "o": "node/2610217942"
+  },
+  {
+   "n": "Punjabi",
+   "c": "Rotterdam",
+   "a": "Stadhuisplein 36",
+   "w": "",
+   "o": "node/2610251394"
+  },
+  {
+   "n": "Punjabi",
+   "c": "Rotterdam",
+   "a": "Watermanweg 349",
+   "w": "",
+   "o": "node/2785269861"
+  },
+  {
+   "n": "Urban Tapri",
+   "c": "Rotterdam",
+   "a": "Pompenburg 638",
+   "w": "https://www.urbantapri.nl/",
+   "o": "node/2610268923"
+  },
+  {
+   "n": "Zainab Roshni Mahal Curry House",
+   "c": "Rotterdam",
+   "a": "Nieuwe Binnenweg 317",
+   "w": "https://zainabroshnimahal.nl/",
+   "o": "node/2798608406"
+  },
+  {
+   "n": "El Pasha",
+   "c": "Sappemeer",
+   "a": "Noorderstraat 105",
+   "w": "https://www.grillroomelpasha-sappemeer.nl/",
+   "o": "node/3427426021"
+  },
+  {
+   "n": "Curry Corner",
+   "c": "Schiedam",
+   "a": "Lange Kerkstraat 27A",
+   "w": "",
+   "o": "node/2789357780"
+  },
+  {
+   "n": "The Indian Chef",
+   "c": "Schiedam",
+   "a": "Nieuwe Passage 21",
+   "w": "https://theindianchef.nl/",
+   "o": "node/2789357498"
+  },
+  {
+   "n": "Chinees Restaurant Boeddha",
+   "c": "Schinveld",
+   "a": "Brunssummerstraat 4",
+   "w": "https://www.boeddhaschinveld.nl/",
+   "o": "node/508541155"
+  },
+  {
+   "n": "Bombay Bites",
+   "c": "Simpson Bay",
+   "a": "Airport Road",
+   "w": "",
+   "o": "way/369597854"
+  },
+  {
+   "n": "Simla",
+   "c": "Sittard",
+   "a": "Stationsstraat 17",
+   "w": "http://simla.nl/",
+   "o": "node/1928994515"
+  },
+  {
+   "n": "Namaste India",
+   "c": "Spijkenisse",
+   "a": "Voorstraat 10",
+   "w": "https://www.namasteindia-spijkenisse.nl/",
+   "o": "node/2752334391"
+  },
+  {
+   "n": "Golden Garden Restaurant",
+   "c": "Ter Aar",
+   "a": "Kerkweg 16",
+   "w": "https://chinesegoldengarden.nl/",
+   "o": "node/2965707321"
+  },
+  {
+   "n": "Biryani Tandoori",
+   "c": "Tilburg",
+   "a": "Tuinstraat 59",
+   "w": "https://www.biryanitandoorisweets.nl/",
+   "o": "node/2849385051"
+  },
+  {
+   "n": "China Fan",
+   "c": "Tilburg",
+   "a": "Goirkestraat 46",
+   "w": "https://www.chinafan-tilburg.nl/",
+   "o": "node/2848987846"
+  },
+  {
+   "n": "Indian Palace",
+   "c": "Tilburg",
+   "a": "Korvelseweg 243",
+   "w": "https://www.indianpalace.nl/",
+   "o": "node/2851143409"
+  },
+  {
+   "n": "Indian Junction",
+   "c": "Uithoorn",
+   "a": "Cort van der Lindenplein 5",
+   "w": "https://indianjunction.nl/",
+   "o": "node/1349066259"
+  },
+  {
+   "n": "Anjappar",
+   "c": "Utrecht",
+   "a": "Vredenburg 28",
+   "w": "https://anjappar.nl/branch-utrecht/",
+   "o": "node/9042627723"
+  },
+  {
+   "n": "Atithi",
+   "c": "Utrecht",
+   "a": "Van Sijpesteijnkade 27",
+   "w": "https://atithi.nl/atithi-utrecht/",
+   "o": "node/5659148959"
+  },
+  {
+   "n": "Blendhouse",
+   "c": "Utrecht",
+   "a": "Voorstraat 100",
+   "w": "https://blendhouse.nl/",
+   "o": "node/2709630620"
+  },
+  {
+   "n": "Cafetaria Hao Wei",
+   "c": "Utrecht",
+   "a": "Madioenstraat 2",
+   "w": "https://www.cafetariahaowei-utrecht.nl/",
+   "o": "node/2722191684"
+  },
+  {
+   "n": "G's Kitchen",
+   "c": "Utrecht",
+   "a": "Van Eysingalaan 388",
+   "w": "https://www.gskitchen.nl/",
+   "o": "node/2726127732"
+  },
+  {
+   "n": "Kashmir Kitchen",
+   "c": "Utrecht",
+   "a": "Adelaarstraat 120",
+   "w": "https://www.kashmirkitchen.nl/",
+   "o": "node/2705700197"
+  },
+  {
+   "n": "Krishna Vilas",
+   "c": "Utrecht",
+   "a": "Kaatstraat 1",
+   "w": "https://krishnavilas.com/utrecht-reservation-best-south-indian-restaurant-in-netherlands/",
+   "o": "node/5003438792"
+  },
+  {
+   "n": "Namaskar",
+   "c": "Utrecht",
+   "a": "Vredenburg 38",
+   "w": "https://www.restaurant-namaskar.nl/",
+   "o": "node/940894051"
+  },
+  {
+   "n": "Punjabi Taste",
+   "c": "Utrecht",
+   "a": "Amsterdamsestraatweg 252",
+   "w": "https://punjabitaste.sitedish.shop/",
+   "o": "node/2632907659"
+  },
+  {
+   "n": "Roti & Chai",
+   "c": "Utrecht",
+   "a": "Admiraal Helfrichlaan 70",
+   "w": "https://roti-chai.nl/",
+   "o": "node/5874078053"
+  },
+  {
+   "n": "Surya",
+   "c": "Utrecht",
+   "a": "Janskerkhof 23",
+   "w": "https://suryarestaurant.nl/nl/indiaas-restaurant-utrecht/",
+   "o": "node/2709504866"
+  },
+  {
+   "n": "Surya To Go",
+   "c": "Utrecht",
+   "a": "Godebaldkwartier 80",
+   "w": "https://suryatogo.nl/",
+   "o": "node/2458124133"
+  },
+  {
+   "n": "Taamaraa",
+   "c": "Utrecht",
+   "a": "Achter Clarenburg 39",
+   "w": "https://www.taamaraa.nl/",
+   "o": "node/2711677616"
+  },
+  {
+   "n": "Taj Mahal",
+   "c": "Utrecht",
+   "a": "Zadelstraat 32",
+   "w": "https://www.tajmahal.nl/",
+   "o": "node/874401833"
+  },
+  {
+   "n": "Taste of India",
+   "c": "Utrecht",
+   "a": "Oudegracht aan de Werf 153",
+   "w": "https://tasteofindiautrecht.nl/",
+   "o": "node/876203889"
+  },
+  {
+   "n": "The Madras Diaries",
+   "c": "Utrecht",
+   "a": "Brusselplein 11",
+   "w": "https://themadrasdiaries.nl/utrecht/",
+   "o": "node/5347240293"
+  },
+  {
+   "n": "Veg Nation",
+   "c": "Utrecht",
+   "a": "St.-Jacobsstraat 323",
+   "w": "https://www.vegnation-utrecht.nl/",
+   "o": "node/2287145539"
+  },
+  {
+   "n": "Wan Soen",
+   "c": "Utrecht",
+   "a": "Julianaweg 306",
+   "w": "https://wan-soen.nl/",
+   "o": "node/3035785907"
+  },
+  {
+   "n": "Namastey India",
+   "c": "Veenendaal",
+   "a": "J.G. Sandbrinkstraat 2",
+   "w": "https://www.namasteyindia.nl/",
+   "o": "node/6984527139"
+  },
+  {
+   "n": "The Blue Lotus",
+   "c": "Velp",
+   "a": "President Kennedylaan 6",
+   "w": "https://www.bluelotusvelp.nl/",
+   "o": "node/2859069387"
+  },
+  {
+   "n": "Sittar",
+   "c": "Venlo",
+   "a": "Kleine Kerkstraat 12",
+   "w": "",
+   "o": "node/1317492987"
+  },
+  {
+   "n": "Peking",
+   "c": "Vlagtwedde",
+   "a": "Wilhelminastraat 20",
+   "w": "",
+   "o": "node/2501570556"
+  },
+  {
+   "n": "Chef India",
+   "c": "Voorburg",
+   "a": "Bruijnings Ingenhoeslaan 42",
+   "w": "https://chefindia.sitedish.shop/",
+   "o": "node/2704920575"
+  },
+  {
+   "n": "Five Flavors",
+   "c": "Voorburg",
+   "a": "Monseigneur van Steelaan 217",
+   "w": "https://www.fiveflavors.nl/",
+   "o": "node/2704917408"
+  },
+  {
+   "n": "Queen of India",
+   "c": "Wageningen",
+   "a": "Junusstraat 14",
+   "w": "https://www.india-gate-wageningen.nl/",
+   "o": "node/3013385906"
+  },
+  {
+   "n": "Toko Radjawali",
+   "c": "Wageningen",
+   "a": "Junusstraat 19",
+   "w": "https://toko-radjawali-wageningen.nl/",
+   "o": "node/3013387770"
+  },
+  {
+   "n": "Restaurant Saffron Indian Cuisine",
+   "c": "Wassenaar",
+   "a": "Luifelbaan 56",
+   "w": "https://www.restaurantsaffron.nl/",
+   "o": "node/2716129843"
+  },
+  {
+   "n": "Khaza Ghar",
+   "c": "Weesp",
+   "a": "Nieuwstad 84",
+   "w": "https://www.khazaghar.nl/",
+   "o": "node/2860109061"
+  },
+  {
+   "n": "Tandoori Mahal",
+   "c": "Weesp",
+   "a": "E.du Perronstraat 30",
+   "w": "https://www.tandoori-mahal.nl/",
+   "o": "node/8423491498"
+  },
+  {
+   "n": "The Vasant",
+   "c": "Woerden",
+   "a": "Havenstraat 10A",
+   "w": "https://thevasant.nl/",
+   "o": "node/2851430030"
+  },
+  {
+   "n": "Mr. Momo",
+   "c": "Zaandam",
+   "a": "Zuiddijk 9",
+   "w": "",
+   "o": "node/2896125512"
+  },
+  {
+   "n": "Hong Kong",
+   "c": "Zandvoort",
+   "a": "Haltestraat 69",
+   "w": "https://hongkongzandvoort.com/",
+   "o": "node/5184330713"
+  },
+  {
+   "n": "Currys2go",
+   "c": "Zeist",
+   "a": "Laan van Vollenhove 2971",
+   "w": "",
+   "o": "node/2215120201"
+  },
+  {
+   "n": "Punjabi Rasoi",
+   "c": "Zeist",
+   "a": "Steynlaan 83a",
+   "w": "https://www.punjabirasoizeist.nl/",
+   "o": "node/1020651035"
+  },
+  {
+   "n": "Welcome",
+   "c": "Zwartsluis",
+   "a": "Kerkstraat 12",
+   "w": "",
+   "o": "node/2704301073"
+  },
+  {
+   "n": "Gandhi",
+   "c": "Zwolle",
+   "a": "Oude Vismarkt 9A",
+   "w": "https://www.gandhizwolle.nl/",
+   "o": "node/2498677602"
+  },
+  {
+   "n": "India Palace",
+   "c": "Zwolle",
+   "a": "Oude Vismarkt 25",
+   "w": "https://indiapalace-zwolle.nl/",
+   "o": "node/2498668420"
+  },
+  {
+   "n": "Manur Kitchen",
+   "c": "Zwolle",
+   "a": "Melkmarkt 42",
+   "w": "",
+   "o": "node/2498671454"
+  },
+  {
+   "n": "55 Bombay Street",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/3109707827"
+  },
+  {
+   "n": "7 Spices",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/13664594893"
+  },
+  {
+   "n": "Anmol",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/497194300"
+  },
+  {
+   "n": "Annavilaas",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/12845162818"
+  },
+  {
+   "n": "Asian Eethuis",
+   "c": "",
+   "a": "",
+   "w": "https://www.asianeethuisamsterdam.nl/",
+   "o": "node/4270404058"
+  },
+  {
+   "n": "Babal",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/14047420901"
+  },
+  {
+   "n": "Bollywood Indian Restaurant",
+   "c": "",
+   "a": "",
+   "w": "https://restaurantbollywood.nl/en/",
+   "o": "node/447815483"
+  },
+  {
+   "n": "Bombay inn",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/1486109761"
+  },
+  {
+   "n": "Bombay Streetfood",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/9061737966"
+  },
+  {
+   "n": "Chef India",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/7199043668"
+  },
+  {
+   "n": "De Branding",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/6570431689"
+  },
+  {
+   "n": "Dosa",
+   "c": "",
+   "a": "",
+   "w": "https://www.dosaamsterdam.nl/",
+   "o": "node/2411531952"
+  },
+  {
+   "n": "Flavours of India",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/4934368328"
+  },
+  {
+   "n": "Handi",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/648922473"
+  },
+  {
+   "n": "Hanji",
+   "c": "",
+   "a": "",
+   "w": "https://hanji.nl/",
+   "o": "node/12150152250"
+  },
+  {
+   "n": "India Poort",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/4343219350"
+  },
+  {
+   "n": "India Roti Room",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2366138154"
+  },
+  {
+   "n": "Indian Barbecue",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2653648519"
+  },
+  {
+   "n": "Indie Ruchi",
+   "c": "",
+   "a": "Theresiastraat 84K",
+   "w": "",
+   "o": "node/12465394777"
+  },
+  {
+   "n": "Kisaan",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/5248643192"
+  },
+  {
+   "n": "Little India",
+   "c": "",
+   "a": "Ridderstraat 11",
+   "w": "https://www.restaurantlittleindia.nl/",
+   "o": "node/597238764"
+  },
+  {
+   "n": "Mac's Food Place",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/4934368325"
+  },
+  {
+   "n": "Mamta",
+   "c": "",
+   "a": "",
+   "w": "https://www.mamta.nl/",
+   "o": "node/1738545350"
+  },
+  {
+   "n": "Mirchi",
+   "c": "",
+   "a": "",
+   "w": "https://mirchirestaurant.nl/",
+   "o": "node/12697016384"
+  },
+  {
+   "n": "Mr. India",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/5774047413"
+  },
+  {
+   "n": "Namche Nepalese Indian",
+   "c": "",
+   "a": "Lange Leidsedwarsstraat 91-H",
+   "w": "",
+   "o": "node/12920036048"
+  },
+  {
+   "n": "ohm",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/3397765393"
+  },
+  {
+   "n": "Pind Punjabi",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/9929424672"
+  },
+  {
+   "n": "Punjabi Food",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/14196590449"
+  },
+  {
+   "n": "Ram's Roti West",
+   "c": "",
+   "a": "",
+   "w": "http://www.ramsroti.nl/",
+   "o": "node/4268735851"
+  },
+  {
+   "n": "Restaurant NUSA",
+   "c": "",
+   "a": "Kerkstraat 4",
+   "w": "https://www.nusa.aw/",
+   "o": "node/10213021917"
+  },
+  {
+   "n": "Sab di Hatti",
+   "c": "",
+   "a": "",
+   "w": "https://sabdihatti.nl/",
+   "o": "node/8592600951"
+  },
+  {
+   "n": "Saeed's Curry House",
+   "c": "",
+   "a": "",
+   "w": "https://www.saeedscurryhouse-amsterdam.nl/",
+   "o": "node/12437544847"
+  },
+  {
+   "n": "Sambal",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/6421355763"
+  },
+  {
+   "n": "Seven Chakra",
+   "c": "",
+   "a": "",
+   "w": "https://sevenchakra.nl/",
+   "o": "node/12437586541"
+  },
+  {
+   "n": "Shirkhan",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/9208532912"
+  },
+  {
+   "n": "Shiv Shakti",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/6175209814"
+  },
+  {
+   "n": "Taj Mahal",
+   "c": "",
+   "a": "",
+   "w": "https://www.tajmahalrestaurant.eu/",
+   "o": "node/3750256486"
+  },
+  {
+   "n": "Tandoor Palace",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/13022306411"
+  },
+  {
+   "n": "The Guru of India",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/1486109783"
+  },
+  {
+   "n": "The Oriëntal Swan",
+   "c": "",
+   "a": "",
+   "w": "https://www.orientalswan.nl/",
+   "o": "node/1544930278"
+  },
+  {
+   "n": "The Red Fort",
+   "c": "",
+   "a": "",
+   "w": "http://theredfort.nl/",
+   "o": "node/5210479356"
+  },
+  {
+   "n": "Tulsi",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/12077123322"
+  },
+  {
+   "n": "What's up India",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/6786835987"
+  }
+ ],
+ "worship": [
+  {
+   "n": "Dev Mandir",
+   "c": "'s-Gravenhage",
+   "a": "Gaslaan 74",
+   "w": "",
+   "o": "node/2731055542"
+  },
+  {
+   "n": "Shri Guru Ravidass Temple",
+   "c": "'s-Gravenhage",
+   "a": "Delftselaan 105",
+   "w": "",
+   "o": "node/1567074969"
+  },
+  {
+   "n": "Shri Sanatan Dharm Sabha Nederland",
+   "c": "'s-Gravenhage",
+   "a": "Mijtensstraat 183",
+   "w": "http://www.shrirammandir.nl/",
+   "o": "way/143188257"
+  },
+  {
+   "n": "Shri- Sanatan Dharm Sakha Sabha Den Haag",
+   "c": "'s-Gravenhage",
+   "a": "Regentesseplein 156",
+   "w": "",
+   "o": "node/1567081496"
+  },
+  {
+   "n": "Stichting Shri Sai Mandir",
+   "c": "'s-Gravenhage",
+   "a": "Gaslaan 72",
+   "w": "http://saimandirdenhaag.nl/",
+   "o": "node/2731055456"
+  },
+  {
+   "n": "Gurdwara Maan Sarovar Sahib",
+   "c": "Amsterdam",
+   "a": "Baarsjesweg 281-282",
+   "w": "",
+   "o": "node/4439787439"
+  },
+  {
+   "n": "ISKCON Amsterdam",
+   "c": "Amsterdam",
+   "a": "Lizzy Ansinghstraat 80",
+   "w": "https://iskconamsterdam.nl/",
+   "o": "node/9039013452"
+  },
+  {
+   "n": "Shri Guru Nanak Gurdwara Sahib",
+   "c": "Amsterdam",
+   "a": "Schakelstraat 21",
+   "w": "",
+   "o": "node/2628741158"
+  },
+  {
+   "n": "Shri Shiv Mandir",
+   "c": "Arnhem",
+   "a": "Zuringstraat 12",
+   "w": "",
+   "o": "node/2701841851"
+  },
+  {
+   "n": "Vereniging Arulmigu Sri Arunachaleswarar",
+   "c": "Beverwijk",
+   "a": "Elbestraat 2",
+   "w": "",
+   "o": "node/2909049565"
+  },
+  {
+   "n": "Sri Varatharajah Selvavinayagar tempel",
+   "c": "Den Helder",
+   "a": "Annie Romein-Verschoorlaan 32",
+   "w": "",
+   "o": "way/282528399"
+  },
+  {
+   "n": "Mandir Triloki Dhaam",
+   "c": "Eindhoven",
+   "a": "Tongelresestraat 371",
+   "w": "https://www.trilokidhaam.nl/",
+   "o": "node/2687487699"
+  },
+  {
+   "n": "Sada Shiva Dham",
+   "c": "Loenen",
+   "a": "Vrijenbergweg 60",
+   "w": "https://www.babaji.nl/",
+   "o": "node/2737582191"
+  },
+  {
+   "n": "Gurdwara Shri Guru Nanak Dev Ji",
+   "c": "Rotterdam",
+   "a": "Ottergracht 6",
+   "w": "",
+   "o": "way/273601941"
+  },
+  {
+   "n": "Maheshwar Dhaam",
+   "c": "Rotterdam",
+   "a": "Putsebocht 163a",
+   "w": "",
+   "o": "node/2667644698"
+  },
+  {
+   "n": "Shri Ram Mandir",
+   "c": "Rotterdam",
+   "a": "Putselaan 194",
+   "w": "",
+   "o": "node/2667644699"
+  },
+  {
+   "n": "Shri Shiv Mandir",
+   "c": "Rotterdam",
+   "a": "Nozemanstraat 3",
+   "w": "",
+   "o": "node/2667644700"
+  },
+  {
+   "n": "Stichting Shri Nanda Devi Mandir",
+   "c": "Vlaardingen",
+   "a": "Philips de Goedestraat 151",
+   "w": "",
+   "o": "way/272419156"
+  },
+  {
+   "n": "Gurdwara Sikh Sangat Sahib",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2630362916"
+  },
+  {
+   "n": "Gurdwara Singh Sabha",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2632806312"
+  },
+  {
+   "n": "Guru Ram Das Ashram",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2628741156"
+  },
+  {
+   "n": "Hare Krishna ISKCON",
+   "c": "",
+   "a": "",
+   "w": "http://www.iskconehv.blogspot.nl/",
+   "o": "node/2688919513"
+  },
+  {
+   "n": "Hare Krishna Nederland",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2647744802"
+  },
+  {
+   "n": "Hindu Temple",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/1678953885"
+  },
+  {
+   "n": "Lord Shiva Temple",
+   "c": "",
+   "a": "",
+   "w": "https://www.shivatemple.nl/",
+   "o": "node/2647744803"
+  },
+  {
+   "n": "Radha Krishna Mandir",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2649828852"
+  },
+  {
+   "n": "Sai Mandir Olst",
+   "c": "",
+   "a": "",
+   "w": "https://www.sai-mandir-olst.nl/",
+   "o": "way/268406466"
+  },
+  {
+   "n": "Sewa Dhaam",
+   "c": "",
+   "a": "",
+   "w": "http://www.sewadhaam.eu/",
+   "o": "way/265337736"
+  },
+  {
+   "n": "Shree Raam Mandir Wijchen",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "way/266220057"
+  },
+  {
+   "n": "Shri Ganesh Mandir",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "way/269425250"
+  },
+  {
+   "n": "Shri Krishna Mandir",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2701850726"
+  },
+  {
+   "n": "Shri Radha Krishna Mandir",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "way/267142890"
+  },
+  {
+   "n": "Shri Ram Mandir",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2706911724"
+  },
+  {
+   "n": "Shri Vishnu Mandir",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2647227087"
+  },
+  {
+   "n": "Siri Guru Singh Sabha",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "way/692623667"
+  },
+  {
+   "n": "Sri Sri Radhe Shyam Mandir",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "way/267842332"
+  },
+  {
+   "n": "Sri Thurkai Amman Tempel Zeist",
+   "c": "",
+   "a": "",
+   "w": "https://www.zeistammantemple.nl/",
+   "o": "node/6402109630"
+  },
+  {
+   "n": "Vishnu Mandir",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/2662822021"
+  }
+ ]
+}
