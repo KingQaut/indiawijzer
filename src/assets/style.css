@@ -61,11 +61,11 @@ main { padding-top: 18px; padding-bottom: 48px; min-height: 60vh; }
 .half .all a { color: #fff; }
 .half .sky { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 170px; z-index: 0; }
 .half .sun { position: absolute; z-index: 0; width: 120px; height: 120px; border-radius: 50%; bottom: 44px; background: radial-gradient(circle, #ffe7b5, #f6b85a 70%); }
-.half.in .sun { right: -60px; } .half.nl .sun { left: -60px; }
+.half.nl .sun { right: -60px; } .half.in .sun { left: -60px; }
 @media (max-width: 760px) {
   .split { grid-template-columns: 1fr; border-radius: 16px; }
   .half { padding: 28px 20px 180px; }
-  .half.in .sun { right: 24px; width: 80px; height: 80px; bottom: 70px; } .half.nl .sun { display: none; }
+  .half.nl .sun { right: 24px; width: 80px; height: 80px; bottom: 70px; } .half.in .sun { display: none; }
   /* keep the windmill and cows in view on narrow screens */
   .half.nl .sky { width: 600px; max-width: none; left: -44px; right: auto; }
 }

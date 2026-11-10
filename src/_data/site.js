@@ -70,7 +70,7 @@ export default {
   // from content/index.js; sections not named here appear as cards below.
   home: [
     {
-      side: "in",
+      side: "nl",
       kicker: { nl: "India → Nederland", en: "India → Netherlands" },
       title: { nl: "India in Nederland", en: "India in the Netherlands" },
       text: {
@@ -81,7 +81,7 @@ export default {
       topics: [["restaurants", "🍛"], ["film-bollywood", "🎬"], ["feesten-evenementen", "🪔"], ["tempels", "🛕"], ["visum-verblijf", "🧳"], ["studeren", "🎓"]],
     },
     {
-      side: "nl",
+      side: "in",
       kicker: { nl: "Nederland → India", en: "Netherlands → India" },
       title: { nl: "Nederland in India", en: "The Netherlands in India" },
       text: {
