@@ -8,7 +8,7 @@ const L = (v, lang) => (v && typeof v === "object" ? v[lang] : v);
 
 export default function () {
   const homePages = [], sectionPages = [], topicPages = [], newsPages = [], aboutPages = [];
-  const nav = {}, search = {};
+  const nav = {}, search = {}, home = {}, rest = {};
 
   for (const lang of site.langs) {
     const alt = other(lang);
@@ -16,12 +16,14 @@ export default function () {
     const topicUrl = (s, t, l) => `${sectionUrl(s, l)}${t.slug[l]}/`;
 
     const secs = sections.map((s) => ({
+      key: s.slug.nl,
       icon: s.icon,
       title: s.title[lang],
       intro: s.intro[lang],
       url: sectionUrl(s, lang),
       alt: sectionUrl(s, alt),
       topics: s.topics.map((t) => ({
+        key: t.slug.nl,
         title: t.title[lang],
         intro: t.intro[lang],
         body: t.body[lang],
@@ -34,6 +36,17 @@ export default function () {
     }));
 
     nav[lang] = secs;
+
+    // Homepage halves (configured in site.js) and the remaining sections.
+    const topics = secs.flatMap((s) => s.topics);
+    const must = (x, what) => { if (!x) throw new Error(`site.js home: unknown ${what}`); return x; };
+    home[lang] = site.home.map((h) => ({
+      side: h.side, kicker: h.kicker[lang], title: h.title[lang], text: h.text[lang],
+      more: h.sections.map((k) => must(secs.find((s) => s.key === k), `section "${k}"`)),
+      links: h.topics.map(([k, icon]) => ({ icon, ...must(topics.find((t) => t.key === k), `topic "${k}"`) })),
+    }));
+    const used = site.home.flatMap((h) => h.sections);
+    rest[lang] = secs.filter((s) => !used.includes(s.key));
     const newsUrl = (l) => `${base(l)}${site.newsSlug[l]}/`;
     const aboutUrl = (l) => `${base(l)}${about.slug[l]}/`;
 
@@ -62,5 +75,5 @@ export default function () {
   for (const p of aboutPages) urls.about[p.lang] = p.url;
 
   const allPages = [...homePages, ...sectionPages, ...topicPages, ...newsPages, ...aboutPages];
-  return { homePages, sectionPages, topicPages, newsPages, aboutPages, allPages, nav, search, urls };
+  return { homePages, sectionPages, topicPages, newsPages, aboutPages, allPages, nav, search, urls, home, rest };
 }

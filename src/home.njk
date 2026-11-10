@@ -4,12 +4,26 @@ pagination: { data: catalog.homePages, size: 1, alias: p }
 permalink: "{{ p.url }}"
 ---
 {%- set ui = site.ui[p.lang] -%}
-<section class="hero">
-  <h1>{{ ui.tagline }}</h1>
-  <p>{{ ui.lead }}</p>
-</section>
+<h1 class="sr">{{ site.name }} – {{ ui.tagline }}</h1>
+<div class="split">
+{%- for h in catalog.home[p.lang] %}
+  <section class="half {{ h.side }}">
+    <span class="sun" aria-hidden="true"></span>
+    {% include "skyline-" + h.side + ".svg" %}
+    <small>{{ h.kicker }}</small>
+    <h2>{{ h.title }}</h2>
+    <p>{{ h.text }}</p>
+    <ul>
+    {%- for l in h.links %}
+      <li><a href="{{ l.url }}"><i aria-hidden="true">{{ l.icon }}</i> {{ l.title }}</a></li>
+    {%- endfor %}
+    </ul>
+    <p class="all">{% for s in h.more %}<a href="{{ s.url }}">{{ s.title }} →</a>{% endfor %}</p>
+  </section>
+{%- endfor %}
+</div>
 <div class="grid">
-{%- for s in catalog.nav[p.lang] %}
+{%- for s in catalog.rest[p.lang] %}
   <section class="card">
     <h2><a href="{{ s.url }}"><span class="ico" aria-hidden="true">{{ s.icon }}</span> {{ s.title }}</a></h2>
     <p>{{ s.intro }}</p>
@@ -25,7 +39,7 @@ permalink: "{{ p.url }}"
     {%- set items = news[p.lang] %}
     {%- if items.length %}
     <ul class="headlines">
-    {%- for n in items.slice(0, 5) %}
+    {%- for n in items.slice(0, 4) %}
       <li><a href="{{ n.link }}" rel="noopener nofollow">{{ n.title }}</a> <small>{{ n.source }}</small></li>
     {%- endfor %}
     </ul>

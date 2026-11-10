@@ -65,4 +65,31 @@ export default {
     },
   },
   newsSlug: { nl: "nieuws", en: "news" },
+
+  // Homepage: the two big halves. "sections" and "topics" use the Dutch slugs
+  // from content/index.js; sections not named here appear as cards below.
+  home: [
+    {
+      side: "in",
+      kicker: { nl: "India → Nederland", en: "India → Netherlands" },
+      title: { nl: "India in Nederland", en: "India in the Netherlands" },
+      text: {
+        nl: "Indiase cultuur hier beleven, of zelf vanuit India naar Nederland komen.",
+        en: "Enjoy Indian culture here, or move from India to the Netherlands yourself.",
+      },
+      sections: ["india-in-nederland", "naar-nederland"],
+      topics: [["restaurants", "🍛"], ["film-bollywood", "🎬"], ["feesten-evenementen", "🪔"], ["tempels", "🛕"], ["visum-verblijf", "🧳"], ["studeren", "🎓"]],
+    },
+    {
+      side: "nl",
+      kicker: { nl: "Nederland → India", en: "Netherlands → India" },
+      title: { nl: "Nederland in India", en: "The Netherlands in India" },
+      text: {
+        nl: "Op reis, wonen of werken in India, en de sporen van Nederland daar.",
+        en: "Travelling, living or working in India, and the traces the Dutch left there.",
+      },
+      sections: ["naar-india"],
+      topics: [["visum-reisadvies", "✈️"], ["gezondheid", "💉"], ["wonen-werken-studeren", "🏠"], ["nederlands-erfgoed", "🏛️"], ["zakendoen-in-india", "🤝"], ["huwelijk-documenten", "📄"]],
+    },
+  ],
 };

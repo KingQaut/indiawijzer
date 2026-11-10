@@ -50,7 +50,7 @@ Waiting on the owner:
 4. Run the "Check links" workflow once and report what it flags.
 
 Open points:
-- **Homepage layout**: three alternatives were mocked up and shown as screenshots; the owner has not chosen yet. A = split in two coloured halves (India → Netherlands saffron, Netherlands → India Delft blue) with shared themes below; B = large search box plus four "I am…" audience cards; C = magazine style with a seasonal feature and a news column. Recommendation given: A with B's large search box on top. Topic pages keep their current layout either way. The mockups were not saved in the repository.
+- **Homepage layout: decided and built.** Two halves side by side, no headline above them: saffron "India in Nederland" with an Indian skyline, Delft-blue "Nederland in India" with windmill, canal houses, cows and tulips, one sun shared across the seam. Which topics and sections appear in each half is set in `home` in `src/_data/site.js`; the drawings are `src/_includes/skyline-in.svg` and `skyline-nl.svg`; sections not assigned to a half (Zakendoen, Familie en recht) show as cards below with the news. Offered but not yet decided: a thin saffron block-print band or blue tile band at the top of inner pages to show which side a page belongs to.
 - **Links are mostly unverified**: only a handful were confirmed by web search. Expect the first link check to flag some; fix them in `content/index.js`.
 - **Texts need the owner's review**, especially the Dutch and the legal topics (adoption phase-out, OCI, nationality, tax treaty). All content was written from scratch.
 - **Contact address** `info@indiawijzer.nl` in `src/_data/site.js` is a placeholder; the owner must confirm it exists or remove it.

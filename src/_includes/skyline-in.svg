@@ -1,0 +1,8 @@
+<svg class="sky" viewBox="0 0 600 170" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"><g fill="#7a260a">
+<rect x="0" y="150" width="600" height="20"/>
+<rect x="215" y="100" width="170" height="52"/><path d="M300 32c-6 14-44 22-44 50c0 12 8 18 8 18h72s8-6 8-18c0-28-38-36-44-50z"/><rect x="298" y="22" width="4" height="14"/>
+<path d="M235 78c-3 7-14 9-14 18v6h28v-6c0-9-11-11-14-18zM365 78c-3 7-14 9-14 18v6h28v-6c0-9-11-11-14-18z"/>
+<rect x="170" y="68" width="12" height="84"/><path d="M176 52c-4 6-10 8-10 16h20c0-8-6-10-10-16z"/><rect x="418" y="68" width="12" height="84"/><path d="M424 52c-4 6-10 8-10 16h20c0-8-6-10-10-16z"/>
+<path d="M60 152v-36l8-6V92l8-6V70l10-14l10 14v16l8 6v18l8 6v36z"/><rect x="20" y="128" width="34" height="24"/><rect x="118" y="132" width="30" height="20"/>
+<path d="M490 152c0-40 6-70 30-84c24 14 30 44 30 84z"/><rect x="518" y="54" width="4" height="16"/><rect x="556" y="124" width="36" height="28"/><path d="M454 152v-22l14-12l14 12v22z"/>
+</g><g fill="#f6c26b"><path d="M288 152v-22a12 12 0 0 1 24 0v22z"/><rect x="238" y="118" width="8" height="14" rx="4"/><rect x="262" y="118" width="8" height="14" rx="4"/><rect x="330" y="118" width="8" height="14" rx="4"/><rect x="354" y="118" width="8" height="14" rx="4"/></g></svg>

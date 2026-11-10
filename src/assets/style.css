@@ -41,8 +41,36 @@ input[type=search]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 
 /* home */
 main { padding-top: 18px; padding-bottom: 48px; min-height: 60vh; }
-.hero { padding: 26px 0 10px; max-width: 46rem; }
-.hero p, .intro { font-size: 1.12rem; color: var(--muted); margin-top: 0; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.intro { font-size: 1.12rem; color: var(--muted); margin-top: 0; }
+
+/* home: the two halves. Colours are fixed (same in light and dark mode). */
+.split { display: grid; grid-template-columns: 1fr 1fr; border-radius: 22px; overflow: hidden; margin-top: 6px; }
+.half { position: relative; overflow: hidden; padding: 38px 36px 190px; color: #fff; }
+.half.in { background: linear-gradient(180deg, #96300c 0%, #b84a14 58%, #ee9a45 100%); }
+.half.nl { background: linear-gradient(180deg, #123561 0%, #1d4e89 58%, #6a9bd0 100%); }
+.half > * { position: relative; z-index: 1; }
+.half small { color: #fff; text-transform: uppercase; letter-spacing: .14em; font-size: .74rem; }
+.half h2 { font-size: clamp(1.7rem, 3.4vw, 2.2rem); margin: .2em 0 .3em; }
+.half p { margin: 0; max-width: 26em; }
+.half ul { list-style: none; padding: 0; margin: 18px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.half li a { display: block; height: 100%; padding: 10px 14px; border-radius: 10px; background: rgba(255,255,255,.17); color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem; line-height: 1.35; }
+.half li a:hover, .half li a:focus-visible { background: rgba(255,255,255,.3); }
+.half i { font-style: normal; }
+.half .all { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: .92rem; max-width: none; }
+.half .all a { color: #fff; }
+.half .sky { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 170px; z-index: 0; }
+.half .sun { position: absolute; z-index: 0; width: 120px; height: 120px; border-radius: 50%; bottom: 44px; background: radial-gradient(circle, #ffe7b5, #f6b85a 70%); }
+.half.in .sun { right: -60px; } .half.nl .sun { left: -60px; }
+@media (max-width: 760px) {
+  .split { grid-template-columns: 1fr; border-radius: 16px; }
+  .half { padding: 28px 20px 180px; }
+  .half.in .sun { right: 24px; width: 80px; height: 80px; bottom: 70px; } .half.nl .sun { display: none; }
+  /* keep the windmill and cows in view on narrow screens */
+  .half.nl .sky { width: 600px; max-width: none; left: -44px; right: auto; }
+}
+@media (max-width: 380px) { .half ul { grid-template-columns: 1fr; } }
+
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; margin-top: 18px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
 .card h2 { margin: 0 0 .3em; font-size: 1.2rem; }
