@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T10:50:47.394Z",
+ "updated": "2026-11-10T10:54:50.213Z",
  "restaurants": [
   {
    "n": "Himalaya Palace",
@@ -2573,6 +2573,13 @@
    "o": "way/282528399"
   },
   {
+   "n": "Mandir Triloki Dhaam",
+   "c": "Eindhoven",
+   "a": "Tongelresestraat 371",
+   "w": "https://www.trilokidhaam.nl/",
+   "o": "node/2687487699"
+  },
+  {
    "n": "Sada Shiva Dham",
    "c": "Loenen",
    "a": "Vrijenbergweg 60",
@@ -2664,18 +2671,18 @@
    "o": "node/2647744803"
   },
   {
-   "n": "Mandir Triloki Dhaam",
-   "c": "",
-   "a": "",
-   "w": "https://www.trilokidhaam.nl/",
-   "o": "node/2687487699"
-  },
-  {
    "n": "Radha Krishna Mandir",
    "c": "",
    "a": "",
    "w": "",
    "o": "node/2649828852"
+  },
+  {
+   "n": "Sai Mandir Olst",
+   "c": "",
+   "a": "",
+   "w": "https://www.sai-mandir-olst.nl/",
+   "o": "way/268406466"
   },
   {
    "n": "Sewa Dhaam",
@@ -2724,7 +2731,7 @@
    "c": "",
    "a": "",
    "w": "",
-   "o": "node/1758351859"
+   "o": "node/2647227087"
   },
   {
    "n": "Siri Guru Singh Sabha",
