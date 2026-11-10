@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T09:24:57.031Z",
+ "updated": "2026-11-10T09:29:14.282Z",
  "restaurants": [
   {
    "n": "Anaya Foods",
@@ -2496,41 +2496,6 @@
  ],
  "worship": [
   {
-   "n": "Dev Mandir",
-   "c": "'s-Gravenhage",
-   "a": "Gaslaan 74",
-   "w": "",
-   "o": "node/2731055542"
-  },
-  {
-   "n": "Shri Guru Ravidass Temple",
-   "c": "'s-Gravenhage",
-   "a": "Delftselaan 105",
-   "w": "",
-   "o": "node/1567074969"
-  },
-  {
-   "n": "Shri Sanatan Dharm Sabha Nederland",
-   "c": "'s-Gravenhage",
-   "a": "Mijtensstraat 183",
-   "w": "http://www.shrirammandir.nl/",
-   "o": "way/143188257"
-  },
-  {
-   "n": "Shri- Sanatan Dharm Sakha Sabha Den Haag",
-   "c": "'s-Gravenhage",
-   "a": "Regentesseplein 156",
-   "w": "",
-   "o": "node/1567081496"
-  },
-  {
-   "n": "Stichting Shri Sai Mandir",
-   "c": "'s-Gravenhage",
-   "a": "Gaslaan 72",
-   "w": "http://saimandirdenhaag.nl/",
-   "o": "node/2731055456"
-  },
-  {
    "n": "Gurdwara Maan Sarovar Sahib",
    "c": "Amsterdam",
    "a": "Baarsjesweg 281-282",
@@ -2564,6 +2529,41 @@
    "a": "Elbestraat 2",
    "w": "",
    "o": "node/2909049565"
+  },
+  {
+   "n": "Dev Mandir",
+   "c": "Den Haag",
+   "a": "Gaslaan 74",
+   "w": "",
+   "o": "node/2731055542"
+  },
+  {
+   "n": "Shri Guru Ravidass Temple",
+   "c": "Den Haag",
+   "a": "Delftselaan 105",
+   "w": "",
+   "o": "node/1567074969"
+  },
+  {
+   "n": "Shri Sanatan Dharm Sabha Nederland",
+   "c": "Den Haag",
+   "a": "Mijtensstraat 183",
+   "w": "http://www.shrirammandir.nl/",
+   "o": "way/143188257"
+  },
+  {
+   "n": "Shri- Sanatan Dharm Sakha Sabha Den Haag",
+   "c": "Den Haag",
+   "a": "Regentesseplein 156",
+   "w": "",
+   "o": "node/1567081496"
+  },
+  {
+   "n": "Stichting Shri Sai Mandir",
+   "c": "Den Haag",
+   "a": "Gaslaan 72",
+   "w": "http://saimandirdenhaag.nl/",
+   "o": "node/2731055456"
   },
   {
    "n": "Sri Varatharajah Selvavinayagar tempel",
