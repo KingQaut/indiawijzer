@@ -1,0 +1,22 @@
+---
+layout: base.njk
+pagination: { data: catalog.newsPages, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+{%- set ui = site.ui[p.lang] -%}
+<nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › {{ ui.news }}</nav>
+<article class="topic">
+  <h1>{{ ui.news }}</h1>
+  <p class="intro">{{ ui.newsIntro }}</p>
+  {%- set items = news[p.lang] %}
+  {%- if items.length %}
+  <ul class="links news">
+    {%- for n in items %}
+    <li><a href="{{ n.link }}" rel="noopener nofollow">{{ n.title }}</a><br><span>{{ n.source }}{% if n.date %} · {{ n.date | date(p.lang) }}{% endif %}</span></li>
+    {%- endfor %}
+  </ul>
+  <p class="meta">{{ ui.updated }} {{ news.updated | date(p.lang) }}</p>
+  {%- else %}
+  <p class="meta">{{ ui.newsEmpty }}</p>
+  {%- endif %}
+</article>

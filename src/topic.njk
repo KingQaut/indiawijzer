@@ -1,0 +1,63 @@
+---
+layout: base.njk
+pagination: { data: catalog.topicPages, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+{%- set ui = site.ui[p.lang] -%}
+{%- set t = p.topic -%}
+<nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › <a href="{{ p.section.url }}">{{ p.section.title }}</a> › {{ t.title }}</nav>
+<article class="topic">
+  <h1>{{ t.title }}</h1>
+  <p class="intro">{{ t.intro }}</p>
+  {%- for para in t.body %}
+  <p>{{ para }}</p>
+  {%- endfor %}
+
+  {%- if t.live.length %}
+  <h2>{{ ui.live }}</h2>
+  <p class="buttons">
+    {%- for x in t.live %}
+    <a class="btn" href="{{ x.u }}" rel="noopener">{{ x.t }} ↗</a>
+    {%- endfor %}
+  </p>
+  {%- endif %}
+
+  {%- if t.links.length %}
+  <h2>{{ ui.links }}</h2>
+  <ul class="links">
+    {%- for x in t.links %}
+    <li><a href="{{ x.u }}" rel="noopener">{{ x.t }}</a> <small>{{ x.u | host }}</small>{% if x.d %}<br><span>{{ x.d }}</span>{% endif %}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  {%- if t.finder %}
+  {%- set list = places[t.finder] %}
+  <section class="finder">
+    {%- if list.length %}
+    <div class="finder-bar">
+      <input type="search" id="finder-q" placeholder="{{ ui.filterPh }}" aria-label="{{ ui.filterPh }}">
+      <span><b id="finder-n">{{ list.length }}</b> {{ ui.results }}</span>
+    </div>
+    <ul id="finder-list" class="places">
+      {%- for x in list %}
+      <li data-s="{{ (x.n + ' ' + x.c + ' ' + x.a) | lower }}">
+        <b>{{ x.n }}</b>
+        <span>{{ x.c or ui.unknownCity }}{% if x.a %} · {{ x.a }}{% endif %}</span>
+        <span class="acts">{% if x.w %}<a href="{{ x.w }}" rel="noopener nofollow">{{ ui.website }}</a>{% endif %}<a href="https://www.openstreetmap.org/{{ x.o }}" rel="noopener">{{ ui.map }}</a></span>
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="meta">{{ ui.osm }} · {{ ui.updated }} {{ places.updated | date(p.lang) }}</p>
+    {%- else %}
+    <p class="meta">{{ ui.finderEmpty }}</p>
+    {%- endif %}
+  </section>
+  {%- endif %}
+</article>
+<aside class="more">
+  <h2>{{ ui.seeAlso }}: {{ p.section.title }}</h2>
+  <p>
+  {%- for o in p.section.topics %}{% if o.url != t.url %}<a class="chip" href="{{ o.url }}">{{ o.title }}</a> {% endif %}{% endfor -%}
+  </p>
+</aside>

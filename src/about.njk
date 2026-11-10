@@ -1,0 +1,17 @@
+---
+layout: base.njk
+pagination: { data: catalog.aboutPages, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+{%- set ui = site.ui[p.lang] -%}
+<nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › {{ p.title }}</nav>
+<article class="topic">
+  <h1>{{ p.title }}</h1>
+  {%- for b in p.blocks %}
+  <h2>{{ b.h }}</h2>
+  {%- for para in b.p %}<p>{{ para }}</p>{% endfor %}
+  {%- endfor %}
+  {%- if site.email %}
+  <p>{{ ui.suggest }} <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+  {%- endif %}
+</article>

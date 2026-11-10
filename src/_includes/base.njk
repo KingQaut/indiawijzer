@@ -1,0 +1,50 @@
+{%- set ui = site.ui[p.lang] -%}
+<!doctype html>
+<html lang="{{ p.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if p.home %}{{ site.name }} – {{ p.title }}{% else %}{{ p.title }} – {{ site.name }}{% endif %}</title>
+<meta name="description" content="{{ p.description }}">
+{% if p.url %}<link rel="canonical" href="{{ site.url }}{{ p.url }}">{% endif %}
+{% if p.alt %}<link rel="alternate" hreflang="{{ p.lang }}" href="{{ site.url }}{{ p.url }}">
+<link rel="alternate" hreflang="{{ 'en' if p.lang == 'nl' else 'nl' }}" href="{{ site.url }}{{ p.alt }}">{% endif %}
+<meta property="og:title" content="{{ p.title }}">
+<meta property="og:description" content="{{ p.description }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="search-index" href="/assets/search-{{ p.lang }}.json" id="search-index">
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="{{ '/' if p.lang == 'nl' else '/en/' }}" aria-label="{{ site.name }} – {{ ui.home }}">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="16" r="2.6" fill="currentColor"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M16 5v22M5 16h22M8.2 8.2l15.6 15.6M23.8 8.2 8.2 23.8"/></g></svg>
+      <span>India<b>wijzer</b></span>
+    </a>
+    <form class="search" role="search" onsubmit="return false">
+      <input type="search" id="q" placeholder="{{ ui.searchPh }}" aria-label="{{ ui.search }}" autocomplete="off" data-empty="{{ ui.noResults }}">
+      <ul id="hits" hidden></ul>
+    </form>
+    {% if p.alt %}<a class="lang" href="{{ p.alt }}" lang="{{ 'en' if p.lang == 'nl' else 'nl' }}">{{ ui.otherLang }}</a>{% endif %}
+  </div>
+  <nav class="wrap nav" aria-label="Menu">
+    {%- for s in catalog.nav[p.lang] %}
+    <a href="{{ s.url }}"{% if p.section and p.section.url == s.url %} aria-current="true"{% endif %}>{{ s.title }}</a>
+    {%- endfor %}
+    <a href="{{ catalog.urls.news[p.lang] }}"{% if p.url == catalog.urls.news[p.lang] %} aria-current="true"{% endif %}>{{ ui.news }}</a>
+  </nav>
+</header>
+<main class="wrap">
+{{ content | safe }}
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>{{ ui.footer }}</p>
+    <p><a href="{{ catalog.urls.about[p.lang] }}">{{ ui.about }}</a>{% if p.alt %} · <a href="{{ p.alt }}">{{ ui.otherLang }}</a>{% endif %}</p>
+  </div>
+</footer>
+</body>
+</html>

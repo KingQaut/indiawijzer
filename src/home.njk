@@ -1,0 +1,37 @@
+---
+layout: base.njk
+pagination: { data: catalog.homePages, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+{%- set ui = site.ui[p.lang] -%}
+<section class="hero">
+  <h1>{{ ui.tagline }}</h1>
+  <p>{{ ui.lead }}</p>
+</section>
+<div class="grid">
+{%- for s in catalog.nav[p.lang] %}
+  <section class="card">
+    <h2><a href="{{ s.url }}"><span class="ico" aria-hidden="true">{{ s.icon }}</span> {{ s.title }}</a></h2>
+    <p>{{ s.intro }}</p>
+    <ul>
+    {%- for t in s.topics %}
+      <li><a href="{{ t.url }}">{{ t.title }}</a></li>
+    {%- endfor %}
+    </ul>
+  </section>
+{%- endfor %}
+  <section class="card">
+    <h2><a href="{{ catalog.urls.news[p.lang] }}"><span class="ico" aria-hidden="true">📰</span> {{ ui.latest }}</a></h2>
+    {%- set items = news[p.lang] %}
+    {%- if items.length %}
+    <ul class="headlines">
+    {%- for n in items.slice(0, 5) %}
+      <li><a href="{{ n.link }}" rel="noopener nofollow">{{ n.title }}</a> <small>{{ n.source }}</small></li>
+    {%- endfor %}
+    </ul>
+    <p><a href="{{ catalog.urls.news[p.lang] }}">{{ ui.allNews }} →</a></p>
+    {%- else %}
+    <p>{{ ui.newsIntro }}</p>
+    {%- endif %}
+  </section>
+</div>

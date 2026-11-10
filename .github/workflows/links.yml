@@ -1,0 +1,49 @@
+# Checks every link on the site once a week. If links are broken, an issue is
+# opened in the repository (GitHub e-mails you about it). No issue = nothing to do.
+name: Check links
+
+on:
+  schedule:
+    - cron: "41 5 * * 1" # Mondays, 05:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+
+      - id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          # 403/429 = the site is there but refuses robots; not a broken link.
+          # News and map entries are refreshed automatically, so they are skipped.
+          args: >-
+            --no-progress --max-retries 3 --timeout 30
+            --accept 200..=299,403,429
+            --exclude 'google\.com' --exclude 'openstreetmap\.org/(node|way|relation)'
+            --exclude-path _site/nieuws --exclude-path _site/en/news
+            --exclude-path _site/india-in-nederland/restaurants --exclude-path _site/en/india-in-the-netherlands/restaurants
+            --exclude-path _site/india-in-nederland/tempels --exclude-path _site/en/india-in-the-netherlands/temples
+            --exclude-path _site/index.html --exclude-path _site/en/index.html
+            --root-dir ${{ github.workspace }}/_site
+            '_site/**/*.html'
+
+      - name: Report broken links
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Broken links found on indiawijzer.nl
+          content-filepath: ./lychee/out.md
+          labels: broken-links

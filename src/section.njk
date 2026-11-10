@@ -1,0 +1,16 @@
+---
+layout: base.njk
+pagination: { data: catalog.sectionPages, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+<nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ site.ui[p.lang].home }}</a> › {{ p.title }}</nav>
+<h1><span class="ico" aria-hidden="true">{{ p.section.icon }}</span> {{ p.title }}</h1>
+<p class="intro">{{ p.section.intro }}</p>
+<div class="grid">
+{%- for t in p.section.topics %}
+  <a class="card tile" href="{{ t.url }}">
+    <h2>{{ t.title }}</h2>
+    <p>{{ t.intro }}</p>
+  </a>
+{%- endfor %}
+</div>
