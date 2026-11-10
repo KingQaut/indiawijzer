@@ -74,7 +74,8 @@ export function parsePlaces(json) {
     let w = t.website || t["contact:website"] || "";
     if (w && !/^https?:\/\//i.test(w)) w = "https://" + w;
     try { w = w ? new URL(w).href : ""; } catch { w = ""; }
-    return { n: (t.name || "").trim(), c: t["addr:city"] || "", a: street, w, o: `${e.type}/${e.id}` };
+    const city = { "'s-Gravenhage": "Den Haag", "'s-Hertogenbosch": "Den Bosch" }[t["addr:city"]] || t["addr:city"] || ""; // everyday names
+    return { n: (t.name || "").trim(), c: city, a: street, w, o: `${e.type}/${e.id}` };
   }).filter((x) => {
     const key = (x.n + "|" + x.c + "|" + x.a).toLowerCase();
     if (!x.n || seen.has(key)) return false;
