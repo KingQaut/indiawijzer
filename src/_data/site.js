@@ -188,6 +188,14 @@ export default {
     },
   },
 
+  // Topics that moved to another section: Dutch topic slug -> Dutch slug of the
+  // section it used to be in. The old address then forwards to the new one.
+  moved: {
+    "nederlands-erfgoed": "naar-india",
+    "nederland-india-geschiedenis": "naar-india",
+    "nederlanders-in-india": "naar-india",
+  },
+
   // The "start here" page: for each kind of visitor, the topics that matter most.
   // Topics are named by their Dutch slug.
   guides: [
@@ -197,8 +205,8 @@ export default {
     { icon: "🪔", title: { nl: "Ik heb Hindostaanse of Indiase wortels", en: "I have Hindustani or Indian roots" }, topics: ["hindostaanse-geschiedenis", "musea-archieven", "gemeenschap", "nationaliteit-oci", "talen", "bruiloft", "overlijden"] },
     { icon: "🔎", title: { nl: "Ik ben geadopteerd uit India", en: "I was adopted from India" }, topics: ["adoptie-roots", "nationaliteit-oci", "visum-reisadvies", "musea-archieven"] },
     { icon: "✈️", title: { nl: "Ik ga op reis naar India", en: "I am travelling to India" }, topics: ["checklist-vertrek", "visum-reisadvies", "gezondheid", "beste-reistijd", "praktisch-reizen", "reizen-voor-iedereen", "verantwoord-reizen", "spiritueel-reizen", "nederlands-erfgoed"] },
-    { icon: "🏠", title: { nl: "Ik ga in India wonen of werken", en: "I am moving to India" }, topics: ["wonen-werken-studeren", "studie-uitwisseling", "nederlanders-in-india", "gezondheid", "belasting-pensioen", "huwelijk-documenten"] },
-    { icon: "🤝", title: { nl: "Ik doe zaken tussen beide landen", en: "I do business between the two countries" }, topics: ["zakendoen-in-india", "ondernemen-in-nederland", "importeren-uit-india", "indiaas-talent", "sectoren-etiquette", "netwerken"] },
+    { icon: "🏠", title: { nl: "Ik ga in India wonen of werken", en: "I am moving to India" }, topics: ["wonen-werken-studeren", "studie-uitwisseling", "nederlanders-in-india", "ambassade-consulaten", "nederlandse-cultuur", "gezondheid", "belasting-pensioen", "huwelijk-documenten"] },
+    { icon: "🤝", title: { nl: "Ik doe zaken tussen beide landen", en: "I do business between the two countries" }, topics: ["zakendoen-in-india", "ondernemen-in-nederland", "nederlandse-bedrijven", "importeren-uit-india", "indiaas-talent", "sectoren-etiquette", "netwerken"] },
     { icon: "🍛", title: { nl: "Ik wil India in Nederland beleven", en: "I want to enjoy India in the Netherlands" }, topics: ["restaurants", "eten-thuis", "recepten", "boeken", "film-bollywood", "feesten-evenementen", "dans-muziek", "yoga", "ayurveda", "cricket", "hockey-sport"] },
     { icon: "💶", title: { nl: "Ik heb geld, bezit of pensioen in beide landen", en: "I have money, property or a pension in both countries" }, topics: ["belasting-pensioen", "bezit-erfenis-india", "nationaliteit-oci", "scheiding-kinderen", "overlijden"] },
   ],
@@ -281,8 +289,8 @@ export default {
         nl: "Op reis, wonen of werken in India, en de sporen van Nederland daar.",
         en: "Travelling, living or working in India, and the traces the Dutch left there.",
       },
-      sections: ["naar-india"],
-      topics: [["visum-reisadvies", "✈️"], ["gezondheid", "💉"], ["wonen-werken-studeren", "🏠"], ["nederlands-erfgoed", "🏛️"], ["zakendoen-in-india", "🤝"], ["huwelijk-documenten", "📄"]],
+      sections: ["nederland-in-india", "naar-india"],
+      topics: [["nederlands-erfgoed", "🏛️"], ["nederland-india-geschiedenis", "⛵"], ["nederlanders-in-india", "🌷"], ["visum-reisadvies", "✈️"], ["gezondheid", "💉"], ["praktisch-reizen", "🚆"]],
     },
   ],
 };

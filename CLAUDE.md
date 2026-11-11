@@ -34,7 +34,7 @@ Do not add anything that needs regular human upkeep without asking the owner fir
 | Weekly link check, opens an issue when links break | `.github/workflows/links.yml` |
 
 - Dutch lives at `/`, English at `/en/`, with translated slugs and hreflang links.
-- Five sections, 60 topics (yoga and cricket added 11 Nov 2026 with automatic lists; 36 more that day in `content/extra.js`): India in Nederland, Naar Nederland, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
+- Six sections, 63 topics (yoga and cricket added 11 Nov 2026 with automatic lists; 36 more that day in `content/extra.js`): India in Nederland, Naar Nederland, Nederland in India, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
 - The data fetch keeps the previous data when a source fails or returns suspiciously little.
 - The nightly workflow commits the refreshed JSON back to `main` (bot commits "Automatic data update"). This also keeps GitHub from pausing the schedule. **Always `git pull --rebase origin main` before pushing.**
 - `PATH_PREFIX=/indiawijzer/` at build time makes the site work under `kingqaut.github.io/indiawijzer/`; not set by default because the site is meant for the root of indiawijzer.nl.
@@ -53,6 +53,7 @@ Commands: `npm install`, `npm start` (local preview on port 8080), `npm run buil
 - **Third batch, same day**: 11 more topics in `content/extra.js` (eating at home, Hindustani history, charities, schools and childcare, what you can bring, Dutch nationals in India, spiritual travel, four centuries of history, sectors and etiquette, birth, divorce and children) and a "start here" page (`/wegwijzer/`) whose visitor types and topics are set under `guides` in `src/_data/site.js`.
 - **Fourth batch, same day**: 7 more topics (recipes, books, hockey and other sports, first-30-days checklist, pre-departure checklist, travel with children / a disability / as LGBTQ+, Indian names on Dutch forms).
 - **Fifth batch, same day**: study, internships and research in India; more search buttons on events, film, community, cricket and tax topics.
+- **Section "Nederland in India" added** (owner request, 11 Nov 2026): the homepage half had that title but the menu had no matching section. It holds heritage, four centuries of history and Dutch nationals in India (moved from "Naar India"; old addresses forward via `moved` in `src/_data/site.js` and `src/redirect.njk`) plus three new topics: embassy and consulates, Dutch companies, Dutch culture and language. The move of the two `extra.js` topics is done at the bottom of that file.
 - **Backlog still open**: only the Indian-neighbourhood walking route and "this day in shared history" (both need facts someone has checked on the ground or in sources).
 - **Merging while a publish run is going** makes that run's "save refreshed data" step fail (it cannot push to a moved `main`), so the fetched data is published but not saved. Leave about 10 minutes between merges when the data matters.
 - To run the fetch script by hand inside a cloud session, prefix it with `NODE_USE_ENV_PROXY=1`; Wikidata, Frankfurter and Open-Meteo are reachable there, OpenStreetMap is not.
