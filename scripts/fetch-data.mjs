@@ -1,6 +1,7 @@
 // Refreshes the automatic parts of the site: news headlines, the lists of
 // restaurants, places of worship, yoga studios and cricket clubs, the list of
-// Dutch towns (for "India near me") and the euro–rupee rate.
+// Dutch towns (for "India near me"), two lists from Wikidata and the
+// euro–rupee rate.
 // Runs daily in GitHub Actions.
 //
 // Rule: never make things worse. If a source is unreachable or returns
@@ -205,6 +206,66 @@ async function updatePlaces() {
   if (changed) { places.updated = new Date().toISOString(); await writeJson("places.json", places); }
 }
 
+// ── Wikidata lists ─────────────────────────────────────────────────────────
+// Dutch heritage in India and Gandhi memorials in the Netherlands, from the
+// free knowledge base behind Wikipedia.
+const SPARQL = "https://query.wikidata.org/sparql";
+const WIKI = {
+  heritage: {
+    min: 10,
+    lang: "en",
+    // Places in India whose name or description mentions "Dutch" …
+    query: `SELECT DISTINCT ?s ?sLabel ?typeLabel ?placeLabel ?coord ?art WHERE {
+      SERVICE wikibase:mwapi { bd:serviceParam wikibase:endpoint "www.wikidata.org"; wikibase:api "Search"; mwapi:srsearch "Dutch haswbstatement:P17=Q668"; mwapi:srlimit "300". ?s wikibase:apiOutputItem mwapi:title. }
+      ?s wdt:P625 ?coord; wdt:P31 ?type. OPTIONAL { ?s wdt:P131 ?place } OPTIONAL { ?art schema:about ?s; schema:isPartOf <https://en.wikipedia.org/> }
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } }`,
+    // … that are a building or burial ground, not a town, battle or hotel.
+    keep: (x) => /cemetery|fort|tomb|church|palace|warehouse|monument|ruins|factory|trading post|^building$/i.test(x.a) && !/portuguese|danish|british|french/i.test(x.n),
+  },
+  gandhi: {
+    min: 3,
+    lang: "nl",
+    query: `SELECT DISTINCT ?s ?sLabel ?typeLabel ?placeLabel ?coord ?art WHERE {
+      ?s wdt:P17 wd:Q55; wdt:P180|wdt:P547|wdt:P138 wd:Q1001. OPTIONAL { ?s wdt:P31 ?type } OPTIONAL { ?s wdt:P131 ?place } OPTIONAL { ?s wdt:P625 ?coord }
+      OPTIONAL { ?art schema:about ?s; schema:isPartOf <https://nl.wikipedia.org/> }
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". } }`,
+    keep: () => true,
+  },
+};
+
+export function parseWikidata(json, keep) {
+  const seen = new Set();
+  return json.results.bindings.map((b) => {
+    const v = (k) => b[k]?.value || "";
+    const m = v("coord").match(/Point\(([-\d.]+) ([-\d.]+)\)/);
+    const out = { n: v("sLabel"), c: /^Q\d+$/.test(v("placeLabel")) ? "" : v("placeLabel"), a: /^Q\d+$/.test(v("typeLabel")) ? "" : v("typeLabel"), i: v("art") || v("s").replace("http://", "https://") };
+    if (m) { out.y = +(+m[2]).toFixed(5); out.x = +(+m[1]).toFixed(5); }
+    return out;
+  }).filter((x) => {
+    if (!x.n || /^Q\d+$/.test(x.n) || seen.has(x.i) || !keep(x)) return false;
+    seen.add(x.i);
+    return true;
+  }).sort((a, b) => a.c.localeCompare(b.c) || a.n.localeCompare(b.n));
+}
+
+export async function updateWikidata() {
+  const wiki = await readJson("wiki.json", { updated: null });
+  let changed = false;
+  for (const [key, w] of Object.entries(WIKI)) {
+    try {
+      const res = await get(`${SPARQL}?query=${encodeURIComponent(w.query)}`, { headers: { Accept: "application/sparql-results+json" } });
+      const list = parseWikidata(await res.json(), w.keep);
+      if (list.length < w.min) throw new Error(`only ${list.length} results`);
+      wiki[key] = list;
+      changed = true;
+      console.log(`wikidata ${key}: ${list.length}`);
+    } catch (err) {
+      console.warn(`wikidata ${key}: kept previous data (${err.message})`);
+    }
+  }
+  if (changed) { wiki.updated = new Date().toISOString(); await writeJson("wiki.json", wiki); }
+}
+
 // ── Euro–rupee rate ────────────────────────────────────────────────────────
 async function updateRate() {
   try {
@@ -221,5 +282,6 @@ async function updateRate() {
 if (import.meta.url === `file://${process.argv[1]}`) {
   await updateNews();
   await updatePlaces();
+  await updateWikidata();
   await updateRate();
 }
