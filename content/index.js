@@ -120,6 +120,7 @@ export const sections = [
         live: [
           { u: "https://www.google.com/search?q=bollywood+film+bioscoop+deze+week+nederland", t: { nl: "Bollywood in de bioscoop deze week", en: "Bollywood in cinemas this week" } },
           { u: "https://www.google.com/search?q=tamil+telugu+malayalam+film+bioscoop+nederland", t: { nl: "Zuid-Indiase films in de bioscoop", en: "South Indian films in cinemas" } },
+          { u: "https://www.google.com/search?q=indian+film+festival+nederland", t: { nl: "Indiase filmfestivals", en: "Indian film festivals" } },
         ],
         links: [
           { u: "https://www.pathe.nl/", t: "Pathé", d: { nl: "Grootste bioscoopketen; draait regelmatig Indiase films.", en: "Largest cinema chain; regularly screens Indian films." } },
@@ -149,6 +150,9 @@ export const sections = [
           { u: "https://www.eventbrite.nl/d/netherlands/diwali/", t: { nl: "Diwali-vieringen", en: "Diwali celebrations" } },
           { u: "https://www.eventbrite.nl/d/netherlands/holi/", t: { nl: "Holi-vieringen", en: "Holi celebrations" } },
           { u: "https://www.eventbrite.nl/d/netherlands/bollywood/", t: { nl: "Bollywoodfeesten en -dans", en: "Bollywood parties and dance" } },
+          { u: "https://www.google.com/search?q=garba+navratri+nederland", t: { nl: "Garba- en Navratri-avonden", en: "Garba and Navratri nights" } },
+          { u: "https://www.google.com/search?q=holi+colour+run+festival+nederland", t: { nl: "Holi-kleurenfestivals", en: "Holi colour festivals" } },
+          { u: "https://www.google.com/search?q=rangoli+workshop+nederland", t: { nl: "Rangoli-workshops", en: "Rangoli workshops" } },
         ],
         links: [
           { u: "https://www.indianembassynetherlands.gov.in/", t: { nl: "Ambassade van India – evenementen", en: "Embassy of India – events" }, d: { nl: "De ambassade en haar cultureel centrum organiseren regelmatig concerten, yoga en vieringen.", en: "The embassy and its cultural centre regularly organise concerts, yoga and celebrations." } },
@@ -173,6 +177,8 @@ export const sections = [
         },
         live: [
           { u: "https://www.meetup.com/find/?keywords=indian&location=nl--Amsterdam", t: { nl: "Indiase groepen op Meetup", en: "Indian groups on Meetup" } },
+          { u: "https://www.google.com/search?q=indian+student+association+netherlands", t: { nl: "Indiase studentenverenigingen", en: "Indian student associations" } },
+          { u: "https://www.google.com/search?q=indiase+vereniging+tamil+telugu+marathi+bengali+nederland", t: { nl: "Verenigingen per taal of regio", en: "Associations by language or region" } },
         ],
         links: [
           { u: "https://www.indianembassynetherlands.gov.in/", t: { nl: "Ambassade van India, Den Haag", en: "Embassy of India, The Hague" }, d: { nl: "Onder meer een overzicht van Indiase verenigingen.", en: "Includes an overview of Indian associations." } },
@@ -230,6 +236,7 @@ export const sections = [
         live: [
           { u: "https://www.google.com/maps/search/cricketclub/", t: { nl: "Cricketclub bij mij in de buurt", en: "Cricket club near me" } },
           { u: "https://www.google.com/search?q=cricket+live+score", t: { nl: "Live cricketscores", en: "Live cricket scores" } },
+          { u: "https://www.google.com/search?q=IPL+kijken+in+nederland", t: { nl: "De IPL kijken in Nederland", en: "Watching the IPL in the Netherlands" } },
         ],
         links: [
           { u: "https://www.kncb.nl/", t: "KNCB", d: { nl: "Koninklijke Nederlandse Cricket Bond: clubs, competities en het nationale team.", en: "Royal Dutch Cricket Board: clubs, competitions and the national team." } },
@@ -662,6 +669,10 @@ export const sections = [
             "Anyone living in the Netherlands declares their worldwide income and assets in the Dutch tax return, including Indian bank accounts, investments and property. Indians who move abroad must have their Indian bank accounts converted to NRI accounts. In complicated situations an adviser who knows both systems is well worth it.",
           ],
         },
+        live: [
+          { u: "https://www.google.com/search?q=geld+overmaken+naar+india+vergelijken", t: { nl: "Geld overmaken naar India vergelijken", en: "Compare money transfers to India" } },
+          { u: "https://www.google.com/search?q=belastingadviseur+India+Nederland+NRI", t: { nl: "Belastingadviseurs met India-ervaring", en: "Tax advisers with India experience" } },
+        ],
         links: [
           { u: "https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/individuals", t: { nl: "Belastingdienst (Engelstalig)", en: "Dutch Tax Administration (English)" }, d: { nl: "Aangifte, wereldinkomen en verdragen.", en: "Tax returns, worldwide income and treaties." } },
           { u: "https://www.svb.nl/en", t: "SVB", d: { nl: "AOW en verdragen over sociale zekerheid.", en: "State pension and social security agreements." } },

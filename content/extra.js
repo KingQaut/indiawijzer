@@ -984,3 +984,39 @@ extra["familie-recht"].push(
     ],
   },
 );
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Fifth batch (11 November 2026)
+
+extra["naar-india"].push(
+  {
+    slug: { nl: "studie-uitwisseling", en: "study-exchange" },
+    title: { nl: "Studie, stage en onderzoek in India", en: "Study, internships and research in India" },
+    intro: {
+      nl: "Een semester, stage of onderzoeksperiode in India, en de beurzen daarvoor.",
+      en: "A semester, internship or research stay in India, and the scholarships for it.",
+    },
+    body: {
+      nl: [
+        "De eenvoudigste weg naar India loopt via uw eigen opleiding: veel Nederlandse universiteiten en hogescholen hebben uitwisselingsafspraken met Indiase instellingen, zoals de IIT's en IIM's. Het internationale kantoor van uw instelling weet welke plaatsen en beurzen er zijn, en regelt de erkenning van studiepunten.",
+        "De Indiase overheid geeft via de ICCR beurzen aan buitenlandse studenten, ook voor Indiase muziek, dans, yoga en talen. Voor studie, stage en onderzoek hebt u elk een eigen visumtype nodig; met een toeristenvisum mag u niet studeren of stage lopen. Nederlandse beurzen vindt u in de beurzenzoeker van Nuffic.",
+        "Onderzoekers werken samen in gezamenlijke programma's van de Nederlandse en Indiase wetenschapsfinanciers, onder meer op het gebied van water, gezondheid en landbouw.",
+      ],
+      en: [
+        "The easiest route to India is through your own programme: many Dutch universities and universities of applied sciences have exchange agreements with Indian institutions such as the IITs and IIMs. Your institution's international office knows which places and grants exist and arranges credit recognition.",
+        "The Indian government offers scholarships to foreign students through the ICCR, including for Indian music, dance, yoga and languages. Study, internships and research each require their own type of visa; a tourist visa does not allow you to study or do an internship. Dutch grants are listed in Nuffic's scholarship finder.",
+        "Researchers collaborate in joint programmes of the Dutch and Indian science funders, in fields such as water, health and agriculture.",
+      ],
+    },
+    live: [
+      { u: g("stage India Nederlandse studenten"), t: { nl: "Stages in India", en: "Internships in India" } },
+      { u: g("exchange programme India Dutch university IIT"), t: { nl: "Uitwisseling met Indiase universiteiten", en: "Exchanges with Indian universities" } },
+    ],
+    links: [
+      { u: "https://www.iccr.gov.in/", t: "ICCR", d: { nl: "Beurzen van de Indiase overheid voor buitenlandse studenten.", en: "Indian government scholarships for foreign students." } },
+      { u: "https://www.wilweg.nl/", t: "WilWeg (Nuffic)", d: { nl: "Studeren en stage lopen in het buitenland, met beurzenzoeker.", en: "Studying and interning abroad, with a scholarship finder (in Dutch)." } },
+      { u: "https://www.studyinindia.gov.in/", t: "Study in India", d: { nl: "Het officiële portaal voor buitenlandse studenten.", en: "The official portal for international students." } },
+      { u: "https://www.nwo.nl/", t: "NWO", d: { nl: "Nederlandse onderzoeksfinanciering, ook voor samenwerking met India.", en: "Dutch research funding, including cooperation with India." } },
+    ],
+  },
+);
