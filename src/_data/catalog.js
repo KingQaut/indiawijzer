@@ -92,7 +92,8 @@ export default function () {
       cityPages.push({ lang, url: c.url, alt: c.alt, title: `${site.ui[lang].cityTitle} ${c.name}`, description: `${site.ui[lang].cityIntro} ${c.name}.`, city: c });
     }
 
-    const name = (d) => ({ ...d, name: site.days[d.key][lang], note: site.days[d.key].d?.[lang] || "" });
+    const wiki = (term) => `https://${lang}.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(term)}&go=Go`;
+    const name = (d) => ({ ...d, name: site.days[d.key][lang], note: site.days[d.key].d?.[lang] || "", wiki: wiki(site.days[d.key].w[lang]) });
     calendar[lang] = {
       years,
       upcoming: allDays.filter((d) => d.date >= todayIso && d.date <= horizon).map(name),

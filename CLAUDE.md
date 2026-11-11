@@ -73,3 +73,4 @@ Open points:
 - **Restaurant list stays Indian cuisine only** (owner decision, 10 Nov 2026): do not add places tagged Surinamese. The "Rotishop bij mij in de buurt" search button covers roti shops.
 - 44 restaurants have no town in OpenStreetMap and show as "Plaats onbekend".
 - The owner was invited to name topics from the old site that are missing.
+- **To look into (owner, 11 Nov 2026): OpenStreetMap versus Google Maps.** The lists and the "Kaart" links use OpenStreetMap, while the "search now" buttons open Google Maps, which the owner found confusing. Options offered, not yet chosen: a short line above the buttons saying they open Google Maps, or making the "Kaart" links open Google Maps too.
