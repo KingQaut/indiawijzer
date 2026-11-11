@@ -1,6 +1,6 @@
 # Rebuilds and publishes the site:
 #  - whenever something is changed in the repository
-#  - automatically every night (refreshes news, restaurants and temples)
+#  - automatically every night (refreshes news, place lists and the exchange rate)
 name: Build and publish
 
 on:
@@ -33,7 +33,7 @@ jobs:
           cache: npm
       - run: npm ci
 
-      - name: Refresh news and places
+      - name: Refresh news, places and exchange rate
         run: npm run update-data
 
       # Saving the fresh data also counts as repository activity, which stops
@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "indiawijzer-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/_data/news.json src/_data/places.json
+          git add src/_data/*.json
           git diff --cached --quiet || git commit -m "Automatic data update"
           # Not essential: if saving fails (e.g. two runs at once) the site is still published.
           git push || echo "Could not save data this time; will try again at the next run."

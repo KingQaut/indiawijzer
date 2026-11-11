@@ -3,6 +3,7 @@ layout: base.njk
 pagination: { data: catalog.topicPages, size: 1, alias: p }
 permalink: "{{ p.url }}"
 ---
+{%- from "placelist.njk" import placeList -%}
 {%- set ui = site.ui[p.lang] -%}
 {%- set t = p.topic -%}
 <nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › <a href="{{ p.section.url }}">{{ p.section.title }}</a> › {{ t.title }}</nav>
@@ -39,15 +40,7 @@ permalink: "{{ p.url }}"
       <input type="search" id="finder-q" placeholder="{{ ui.filterPh }}" aria-label="{{ ui.filterPh }}">
       <span><b id="finder-n">{{ list.length }}</b> {{ ui.results }}</span>
     </div>
-    <ul id="finder-list" class="places">
-      {%- for x in list %}
-      <li data-s="{{ (x.n + ' ' + x.c + ' ' + x.a) | lower }}">
-        <b>{{ x.n }}</b>
-        <span>{{ x.c or ui.unknownCity }}{% if x.a %} · {{ x.a }}{% endif %}</span>
-        <span class="acts">{% if x.w %}<a href="{{ x.w }}" rel="noopener nofollow">{{ ui.website }}</a>{% endif %}<a href="https://www.openstreetmap.org/{{ x.o }}" rel="noopener">{{ ui.map }}</a></span>
-      </li>
-      {%- endfor %}
-    </ul>
+    {{ placeList(list, ui, "finder-list") }}
     <p class="meta">{{ ui.osm }} · {{ ui.updated }} {{ places.updated | date(p.lang) }}</p>
     {%- else %}
     <p class="meta">{{ ui.finderEmpty }}</p>

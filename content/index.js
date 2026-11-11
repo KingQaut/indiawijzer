@@ -7,7 +7,7 @@
 //   u = url, t = link title (string, or {nl, en}), d = description {nl, en}
 //
 // Optional per topic:
-//   finder: "restaurants" | "worship"  -> automatic list from OpenStreetMap
+//   finder: "restaurants" | "worship" | "yoga" | "cricket"  -> automatic list from OpenStreetMap
 //   live:   [{ u, t }]                 -> "search now" buttons that always show current results
 
 export const sections = [
@@ -17,8 +17,8 @@ export const sections = [
     slug: { nl: "india-in-nederland", en: "india-in-the-netherlands" },
     title: { nl: "India in Nederland", en: "India in the Netherlands" },
     intro: {
-      nl: "Eten, winkels, tempels, film, feesten en de Indiase gemeenschap in Nederland.",
-      en: "Food, shops, temples, film, festivals and the Indian community in the Netherlands.",
+      nl: "Eten, winkels, tempels, film, feesten, yoga, cricket en de Indiase gemeenschap in Nederland.",
+      en: "Food, shops, temples, film, festivals, yoga, cricket and the Indian community in the Netherlands.",
     },
     topics: [
       {
@@ -168,6 +168,64 @@ export const sections = [
         links: [
           { u: "https://www.indianembassynetherlands.gov.in/", t: { nl: "Ambassade van India, Den Haag", en: "Embassy of India, The Hague" }, d: { nl: "Onder meer een overzicht van Indiase verenigingen.", en: "Includes an overview of Indian associations." } },
           { u: "https://www.iamexpat.nl/", t: "IamExpat", d: { nl: "Nieuws en praktische informatie voor internationals in Nederland.", en: "News and practical information for internationals in the Netherlands." } },
+        ],
+      },
+      {
+        slug: { nl: "yoga", en: "yoga" },
+        title: { nl: "Yogascholen en studio's", en: "Yoga schools and studios" },
+        intro: {
+          nl: "Yogascholen en -studio's in heel Nederland, automatisch bijgewerkt en doorzoekbaar op plaats.",
+          en: "Yoga schools and studios across the Netherlands, updated automatically and searchable by town.",
+        },
+        body: {
+          nl: [
+            "Yoga komt uit India en is daar veel meer dan een reeks houdingen: het omvat ook ademhaling, meditatie en een manier van leven. In Nederland vindt u in bijna elke plaats een studio, van rustige hatha- en yin-yoga tot dynamische ashtanga en vinyasa.",
+            "Het beroep van yogadocent is in Nederland niet beschermd: iedereen mag zich zo noemen. Vraag daarom naar de opleiding van een docent. De Verenigde Naties hebben 21 juni uitgeroepen tot Internationale Dag van de Yoga; rond die datum zijn er op veel plaatsen gratis lessen.",
+            "De lijst hieronder komt rechtstreeks uit OpenStreetMap en staat los van stroming of kwaliteit. Ontbreekt een studio? Dan kunt u die zelf op OpenStreetMap toevoegen; deze pagina neemt de wijziging vanzelf over.",
+          ],
+          en: [
+            "Yoga comes from India, where it is far more than a set of postures: it also covers breathing, meditation and a way of life. In the Netherlands almost every town has a studio, from gentle hatha and yin yoga to dynamic ashtanga and vinyasa.",
+            "Yoga teacher is not a protected profession in the Netherlands: anyone may use the title. So do ask about a teacher's training. The United Nations declared 21 June the International Day of Yoga; around that date many places offer free classes.",
+            "The list below comes straight from OpenStreetMap and says nothing about style or quality. Is a studio missing? You can add it on OpenStreetMap yourself and this page will pick up the change automatically.",
+          ],
+        },
+        finder: "yoga",
+        live: [
+          { u: "https://www.google.com/maps/search/yogastudio/", t: { nl: "Yoga bij mij in de buurt", en: "Yoga near me" } },
+          { u: "https://www.google.com/maps/search/ayurveda/", t: { nl: "Ayurveda bij mij in de buurt", en: "Ayurveda near me" } },
+        ],
+        links: [
+          { u: "https://www.yoganederland.nl/", t: "Vereniging Yogadocenten Nederland", d: { nl: "Beroepsvereniging met een overzicht van opgeleide docenten.", en: "Professional association with a directory of trained teachers." } },
+          { u: "https://yoga.ayush.gov.in/", t: { nl: "Yogaportaal van de Indiase overheid", en: "Yoga portal of the Indian government" }, d: { nl: "Uitleg, oefeningen en de Internationale Dag van de Yoga.", en: "Explanations, exercises and the International Day of Yoga." } },
+          { u: "https://www.un.org/en/observances/yoga-day", t: { nl: "Internationale Dag van de Yoga (VN)", en: "International Day of Yoga (UN)" }, d: { nl: "Achtergrond bij 21 juni.", en: "Background to 21 June." } },
+        ],
+      },
+      {
+        slug: { nl: "cricket", en: "cricket" },
+        title: { nl: "Cricket", en: "Cricket" },
+        intro: {
+          nl: "Cricketclubs in Nederland en waar u het Indiase en Nederlandse cricket volgt.",
+          en: "Cricket clubs in the Netherlands and where to follow Indian and Dutch cricket.",
+        },
+        body: {
+          nl: [
+            "Cricket is in India veruit de grootste sport, en in Nederland wordt het al sinds de negentiende eeuw gespeeld. Veel Nederlandse clubs draaien tegenwoordig voor een flink deel op spelers met Indiase, Pakistaanse, Sri Lankaanse of Surinaamse wortels, en zoeken vrijwel altijd nieuwe leden, ook beginners en jeugd.",
+            "Het seizoen loopt ruwweg van april tot september. De cricketbond KNCB heeft een overzicht van clubs en competities. De lijst hieronder komt rechtstreeks uit OpenStreetMap.",
+          ],
+          en: [
+            "Cricket is by far the biggest sport in India, and it has been played in the Netherlands since the nineteenth century. Many Dutch clubs now rely heavily on players with Indian, Pakistani, Sri Lankan or Surinamese roots and are almost always looking for new members, beginners and juniors included.",
+            "The season runs roughly from April to September. The Dutch cricket board KNCB lists clubs and competitions. The list below comes straight from OpenStreetMap.",
+          ],
+        },
+        finder: "cricket",
+        live: [
+          { u: "https://www.google.com/maps/search/cricketclub/", t: { nl: "Cricketclub bij mij in de buurt", en: "Cricket club near me" } },
+          { u: "https://www.google.com/search?q=cricket+live+score", t: { nl: "Live cricketscores", en: "Live cricket scores" } },
+        ],
+        links: [
+          { u: "https://www.kncb.nl/", t: "KNCB", d: { nl: "Koninklijke Nederlandse Cricket Bond: clubs, competities en het nationale team.", en: "Royal Dutch Cricket Board: clubs, competitions and the national team." } },
+          { u: "https://www.bcci.tv/", t: "BCCI", d: { nl: "De Indiase cricketbond.", en: "The Board of Control for Cricket in India." } },
+          { u: "https://www.icc-cricket.com/", t: "ICC", d: { nl: "Internationale wedstrijden, standen en toernooien.", en: "International fixtures, rankings and tournaments." } },
         ],
       },
     ],
@@ -625,10 +683,10 @@ export const about = {
       h: { nl: "Hoe blijft de site actueel?", en: "How does the site stay up to date?" },
       p: {
         nl: [
-          "Regels, tarieven en adressen veranderen voortdurend. Daarom noemen we die zo min mogelijk zelf en linken we naar de instantie die ze vaststelt. Het nieuws en de lijsten met restaurants en tempels worden elke dag automatisch ververst uit openbare bronnen, en alle links op de site worden wekelijks automatisch gecontroleerd.",
+          "Regels, tarieven en adressen veranderen voortdurend. Daarom noemen we die zo min mogelijk zelf en linken we naar de instantie die ze vaststelt. Het nieuws, de wisselkoers en de lijsten met restaurants, tempels, yogastudio's en cricketclubs worden elke dag automatisch ververst uit openbare bronnen. De feestkalender wordt berekend uit de stand van zon en maan. Alle links op de site worden wekelijks automatisch gecontroleerd.",
         ],
         en: [
-          "Rules, fees and addresses change constantly. That is why we state them as little as possible ourselves and link to the authority that sets them. The news and the lists of restaurants and temples are refreshed automatically every day from public sources, and every link on the site is checked automatically each week.",
+          "Rules, fees and addresses change constantly. That is why we state them as little as possible ourselves and link to the authority that sets them. The news, the exchange rate and the lists of restaurants, temples, yoga studios and cricket clubs are refreshed automatically every day from public sources. The festival calendar is calculated from the positions of the sun and moon. Every link on the site is checked automatically each week.",
         ],
       },
     },
@@ -648,9 +706,11 @@ export const about = {
       p: {
         nl: [
           "Deze website plaatst geen cookies, gebruikt geen trackers en verzamelt geen persoonsgegevens. Er zijn geen accounts, formulieren of advertenties.",
+          "Twee pagina's halen gegevens rechtstreeks bij een andere dienst op: de kaart op ‘India bij mij in de buurt’ komt van OpenStreetMap en het weer op ‘Nu in India en Nederland’ van Open-Meteo. Die diensten zien daarbij uw IP-adres, zoals elke website die u bezoekt. Gebruikt u de knop ‘Gebruik mijn locatie’, dan blijft uw locatie in uw eigen browser; wij ontvangen of bewaren die niet.",
         ],
         en: [
           "This website sets no cookies, uses no trackers and collects no personal data. There are no accounts, forms or advertisements.",
+          "Two pages fetch data directly from another service: the map on ‘India near me’ comes from OpenStreetMap and the weather on ‘Right now in India and the Netherlands’ from Open-Meteo. Those services see your IP address when they do, like any website you visit. If you use the ‘Use my location’ button, your location stays in your own browser; we do not receive or store it.",
         ],
       },
     },
@@ -658,10 +718,10 @@ export const about = {
       h: { nl: "Bronnen", en: "Sources" },
       p: {
         nl: [
-          "Lijsten met restaurants en gebedshuizen: © OpenStreetMap-bijdragers, beschikbaar onder de Open Database License. Nieuwskoppen zijn eigendom van de genoemde uitgevers en linken naar het oorspronkelijke artikel.",
+          "Lijsten met restaurants, gebedshuizen, yogastudio's, cricketclubs en plaatsen, en de kaart: © OpenStreetMap-bijdragers, beschikbaar onder de Open Database License. Weer en luchtkwaliteit: Open-Meteo. Wisselkoers: referentiekoers van de Europese Centrale Bank via Frankfurter. Nieuwskoppen zijn eigendom van de genoemde uitgevers en linken naar het oorspronkelijke artikel.",
         ],
         en: [
-          "Lists of restaurants and places of worship: © OpenStreetMap contributors, available under the Open Database License. News headlines belong to the publishers named and link to the original article.",
+          "Lists of restaurants, places of worship, yoga studios, cricket clubs and towns, and the map: © OpenStreetMap contributors, available under the Open Database License. Weather and air quality: Open-Meteo. Exchange rate: European Central Bank reference rate via Frankfurter. News headlines belong to the publishers named and link to the original article.",
         ],
       },
     },

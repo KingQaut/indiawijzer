@@ -1,5 +1,7 @@
-// Refreshes the automatic parts of the site: news headlines and the lists of
-// restaurants and places of worship. Runs daily in GitHub Actions.
+// Refreshes the automatic parts of the site: news headlines, the lists of
+// restaurants, places of worship, yoga studios and cricket clubs, the list of
+// Dutch towns (for "India near me") and the euro–rupee rate.
+// Runs daily in GitHub Actions.
 //
 // Rule: never make things worse. If a source is unreachable or returns
 // suspiciously little, the previous data is kept.
@@ -27,8 +29,19 @@ const NL = 'area["ISO3166-1"="NL"][admin_level=2]->.nl;';
 const QUERIES = {
   restaurants: `[out:json][timeout:120];${NL}nwr["amenity"~"^(restaurant|fast_food|cafe)$"]["cuisine"~"indian"](area.nl);out center tags;`,
   worship: `[out:json][timeout:120];${NL}nwr["amenity"="place_of_worship"]["religion"~"^(hindu|sikh|jain)$"](area.nl);out center tags;`,
+  yoga: `[out:json][timeout:120];${NL}(nwr["sport"~"yoga"]["name"](area.nl);nwr["leisure"="fitness_centre"]["name"~"yoga",i](area.nl););out center tags;`,
+  cricket: `[out:json][timeout:120];${NL}(nwr["club"="sport"]["sport"~"cricket"]["name"](area.nl);nwr["leisure"~"^(sports_centre|pitch)$"]["sport"="cricket"]["name"](area.nl););out center tags;`,
 };
-const MIN_PLACES = { restaurants: 50, worship: 10 }; // fewer than this = treat as a failed fetch
+const MIN_PLACES = { restaurants: 50, worship: 10, yoga: 20, cricket: 5 }; // fewer than this = treat as a failed fetch
+
+// Town centres, used to let visitors pick a town and to name the town of
+// places that have no address in OpenStreetMap.
+const TOWNS_QUERY = `[out:json][timeout:120];${NL}node["place"~"^(city|town|village)$"]["name"](area.nl);out;`;
+const MIN_TOWNS = 500;
+const TOWN_NAMES = { "'s-Gravenhage": "Den Haag", "'s-Hertogenbosch": "Den Bosch" }; // everyday names
+const NEAR_TOWN_KM = 4; // a place without address gets the nearest town centre within this distance
+
+const RATE_URL = "https://api.frankfurter.dev/v1/latest?base=EUR&symbols=INR"; // European Central Bank reference rate
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 async function get(url, opts = {}) {
@@ -74,14 +87,42 @@ export function parsePlaces(json) {
     let w = t.website || t["contact:website"] || "";
     if (w && !/^https?:\/\//i.test(w)) w = "https://" + w;
     try { w = w ? new URL(w).href : ""; } catch { w = ""; }
-    const city = { "'s-Gravenhage": "Den Haag", "'s-Hertogenbosch": "Den Bosch" }[t["addr:city"]] || t["addr:city"] || ""; // everyday names
-    return { n: (t.name || "").trim(), c: city, a: street, w, o: `${e.type}/${e.id}` };
+    const city = TOWN_NAMES[t["addr:city"]] || t["addr:city"] || "";
+    const lat = e.lat ?? e.center?.lat, lon = e.lon ?? e.center?.lon;
+    const out = { n: (t.name || "").trim(), c: city, a: street, w, o: `${e.type}/${e.id}` };
+    if (Number.isFinite(lat) && Number.isFinite(lon)) { out.y = +lat.toFixed(5); out.x = +lon.toFixed(5); }
+    return out;
   }).filter((x) => {
     const key = (x.n + "|" + x.c + "|" + x.a).toLowerCase();
     if (!x.n || seen.has(key)) return false;
     seen.add(key);
     return true;
-  }).sort((a, b) => !a.c - !b.c || a.c.localeCompare(b.c, "nl") || a.n.localeCompare(b.n, "nl")); // no town = last
+  }).sort(byTown);
+}
+const byTown = (a, b) => !a.c - !b.c || a.c.localeCompare(b.c, "nl") || a.n.localeCompare(b.n, "nl"); // no town = last
+
+export function parseTowns(json) {
+  const seen = new Set();
+  return json.elements.map((e) => {
+    const t = e.tags || {};
+    return { n: TOWN_NAMES[t.name] || t.name, y: +e.lat.toFixed(4), x: +e.lon.toFixed(4), p: +t.population || 0 };
+  }).filter((t) => t.n && !seen.has(t.n) && seen.add(t.n)).sort((a, b) => a.n.localeCompare(b.n, "nl"));
+}
+
+export const km = (a, b) => {
+  const r = Math.PI / 180, dy = (a.y - b.y) * r, dx = (a.x - b.x) * r * Math.cos(((a.y + b.y) / 2) * r);
+  return 6371 * Math.sqrt(dx * dx + dy * dy);
+};
+
+// Gives places without a town the name of the nearest town centre, if close by.
+export function fillTowns(list, towns) {
+  for (const p of list) {
+    if (p.c || p.y == null) continue;
+    let best = null, d = NEAR_TOWN_KM;
+    for (const t of towns) { const k = km(p, t); if (k < d) { d = k; best = t; } }
+    if (best) p.c = best.n;
+  }
+  return list.sort(byTown);
 }
 
 // ── News ───────────────────────────────────────────────────────────────────
@@ -123,11 +164,23 @@ async function overpass(query) {
 async function updatePlaces() {
   const places = await readJson("places.json", { updated: null, restaurants: [], worship: [] });
   let changed = false;
+
+  let towns = await readJson("towns.json", []);
+  try {
+    const list = parseTowns(await overpass(TOWNS_QUERY));
+    if (list.length < MIN_TOWNS) throw new Error(`only ${list.length} results`);
+    towns = list;
+    await writeJson("towns.json", towns);
+    console.log(`towns: ${towns.length}`);
+  } catch (err) {
+    console.warn(`towns: kept previous data (${err.message})`);
+  }
+
   for (const [key, query] of Object.entries(QUERIES)) {
     try {
       const list = parsePlaces(await overpass(query));
       if (list.length < MIN_PLACES[key]) throw new Error(`only ${list.length} results`);
-      places[key] = list;
+      places[key] = fillTowns(list, towns);
       changed = true;
       console.log(`places ${key}: ${list.length}`);
     } catch (err) {
@@ -137,7 +190,21 @@ async function updatePlaces() {
   if (changed) { places.updated = new Date().toISOString(); await writeJson("places.json", places); }
 }
 
+// ── Euro–rupee rate ────────────────────────────────────────────────────────
+async function updateRate() {
+  try {
+    const d = await (await get(RATE_URL)).json();
+    const inr = d?.rates?.INR;
+    if (!(inr > 20 && inr < 500)) throw new Error("implausible rate");
+    await writeJson("rate.json", { inr, date: d.date, updated: new Date().toISOString() });
+    console.log(`rate: 1 EUR = ${inr} INR`);
+  } catch (err) {
+    console.warn(`rate: kept previous data (${err.message})`);
+  }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   await updateNews();
   await updatePlaces();
+  await updateRate();
 }
