@@ -381,12 +381,133 @@ export const sections = [
 
   // ───────────────────────────────────────────────────────────────────────────
   {
+    icon: "🌷",
+    slug: { nl: "nederland-in-india", en: "the-netherlands-in-india" },
+    title: { nl: "Nederland in India", en: "The Netherlands in India" },
+    intro: {
+      nl: "Vier eeuwen sporen, de ambassade, Nederlandse bedrijven en cultuur, en het leven als Nederlander in India.",
+      en: "Four centuries of traces, the embassy, Dutch companies and culture, and life as a Dutch national in India.",
+    },
+    topics: [
+      {
+        slug: { nl: "nederlands-erfgoed", en: "dutch-heritage" },
+        title: { nl: "Nederlands erfgoed in India", en: "Dutch heritage in India" },
+        intro: {
+          nl: "Forten, begraafplaatsen en handelsposten van de VOC, van Gujarat tot Bengalen.",
+          en: "Forts, cemeteries and trading posts of the Dutch East India Company, from Gujarat to Bengal.",
+        },
+        body: {
+          nl: [
+            "Tussen het begin van de zeventiende en het begin van de negentiende eeuw had de Verenigde Oost-Indische Compagnie (VOC) handelsposten langs de hele Indiase kust: in Gujarat (Surat), aan de Malabarkust (Kochi), aan de Coromandelkust (Pulicat, Sadras, Nagapattinam) en in Bengalen (Chinsurah).",
+            "Veel is nog te bezoeken. In Kochi staan het Mattancherry-paleis, bekend als het 'Dutch Palace', en een Nederlandse begraafplaats. Pulicat, Sadras en Chinsurah hebben begraafplaatsen met rijk versierde grafstenen en resten van forten. In Nederlandse archieven liggen kilometers VOC-documenten over India, deels online te raadplegen.",
+          ],
+          en: [
+            "From the early seventeenth to the early nineteenth century, the Dutch East India Company (VOC) had trading posts all along the Indian coast: in Gujarat (Surat), on the Malabar coast (Kochi), on the Coromandel coast (Pulicat, Sadras, Nagapattinam) and in Bengal (Chinsurah).",
+            "Much can still be visited. Kochi has the Mattancherry Palace, known as the 'Dutch Palace', and a Dutch cemetery. Pulicat, Sadras and Chinsurah have cemeteries with richly decorated tombstones and remains of forts. Dutch archives hold kilometres of VOC records on India, part of which can be consulted online.",
+          ],
+        },
+        finder: "heritage",
+        links: [
+          { u: "https://www.atlasofmutualheritage.nl/", t: "Atlas of Mutual Heritage", d: { nl: "Kaarten, tekeningen en prenten van VOC-locaties.", en: "Maps, drawings and prints of VOC locations." } },
+          { u: "https://www.nationaalarchief.nl/", t: "Nationaal Archief", d: { nl: "Het VOC-archief, deels gedigitaliseerd.", en: "The VOC archives, partly digitised." } },
+          { u: "https://dutchinchinsurah.com/", t: "Dutch in Chinsurah", d: { nl: "Het Nederlandse verleden van Chinsurah in Bengalen.", en: "The Dutch past of Chinsurah in Bengal." } },
+          { u: "https://dutchculture.nl/", t: "DutchCulture", d: { nl: "Culturele samenwerking en gedeeld erfgoed.", en: "Cultural cooperation and shared heritage." } },
+        ],
+      },
+      {
+        slug: { nl: "ambassade-consulaten", en: "embassy-consulates" },
+        title: { nl: "Nederlandse ambassade en consulaten", en: "Dutch embassy and consulates" },
+        intro: {
+          nl: "Waar Nederland in India vertegenwoordigd is en waarvoor u er terechtkunt.",
+          en: "Where the Netherlands is represented in India and what they can do for you.",
+        },
+        body: {
+          nl: [
+            "Nederland heeft een ambassade in New Delhi en consulaten-generaal in Mumbai en Bengaluru, aangevuld met honorair consuls en handelskantoren in andere steden. Samen vormen ze een van de grotere Nederlandse netwerken in Azië, wat laat zien hoe belangrijk India voor Nederland is geworden.",
+            "Nederlanders kunnen er terecht voor een paspoort of noodreisdocument, voor consulaire verklaringen en voor hulp bij ernstige problemen zoals een ziekenhuisopname, arrestatie of overlijden. Maak altijd vooraf een afspraak. Bij nood buiten kantoortijd belt u het 24-uurs contactcentrum van het ministerie van Buitenlandse Zaken.",
+            "Indiërs die naar Nederland willen, dienen hun visumaanvraag niet bij de ambassade in maar bij een extern visumkantoor. Voor ondernemers hebben de ambassade en consulaten economische afdelingen die helpen bij het vinden van partners en het begrijpen van de markt.",
+          ],
+          en: [
+            "The Netherlands has an embassy in New Delhi and consulates-general in Mumbai and Bengaluru, supported by honorary consuls and business offices in other cities. Together they form one of the larger Dutch networks in Asia, which shows how important India has become to the Netherlands.",
+            "Dutch nationals can go there for a passport or emergency travel document, for consular statements and for help with serious problems such as a hospital admission, arrest or death. Always make an appointment first. In an emergency outside office hours, call the 24-hour contact centre of the Ministry of Foreign Affairs.",
+            "Indians who want to travel to the Netherlands submit their visa application not at the embassy but at an external visa centre. For entrepreneurs, the embassy and consulates have economic departments that help with finding partners and understanding the market.",
+          ],
+        },
+        links: [
+          { u: "https://www.netherlandsworldwide.nl/", t: "Netherlands Worldwide", d: { nl: "Adressen, afspraken en alle consulaire diensten.", en: "Addresses, appointments and all consular services." } },
+          { u: "https://www.nederlandwereldwijd.nl/reisadvies/india", t: { nl: "Reisadvies India", en: "Dutch travel advice for India" }, d: { nl: "Met de contactgegevens voor noodgevallen.", en: "Including emergency contact details (in Dutch)." } },
+          { u: "https://www.rijksoverheid.nl/onderwerpen/betrekkingen-nederland-india", t: { nl: "Rijksoverheid: betrekkingen Nederland–India", en: "Dutch government: relations with India" }, d: { nl: "Het Nederlandse beleid ten aanzien van India.", en: "Dutch policy towards India (in Dutch)." } },
+        ],
+      },
+      {
+        slug: { nl: "nederlandse-bedrijven", en: "dutch-companies" },
+        title: { nl: "Nederlandse bedrijven in India", en: "Dutch companies in India" },
+        intro: {
+          nl: "Van Philips en Unilever tot water en zaden: het Nederlandse bedrijfsleven in India.",
+          en: "From Philips and Unilever to water and seeds: Dutch business in India.",
+        },
+        body: {
+          nl: [
+            "Nederland behoort al jaren tot de grootste buitenlandse investeerders in India. Sommige namen zijn er al bijna een eeuw: Philips begon in 1930 in Calcutta en heeft nu een groot ontwikkelcentrum in Bengaluru, Unilever is via Hindustan Unilever in vrijwel elk Indiaas huishouden aanwezig, en Shell en Heineken, eigenaar van het bekende Kingfisher-bier, zijn er groot.",
+            "Minstens zo belangrijk zijn de honderden kleinere bedrijven. Nederlandse veredelaars leveren zaden voor groenten, ingenieursbureaus en baggeraars werken aan rivieren, havens en schoon water, en zuivel-, kassen- en koelketenbedrijven helpen de Indiase landbouw moderniseren. Veel Nederlandse bedrijven hebben daarnaast een IT- of ontwikkelafdeling in India.",
+            "Zoekt u werk bij een Nederlands bedrijf in India, of juist een Nederlandse partner? Zakelijke netwerken en de economische afdelingen van de ambassade en consulaten zijn het beste startpunt.",
+          ],
+          en: [
+            "The Netherlands has for years been among the largest foreign investors in India. Some names have been there for almost a century: Philips started in Calcutta in 1930 and now has a large development centre in Bengaluru, Unilever is present in almost every Indian household through Hindustan Unilever, and Shell and Heineken, owner of the well-known Kingfisher beer, are big there.",
+            "At least as important are the hundreds of smaller companies. Dutch breeders supply vegetable seeds, engineering firms and dredgers work on rivers, ports and clean water, and dairy, greenhouse and cold-chain companies help modernise Indian agriculture. Many Dutch companies also have an IT or development arm in India.",
+            "Looking for a job with a Dutch company in India, or for a Dutch partner? Business networks and the economic departments of the embassy and consulates are the best place to start.",
+          ],
+        },
+        live: [
+          { u: "https://www.google.com/search?q=Dutch+companies+in+India+jobs", t: { nl: "Vacatures bij Nederlandse bedrijven in India", en: "Jobs at Dutch companies in India" } },
+          { u: "https://www.google.com/search?q=Netherlands+India+business+event", t: { nl: "Zakelijke evenementen", en: "Business events" } },
+        ],
+        links: [
+          { u: "https://www.rvo.nl/", t: "RVO", d: { nl: "Zakendoen in India en Nederlandse handelsmissies.", en: "Doing business in India and Dutch trade missions." } },
+          { u: "https://www.investindia.gov.in/", t: "Invest India", d: { nl: "Het Indiase investeringsagentschap, met een landenpagina over Nederland.", en: "India's investment agency, with a country page on the Netherlands." } },
+        ],
+      },
+      {
+        slug: { nl: "nederlandse-cultuur", en: "dutch-culture" },
+        title: { nl: "Nederlandse cultuur en taal in India", en: "Dutch culture and language in India" },
+        intro: {
+          nl: "Koningsdag, tulpen in Kasjmir, Nederlands leren en waar u stroopwafels vindt.",
+          en: "King's Day, tulips in Kashmir, learning Dutch and where to find stroopwafels.",
+        },
+        body: {
+          nl: [
+            "Rond 27 april vieren Nederlanders in de grote Indiase steden Koningsdag, vaak op uitnodiging van de ambassade, een consulaat of een Nederlandse vereniging; in december komt Sinterklaas langs. Nederlandse kunstenaars, ontwerpers en architecten werken geregeld in India, met steun van DutchCulture, het Nederlandse centrum voor internationale culturele samenwerking.",
+            "Wie in het voorjaar in Kasjmir is, ziet daar iets onverwacht Nederlands: de tulpentuin van Srinagar, een van de grootste van Azië, bloeit enkele weken in maart en april. En in Kerala staan het Mattancherry-paleis, in de volksmond het Dutch Palace, en de kerken en pakhuizen van Fort Kochi.",
+            "Nederlands leren in India kan online en bij taalinstituten in de grote steden; voor wie naar Nederland wil verhuizen is het basisexamen inburgering soms verplicht en kan dat op de ambassade worden afgelegd. Nederlandse producten als kaas, stroopwafels en hagelslag vindt u in winkels met geïmporteerde levensmiddelen en online, al neemt bijna elke Nederlander ze ook zelf mee.",
+          ],
+          en: [
+            "Around 27 April, Dutch people in the big Indian cities celebrate King's Day, often at the invitation of the embassy, a consulate or a Dutch association; in December Sinterklaas pays a visit. Dutch artists, designers and architects regularly work in India, supported by DutchCulture, the Dutch centre for international cultural cooperation.",
+            "Visit Kashmir in spring and you will see something unexpectedly Dutch: the tulip garden of Srinagar, one of the largest in Asia, blooms for a few weeks in March and April. And in Kerala stand the Mattancherry Palace, popularly known as the Dutch Palace, and the churches and warehouses of Fort Kochi.",
+            "You can learn Dutch in India online and at language institutes in the big cities; for some people moving to the Netherlands the basic civic integration exam is compulsory and can be taken at the embassy. Dutch products such as cheese, stroopwafels and hagelslag can be found in shops selling imported food and online, although almost every Dutch person also brings their own.",
+          ],
+        },
+        live: [
+          { u: "https://www.google.com/search?q=King%27s+Day+Koningsdag+India+celebration", t: { nl: "Koningsdag in India", en: "King's Day in India" } },
+          { u: "https://www.google.com/search?q=learn+Dutch+language+course+India", t: { nl: "Nederlands leren in India", en: "Learn Dutch in India" } },
+          { u: "https://www.google.com/search?q=Srinagar+tulip+garden+opening+dates", t: { nl: "Tulpentuin Srinagar: wanneer open?", en: "Srinagar tulip garden: when is it open?" } },
+          { u: "https://www.google.com/search?q=buy+Dutch+cheese+stroopwafels+India", t: { nl: "Nederlandse producten in India", en: "Dutch products in India" } },
+        ],
+        links: [
+          { u: "https://dutchculture.nl/", t: "DutchCulture", d: { nl: "Nederlandse culturele projecten in India.", en: "Dutch cultural projects in India." } },
+          { u: "https://www.naarnederland.nl/", t: "Naar Nederland", d: { nl: "Het basisexamen inburgering in het buitenland.", en: "The basic civic integration exam abroad." } },
+          { u: "https://taalunie.org/", t: "Taalunie", d: { nl: "Nederlands leren en onderwijzen buiten Nederland.", en: "Learning and teaching Dutch outside the Netherlands." } },
+        ],
+      },
+    ],
+  },
+  // ───────────────────────────────────────────────────────────────────────────
+  {
     icon: "✈️",
     slug: { nl: "naar-india", en: "going-to-india" },
     title: { nl: "Naar India", en: "Going to India" },
     intro: {
-      nl: "Voor Nederlanders die naar India gaan: visum, gezondheid, wonen en Nederlands erfgoed.",
-      en: "For Dutch people heading to India: visas, health, living there and Dutch heritage.",
+      nl: "Voor wie naar India gaat: visum, gezondheid, reizen, wonen, werken en studeren.",
+      en: "For anyone going to India: visa, health, travel, living, working and studying.",
     },
     topics: [
       {
@@ -458,31 +579,6 @@ export const sections = [
           { u: "https://www.studyinindia.gov.in/", t: "Study in India", d: { nl: "Officiële portal voor buitenlandse studenten.", en: "Official portal for international students." } },
           { u: "https://www.nederlandwereldwijd.nl/wonen-werken", t: { nl: "Nederland Wereldwijd – Wonen en werken in het buitenland", en: "Netherlands Worldwide – Living and working abroad (Dutch)" }, d: { nl: "Checklist: uitschrijven, verzekering, AOW, belasting.", en: "Checklist: deregistration, insurance, state pension, tax." } },
           { u: "https://www.svb.nl/", t: "SVB", d: { nl: "AOW en kinderbijslag bij verblijf in het buitenland.", en: "State pension and child benefit while living abroad." } },
-        ],
-      },
-      {
-        slug: { nl: "nederlands-erfgoed", en: "dutch-heritage" },
-        title: { nl: "Nederlands erfgoed in India", en: "Dutch heritage in India" },
-        intro: {
-          nl: "Forten, begraafplaatsen en handelsposten van de VOC, van Gujarat tot Bengalen.",
-          en: "Forts, cemeteries and trading posts of the Dutch East India Company, from Gujarat to Bengal.",
-        },
-        body: {
-          nl: [
-            "Tussen het begin van de zeventiende en het begin van de negentiende eeuw had de Verenigde Oost-Indische Compagnie (VOC) handelsposten langs de hele Indiase kust: in Gujarat (Surat), aan de Malabarkust (Kochi), aan de Coromandelkust (Pulicat, Sadras, Nagapattinam) en in Bengalen (Chinsurah).",
-            "Veel is nog te bezoeken. In Kochi staan het Mattancherry-paleis, bekend als het 'Dutch Palace', en een Nederlandse begraafplaats. Pulicat, Sadras en Chinsurah hebben begraafplaatsen met rijk versierde grafstenen en resten van forten. In Nederlandse archieven liggen kilometers VOC-documenten over India, deels online te raadplegen.",
-          ],
-          en: [
-            "From the early seventeenth to the early nineteenth century, the Dutch East India Company (VOC) had trading posts all along the Indian coast: in Gujarat (Surat), on the Malabar coast (Kochi), on the Coromandel coast (Pulicat, Sadras, Nagapattinam) and in Bengal (Chinsurah).",
-            "Much can still be visited. Kochi has the Mattancherry Palace, known as the 'Dutch Palace', and a Dutch cemetery. Pulicat, Sadras and Chinsurah have cemeteries with richly decorated tombstones and remains of forts. Dutch archives hold kilometres of VOC records on India, part of which can be consulted online.",
-          ],
-        },
-        finder: "heritage",
-        links: [
-          { u: "https://www.atlasofmutualheritage.nl/", t: "Atlas of Mutual Heritage", d: { nl: "Kaarten, tekeningen en prenten van VOC-locaties.", en: "Maps, drawings and prints of VOC locations." } },
-          { u: "https://www.nationaalarchief.nl/", t: "Nationaal Archief", d: { nl: "Het VOC-archief, deels gedigitaliseerd.", en: "The VOC archives, partly digitised." } },
-          { u: "https://dutchinchinsurah.com/", t: "Dutch in Chinsurah", d: { nl: "Het Nederlandse verleden van Chinsurah in Bengalen.", en: "The Dutch past of Chinsurah in Bengal." } },
-          { u: "https://dutchculture.nl/", t: "DutchCulture", d: { nl: "Culturele samenwerking en gedeeld erfgoed.", en: "Cultural cooperation and shared heritage." } },
         ],
       },
     ],

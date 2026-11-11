@@ -1020,3 +1020,9 @@ extra["naar-india"].push(
     ],
   },
 );
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Topics that belong in the "Nederland in India" section (added 11 November 2026).
+const moved = ["nederland-india-geschiedenis", "nederlanders-in-india"];
+extra["nederland-in-india"] = extra["naar-india"].filter((t) => moved.includes(t.slug.nl)).sort((a, b) => moved.indexOf(a.slug.nl) - moved.indexOf(b.slug.nl));
+extra["naar-india"] = extra["naar-india"].filter((t) => !moved.includes(t.slug.nl));

@@ -134,10 +134,20 @@ export default function () {
     ];
   }
 
+  // Old addresses of topics that moved to another section keep working.
+  const redirects = [];
+  for (const [topicKey, oldSectionKey] of Object.entries(site.moved)) {
+    for (const lang of site.langs) {
+      const oldSec = nav[lang].find((x) => x.key === oldSectionKey);
+      const t = nav[lang].flatMap((x) => x.topics).find((x) => x.key === topicKey);
+      if (oldSec && t) redirects.push({ from: `${oldSec.url}${t.url.split("/").at(-2)}/`, to: t.url, title: t.title });
+    }
+  }
+
   const urls = { news: {}, about: {} };
   for (const p of newsPages) urls.news[p.lang] = p.url;
   for (const p of aboutPages) urls.about[p.lang] = p.url;
 
   const allPages = [...homePages, ...sectionPages, ...topicPages, ...Object.values(toolPages).flat(), ...cityPages, ...newsPages, ...aboutPages];
-  return { homePages, sectionPages, topicPages, newsPages, aboutPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar, ingredients, guides, toolBy };
+  return { homePages, sectionPages, topicPages, newsPages, aboutPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar, ingredients, guides, toolBy, redirects };
 }
