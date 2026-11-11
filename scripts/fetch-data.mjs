@@ -29,8 +29,10 @@ const NL = 'area["ISO3166-1"="NL"][admin_level=2]->.nl;';
 const QUERIES = {
   restaurants: `[out:json][timeout:120];${NL}nwr["amenity"~"^(restaurant|fast_food|cafe)$"]["cuisine"~"indian"](area.nl);out center tags;`,
   worship: `[out:json][timeout:120];${NL}nwr["amenity"="place_of_worship"]["religion"~"^(hindu|sikh|jain)$"](area.nl);out center tags;`,
-  yoga: `[out:json][timeout:120];${NL}(nwr["sport"="yoga"]["name"](area.nl);nwr["leisure"~"^(fitness_centre|sports_centre)$"]["name"~"[Yy]oga"](area.nl););out center tags;`,
-  cricket: `[out:json][timeout:120];${NL}(nwr["club"="sport"]["sport"~"cricket"]["name"](area.nl);nwr["leisure"~"^(sports_centre|pitch)$"]["sport"="cricket"]["name"](area.nl););out center tags;`,
+  // Exact matches only (sport=yoga, not a pattern): patterns on common keys make
+  // the OpenStreetMap servers scan every sports field in the country and time out.
+  yoga: `[out:json][timeout:120];${NL}(nwr["sport"="yoga"]["name"](area.nl);nwr["leisure"="fitness_centre"]["name"~"[Yy]oga"](area.nl););out center tags;`,
+  cricket: `[out:json][timeout:120];${NL}nwr["sport"="cricket"]["name"](area.nl);out center tags;`,
 };
 const MIN_PLACES = { restaurants: 50, worship: 10, yoga: 10, cricket: 5 }; // fewer than this = treat as a failed fetch
 
