@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T13:23:21.462Z",
+ "updated": "2026-11-11T13:52:46.980Z",
  "restaurants": [
   {
    "n": "Himalaya Palace",
@@ -3552,6 +3552,15 @@
  ],
  "cricket": [
   {
+   "n": "ACC",
+   "c": "Amstelveen",
+   "a": "",
+   "w": "",
+   "o": "way/273525000",
+   "y": 52.31911,
+   "x": 4.8839
+  },
+  {
    "n": "VRA",
    "c": "Amstelveen",
    "a": "Nieuwe Kalfjeslaan 21B",
@@ -3561,40 +3570,13 @@
    "x": 4.85056
   },
   {
-   "n": "VRA",
-   "c": "Amstelveen",
-   "a": "",
-   "w": "",
-   "o": "way/27064006",
-   "y": 52.3196,
-   "x": 4.84906
-  },
-  {
-   "n": "VRA Cricket Ground",
-   "c": "Amstelveen",
-   "a": "",
-   "w": "https://www.vra.nl/",
-   "o": "way/1453537603",
-   "y": 52.31959,
-   "x": 4.84904
-  },
-  {
-   "n": "cricketclub Bloemendaal",
+   "n": "Cricketclub Bloemendaal",
    "c": "Bloemendaal",
    "a": "",
    "w": "",
-   "o": "relation/4134158",
-   "y": 52.40868,
-   "x": 4.615
-  },
-  {
-   "n": "H.V. & C.V. Quick",
-   "c": "Den Haag",
-   "a": "De Savornin Lohmanlaan 215",
-   "w": "https://www.quick.nl/",
-   "o": "node/2731715079",
-   "y": 52.07227,
-   "x": 4.24281
+   "o": "way/271217667",
+   "y": 52.40825,
+   "x": 4.61803
   },
   {
    "n": "Koninklijke Haagsche Cricket & Voetbal Vereeniging",
@@ -3633,15 +3615,6 @@
    "x": 6.8075
   },
   {
-   "n": "Veld 13",
-   "c": "Voorburg",
-   "a": "",
-   "w": "",
-   "o": "way/62289521",
-   "y": 52.06857,
-   "x": 4.37441
-  },
-  {
    "n": "H.C.C. Groen-Geel Cricket",
    "c": "",
    "a": "",
@@ -3649,6 +3622,1637 @@
    "o": "node/10902416642",
    "y": 52.11643,
    "x": 4.34328
+  }
+ ],
+ "yoga": [
+  {
+   "n": "Yoga boerderij Bullens",
+   "c": "Aalten",
+   "a": "Bullenssteeg 8",
+   "w": "https://yogaboerderijbullens.nl/",
+   "o": "node/2811937613",
+   "y": 51.96571,
+   "x": 6.57954
+  },
+  {
+   "n": "Yoga Studio",
+   "c": "Akkrum",
+   "a": "",
+   "w": "",
+   "o": "node/6516261587",
+   "y": 53.04945,
+   "x": 5.83474
+  },
+  {
+   "n": "Ohmmm...",
+   "c": "Alkmaar",
+   "a": "",
+   "w": "",
+   "o": "node/7913768961",
+   "y": 52.63266,
+   "x": 4.75087
+  },
+  {
+   "n": "Elke dag yoga",
+   "c": "Alphen aan den Rijn",
+   "a": "Lemelerberg 11",
+   "w": "https://www.elkedagyoga.nl/locatie/lemelerberg/",
+   "o": "node/2877478676",
+   "y": 52.15365,
+   "x": 4.66026
+  },
+  {
+   "n": "Elke dag yoga",
+   "c": "Alphen aan den Rijn",
+   "a": "Castellumstraat 31",
+   "w": "https://www.elkedagyoga.nl/locatie/castellum/",
+   "o": "node/8761054279",
+   "y": 52.12889,
+   "x": 4.6588
+  },
+  {
+   "n": "Bindi",
+   "c": "Amersfoort",
+   "a": "",
+   "w": "",
+   "o": "node/14308679207",
+   "y": 52.15026,
+   "x": 5.38422
+  },
+  {
+   "n": "Surya Vita",
+   "c": "Amstelveen",
+   "a": "Jhr.Mr.Dr. H.A. van Karnebeeklaan 45",
+   "w": "https://www.suryavita.nl/",
+   "o": "node/9350274474",
+   "y": 52.30466,
+   "x": 4.85917
+  },
+  {
+   "n": "Balanz~s",
+   "c": "Amsterdam",
+   "a": "",
+   "w": "",
+   "o": "node/13417776716",
+   "y": 52.38583,
+   "x": 4.88648
+  },
+  {
+   "n": "Bikram Yoga Amsterdam",
+   "c": "Amsterdam",
+   "a": "",
+   "w": "",
+   "o": "node/12925463742",
+   "y": 52.35503,
+   "x": 4.9024
+  },
+  {
+   "n": "Delight Yoga",
+   "c": "Amsterdam",
+   "a": "Weteringschans 53-1",
+   "w": "",
+   "o": "node/2730037491",
+   "y": 52.36175,
+   "x": 4.88568
+  },
+  {
+   "n": "Delight Yoga",
+   "c": "Amsterdam",
+   "a": "",
+   "w": "",
+   "o": "node/6381098185",
+   "y": 52.36234,
+   "x": 4.90563
+  },
+  {
+   "n": "Equal",
+   "c": "Amsterdam",
+   "a": "Linnaeusstraat 30",
+   "w": "",
+   "o": "node/1578734049",
+   "y": 52.35876,
+   "x": 4.92581
+  },
+  {
+   "n": "Equal",
+   "c": "Amsterdam",
+   "a": "Hoofdweg 122-H",
+   "w": "https://equalyoga.com/",
+   "o": "node/12014425983",
+   "y": 52.36373,
+   "x": 4.85345
+  },
+  {
+   "n": "Form",
+   "c": "Amsterdam",
+   "a": "",
+   "w": "",
+   "o": "node/12073756873",
+   "y": 52.35565,
+   "x": 4.90833
+  },
+  {
+   "n": "Healing People",
+   "c": "Amsterdam",
+   "a": "Meeuwenlaan 327-H",
+   "w": "",
+   "o": "node/2848620118",
+   "y": 52.39042,
+   "x": 4.92448
+  },
+  {
+   "n": "ImoveAmsterdam Boutique",
+   "c": "Amsterdam",
+   "a": "Revaleiland 500",
+   "w": "https://www.imoveamsterdam.com/",
+   "o": "node/9035062561",
+   "y": 52.39443,
+   "x": 4.88245
+  },
+  {
+   "n": "Iyengar Yoga Centrum Amsterdam",
+   "c": "Amsterdam",
+   "a": "Nieuwe Achtergracht 138",
+   "w": "https://www.iyengaryogacentrum.nl/",
+   "o": "node/2742804053",
+   "y": 52.36274,
+   "x": 4.91007
+  },
+  {
+   "n": "Movements Yoga",
+   "c": "Amsterdam",
+   "a": "Utrechtsedwarsstraat 31-H",
+   "w": "https://movementsyoga.com/",
+   "o": "node/2737858690",
+   "y": 52.36129,
+   "x": 4.89782
+  },
+  {
+   "n": "Sai Mithra yoga",
+   "c": "Amsterdam",
+   "a": "Sint Antoniesbreestraat 102",
+   "w": "",
+   "o": "node/2725746464",
+   "y": 52.37081,
+   "x": 4.9004
+  },
+  {
+   "n": "Studio Yoga 191",
+   "c": "Amsterdam",
+   "a": "Jan Hanzenstraat 54-H",
+   "w": "",
+   "o": "node/8711667098",
+   "y": 52.36809,
+   "x": 4.86571
+  },
+  {
+   "n": "Sukha Yoga",
+   "c": "Amsterdam",
+   "a": "Ceintuurbaan 243-H",
+   "w": "https://www.sukhayoga.nl/",
+   "o": "node/2817534392",
+   "y": 52.35582,
+   "x": 4.90383
+  },
+  {
+   "n": "Svaha Yoga - Jordaan Shala",
+   "c": "Amsterdam",
+   "a": "Willemsstraat 133-H",
+   "w": "https://svahayoga.com/",
+   "o": "node/2720811508",
+   "y": 52.3809,
+   "x": 4.88284
+  },
+  {
+   "n": "Thrive Yoga",
+   "c": "Amsterdam",
+   "a": "IJburglaan 961",
+   "w": "https://thriveyoga.nl/",
+   "o": "node/2842400538",
+   "y": 52.35604,
+   "x": 4.99434
+  },
+  {
+   "n": "Thrive Yoga Celebes",
+   "c": "Amsterdam",
+   "a": "",
+   "w": "",
+   "o": "node/12699330329",
+   "y": 52.36546,
+   "x": 4.93189
+  },
+  {
+   "n": "Yagoy",
+   "c": "Amsterdam",
+   "a": "Karel du Jardinstraat 33",
+   "w": "",
+   "o": "node/2817713435",
+   "y": 52.35129,
+   "x": 4.89382
+  },
+  {
+   "n": "Yoga Garage",
+   "c": "Amsterdam",
+   "a": "",
+   "w": "",
+   "o": "node/4866974721",
+   "y": 52.36141,
+   "x": 4.858
+  },
+  {
+   "n": "Yoga Spot",
+   "c": "Amsterdam",
+   "a": "Laan der Hesperiden 142",
+   "w": "https://www.yogaspot.nl/",
+   "o": "node/2814654832",
+   "y": 52.34485,
+   "x": 4.85268
+  },
+  {
+   "n": "Yogaschool Amsterdam",
+   "c": "Amsterdam",
+   "a": "Kanaalstraat 190-H",
+   "w": "https://yogaschoolamsterdam.nl/",
+   "o": "node/9582499477",
+   "y": 52.36106,
+   "x": 4.85842
+  },
+  {
+   "n": "Yogaschool Noord",
+   "c": "Amsterdam",
+   "a": "Nachtegaalstraat 157",
+   "w": "https://www.yogaschoolnoord.nl/",
+   "o": "node/3660457135",
+   "y": 52.3882,
+   "x": 4.92104
+  },
+  {
+   "n": "YogaZenter",
+   "c": "Amsterdam",
+   "a": "",
+   "w": "",
+   "o": "node/12729258139",
+   "y": 52.35636,
+   "x": 4.91686
+  },
+  {
+   "n": "Yogisha Yogawinkel Amsterdam",
+   "c": "Amsterdam",
+   "a": "Ceintuurbaan 306-H",
+   "w": "https://www.yogisha.nl/",
+   "o": "node/2817713234",
+   "y": 52.35281,
+   "x": 4.89251
+  },
+  {
+   "n": "You Can Yoga",
+   "c": "Amsterdam",
+   "a": "Stadionweg 283-H",
+   "w": "https://youcanyoga.nl/",
+   "o": "node/2816953312",
+   "y": 52.34484,
+   "x": 4.85873
+  },
+  {
+   "n": "Happy Yogi",
+   "c": "Apeldoorn",
+   "a": "Schumanpark 9",
+   "w": "https://www.happyyogi.nl/",
+   "o": "node/13815119770",
+   "y": 52.19533,
+   "x": 5.944
+  },
+  {
+   "n": "Yoga",
+   "c": "Apeldoorn",
+   "a": "Asselsestraat 258",
+   "w": "https://www.spiritofyoga.nl/",
+   "o": "node/2686444687",
+   "y": 52.20923,
+   "x": 5.94336
+  },
+  {
+   "n": "ANNA Yogacentrum",
+   "c": "Arnhem",
+   "a": "Kastanjelaan 33",
+   "w": "https://www.annayoga.nl/",
+   "o": "node/2722833959",
+   "y": 51.98118,
+   "x": 5.91983
+  },
+  {
+   "n": "Home of Zen",
+   "c": "Arnhem",
+   "a": "Velperweg 95",
+   "w": "https://homeofzen.eu/",
+   "o": "node/2727108916",
+   "y": 51.98947,
+   "x": 5.93595
+  },
+  {
+   "n": "Yogahouse",
+   "c": "Arnhem",
+   "a": "Putstraat 11",
+   "w": "https://www.yogahouse.nl/",
+   "o": "node/2719859060",
+   "y": 51.98612,
+   "x": 5.91683
+  },
+  {
+   "n": "Yoga With April",
+   "c": "Born",
+   "a": "Kerkstraat 30D",
+   "w": "https://yogawithapril.nl/",
+   "o": "node/2887776644",
+   "y": 51.03175,
+   "x": 5.80908
+  },
+  {
+   "n": "StudYoPi",
+   "c": "Borne",
+   "a": "Ennekerdijk 37",
+   "w": "",
+   "o": "node/5457685685",
+   "y": 52.30039,
+   "x": 6.76147
+  },
+  {
+   "n": "Body-Motion",
+   "c": "Boxmeer",
+   "a": "Steenstraat 28a",
+   "w": "https://www.body-motion.nl/contact",
+   "o": "node/2754648258",
+   "y": 51.64622,
+   "x": 5.95364
+  },
+  {
+   "n": "Dharma-Lotus",
+   "c": "Breda",
+   "a": "Aardrijk 103",
+   "w": "https://www.dharma-lotus.nl/wiki/index.php?title=Hoofdpagina",
+   "o": "node/2734030991",
+   "y": 51.60305,
+   "x": 4.74504
+  },
+  {
+   "n": "You are the Buddha",
+   "c": "Breda",
+   "a": "",
+   "w": "https://www.youarethebuddha.com/",
+   "o": "node/10581597079",
+   "y": 51.59578,
+   "x": 4.77993
+  },
+  {
+   "n": "Ruimte de Verandering",
+   "c": "Castricum",
+   "a": "Stetweg 43-B",
+   "w": "https://ruimtedeverandering.nl/",
+   "o": "node/13241675612",
+   "y": 52.55912,
+   "x": 4.66301
+  },
+  {
+   "n": "Liberty Yoga & Pilates",
+   "c": "Cuijk",
+   "a": "Deken van den Ackerhof 10",
+   "w": "https://liberty-yoga-pilates.nl/",
+   "o": "node/5827755264",
+   "y": 51.73031,
+   "x": 5.8821
+  },
+  {
+   "n": "Mika",
+   "c": "De Bilt",
+   "a": "Hessenweg 187",
+   "w": "https://mikadebilt.nl/",
+   "o": "node/3004379546",
+   "y": 52.11225,
+   "x": 5.1826
+  },
+  {
+   "n": "Yogapoint Utrecht – Leidsche Rijn",
+   "c": "De Meern",
+   "a": "Strijkviertel 26",
+   "w": "https://yogapoint.nl/",
+   "o": "node/2729312964",
+   "y": 52.08116,
+   "x": 5.06018
+  },
+  {
+   "n": "Banyan yoga",
+   "c": "Delft",
+   "a": "Brabantse Turfmarkt 32",
+   "w": "https://banyanyoga.nl/",
+   "o": "node/2599511284",
+   "y": 52.00934,
+   "x": 4.36144
+  },
+  {
+   "n": "Flow Yoga",
+   "c": "Delft",
+   "a": "De Groene Haven 152",
+   "w": "https://flowyogaandfood.nl/",
+   "o": "node/5629501425",
+   "y": 52.00399,
+   "x": 4.35842
+  },
+  {
+   "n": "Merlijn Body & Mind Center",
+   "c": "Delft",
+   "a": "",
+   "w": "https://www.merlijn.eu/",
+   "o": "node/10938064399",
+   "y": 52.02763,
+   "x": 4.35297
+  },
+  {
+   "n": "Yoga Delft",
+   "c": "Delft",
+   "a": "Lange Geer 62",
+   "w": "https://yogadelft.net/",
+   "o": "node/2599514635",
+   "y": 52.00779,
+   "x": 4.36049
+  },
+  {
+   "n": "Yoga Point",
+   "c": "Den Bosch",
+   "a": "Bordeslaan 475",
+   "w": "",
+   "o": "node/4373321386",
+   "y": 51.6852,
+   "x": 5.28915
+  },
+  {
+   "n": "7e Hemel",
+   "c": "Den Haag",
+   "a": "Laan van Meerdervoort 190A",
+   "w": "",
+   "o": "node/2729791156",
+   "y": 52.08108,
+   "x": 4.28672
+  },
+  {
+   "n": "Balanzs",
+   "c": "Den Haag",
+   "a": "Laan van Nieuw-Oost-Indië 90",
+   "w": "https://balanzs.nl/",
+   "o": "node/2709982725",
+   "y": 52.0858,
+   "x": 4.33788
+  },
+  {
+   "n": "Balanzs",
+   "c": "Den Haag",
+   "a": "Veenkade 22",
+   "w": "",
+   "o": "node/2730092323",
+   "y": 52.07974,
+   "x": 4.30205
+  },
+  {
+   "n": "Brandon Iyengar Yogacentrum",
+   "c": "Den Haag",
+   "a": "Anna Paulownastraat 89",
+   "w": "",
+   "o": "node/2730105273",
+   "y": 52.08548,
+   "x": 4.29911
+  },
+  {
+   "n": "Corazón",
+   "c": "Den Haag",
+   "a": "Goudenregenstraat 89",
+   "w": "https://www.yoga-corazon.nl/",
+   "o": "node/13744454542",
+   "y": 52.07508,
+   "x": 4.26566
+  },
+  {
+   "n": "Éclair Studio",
+   "c": "Den Haag",
+   "a": "",
+   "w": "",
+   "o": "node/5111168341",
+   "y": 52.07935,
+   "x": 4.26839
+  },
+  {
+   "n": "Haags Yogacentrum",
+   "c": "Den Haag",
+   "a": "De Sillestraat 13",
+   "w": "",
+   "o": "node/2709960705",
+   "y": 52.08703,
+   "x": 4.33931
+  },
+  {
+   "n": "Haguegym",
+   "c": "Den Haag",
+   "a": "",
+   "w": "https://www.imoves.nl/",
+   "o": "node/2754781923",
+   "y": 52.07759,
+   "x": 4.2842
+  },
+  {
+   "n": "Hot Yoga The Hague",
+   "c": "Den Haag",
+   "a": "Turfhaven 3",
+   "w": "https://hotyogathehague.com/",
+   "o": "node/9843856676",
+   "y": 52.0778,
+   "x": 4.31904
+  },
+  {
+   "n": "Laraiz",
+   "c": "Den Haag",
+   "a": "Westeinde 135C",
+   "w": "",
+   "o": "node/5268694580",
+   "y": 52.0761,
+   "x": 4.30197
+  },
+  {
+   "n": "Maliva Yoga",
+   "c": "Den Haag",
+   "a": "Vrouw Avenweg 656",
+   "w": "",
+   "o": "node/6286840752",
+   "y": 52.05609,
+   "x": 4.3995
+  },
+  {
+   "n": "Matlove",
+   "c": "Den Haag",
+   "a": "",
+   "w": "http://www.nakayama.nl/",
+   "o": "node/2754781916",
+   "y": 52.07784,
+   "x": 4.28518
+  },
+  {
+   "n": "Muuk' Pilates",
+   "c": "Den Haag",
+   "a": "Anna Paulownastraat 40A",
+   "w": "",
+   "o": "node/2730095895",
+   "y": 52.08427,
+   "x": 4.29985
+  },
+  {
+   "n": "MyYoga",
+   "c": "Den Haag",
+   "a": "Prins Hendrikplein 2",
+   "w": "https://one.fit/nl-nl/partners/256/myyoga-den-haag",
+   "o": "node/2730090200",
+   "y": 52.08231,
+   "x": 4.29535
+  },
+  {
+   "n": "Pure Flow",
+   "c": "Den Haag",
+   "a": "",
+   "w": "",
+   "o": "node/5796985963",
+   "y": 52.07894,
+   "x": 4.27737
+  },
+  {
+   "n": "Sakti Isha",
+   "c": "Den Haag",
+   "a": "",
+   "w": "",
+   "o": "node/5783350480",
+   "y": 52.06747,
+   "x": 4.32302
+  },
+  {
+   "n": "Studio Meng",
+   "c": "Den Haag",
+   "a": "",
+   "w": "",
+   "o": "node/12656909634",
+   "y": 52.07903,
+   "x": 4.29385
+  },
+  {
+   "n": "Vrouw in Balans",
+   "c": "Den Haag",
+   "a": "Brouwersgracht 14A",
+   "w": "",
+   "o": "node/2719999085",
+   "y": 52.07334,
+   "x": 4.30591
+  },
+  {
+   "n": "Yoga Winfried Termaaten",
+   "c": "Den Haag",
+   "a": "Lange Beestenmarkt 89",
+   "w": "",
+   "o": "node/2720013175",
+   "y": 52.07369,
+   "x": 4.30803
+  },
+  {
+   "n": "Yoyoga",
+   "c": "Den Haag",
+   "a": "Assendelftstraat 16",
+   "w": "",
+   "o": "node/2724261247",
+   "y": 52.07587,
+   "x": 4.30462
+  },
+  {
+   "n": "House of Shin",
+   "c": "Deventer",
+   "a": "Nieuwstraat 30",
+   "w": "https://houseofshin.com/",
+   "o": "node/2678761157",
+   "y": 52.25426,
+   "x": 6.15485
+  },
+  {
+   "n": "Ruimte voor Ontspanning",
+   "c": "Deventer",
+   "a": "Grote Overstraat 35",
+   "w": "https://ruimtevoorontspanning.nl/",
+   "o": "node/2678762962",
+   "y": 52.25283,
+   "x": 6.15838
+  },
+  {
+   "n": "Sundry",
+   "c": "Deventer",
+   "a": "Kleine Overstraat 51",
+   "w": "https://www.sundrymoves.nl/",
+   "o": "node/2678765303",
+   "y": 52.25234,
+   "x": 6.158
+  },
+  {
+   "n": "Into Yoga Dokkum",
+   "c": "Dokkum",
+   "a": "",
+   "w": "https://www.into-yoga.nl/",
+   "o": "node/8997977352",
+   "y": 53.32605,
+   "x": 6.00076
+  },
+  {
+   "n": "Sahaja Yoga",
+   "c": "Duivendrecht",
+   "a": "",
+   "w": "https://sahajayoga.nl/",
+   "o": "node/8305374420",
+   "y": 52.34413,
+   "x": 4.92175
+  },
+  {
+   "n": "Awake",
+   "c": "Eindhoven",
+   "a": "",
+   "w": "",
+   "o": "node/11955495925",
+   "y": 51.42472,
+   "x": 5.4852
+  },
+  {
+   "n": "Yoga Kumar",
+   "c": "Eindhoven",
+   "a": "Paradijslaan 30a",
+   "w": "https://yogakumar.nl/",
+   "o": "node/5304426106",
+   "y": 51.435,
+   "x": 5.47793
+  },
+  {
+   "n": "Yoga Shala",
+   "c": "Eindhoven",
+   "a": "",
+   "w": "",
+   "o": "node/11926163029",
+   "y": 51.43315,
+   "x": 5.48933
+  },
+  {
+   "n": "Studio Aranya",
+   "c": "Elst",
+   "a": "Prinses Irenestraat 82",
+   "w": "https://aranyayogaencoaching.nl/",
+   "o": "node/3008746635",
+   "y": 51.92015,
+   "x": 5.84782
+  },
+  {
+   "n": "Yoga Den Oever",
+   "c": "Gemonde",
+   "a": "",
+   "w": "",
+   "o": "way/440331318",
+   "y": 51.62075,
+   "x": 5.36114
+  },
+  {
+   "n": "Cityzen",
+   "c": "Goes",
+   "a": "Voorstad 65",
+   "w": "https://www.cityzengoes.nl/",
+   "o": "node/2905617081",
+   "y": 51.50024,
+   "x": 3.89569
+  },
+  {
+   "n": "EsTaYoga",
+   "c": "Goes",
+   "a": "'s-Gravenpolderseweg 2C",
+   "w": "",
+   "o": "node/2888159632",
+   "y": 51.49496,
+   "x": 3.90652
+  },
+  {
+   "n": "studio Aerial Yoga Gouda",
+   "c": "Gouda",
+   "a": "Keerkring 8-101",
+   "w": "",
+   "o": "node/9951042293",
+   "y": 52.01641,
+   "x": 4.68914
+  },
+  {
+   "n": "Yogabird",
+   "c": "Gouda",
+   "a": "Gouderaksedijk 34",
+   "w": "",
+   "o": "node/2797607578",
+   "y": 52.0056,
+   "x": 4.71446
+  },
+  {
+   "n": "Yogastudio Groenlo",
+   "c": "Groenlo",
+   "a": "Notenboomstraat 41",
+   "w": "https://yogastudio-groenlo.nl/",
+   "o": "node/5435997173",
+   "y": 52.04295,
+   "x": 6.61525
+  },
+  {
+   "n": "Katinka de Bruin",
+   "c": "Groningen",
+   "a": "Verlengde Hereweg 88",
+   "w": "https://katinkadebruin.nl/",
+   "o": "node/2740265125",
+   "y": 53.1975,
+   "x": 6.58057
+  },
+  {
+   "n": "Open Yoga",
+   "c": "Groningen",
+   "a": "Zuiderkerkstraat 10",
+   "w": "https://www.openyoga.nl/",
+   "o": "node/6189956985",
+   "y": 53.22309,
+   "x": 6.56297
+  },
+  {
+   "n": "Yogastudio Groningen",
+   "c": "Groningen",
+   "a": "Nieuwe Kerkhof 3",
+   "w": "http://www.yogastudiogroningen.nl/",
+   "o": "node/2752130739",
+   "y": 53.22262,
+   "x": 6.56168
+  },
+  {
+   "n": "Yogawieteke",
+   "c": "Groningen",
+   "a": "Oosterhamriklaan 261a",
+   "w": "https://yogawieteke.nl/",
+   "o": "node/2751730642",
+   "y": 53.23672,
+   "x": 6.56841
+  },
+  {
+   "n": "Satya",
+   "c": "Haarle",
+   "a": "Bathemerweg 22-BEDR",
+   "w": "https://www.yogastudiosatya.nl/",
+   "o": "node/14163297381",
+   "y": 52.32948,
+   "x": 6.36393
+  },
+  {
+   "n": "L&L Yoga & Pilates",
+   "c": "Haarlem",
+   "a": "Rijksstraatweg 4",
+   "w": "https://life-en-lifestylecoaching.nl/",
+   "o": "node/2715767619",
+   "y": 52.39954,
+   "x": 4.64465
+  },
+  {
+   "n": "Movementsyoga",
+   "c": "Haarlem",
+   "a": "Kruisweg 72",
+   "w": "https://movementsyoga.com/",
+   "o": "node/2710451438",
+   "y": 52.38545,
+   "x": 4.63607
+  },
+  {
+   "n": "Tiger Sports",
+   "c": "Haarlem",
+   "a": "",
+   "w": "https://tigersports.eu/",
+   "o": "node/13725216154",
+   "y": 52.3768,
+   "x": 4.63526
+  },
+  {
+   "n": "Bloom yoga",
+   "c": "Heerde",
+   "a": "Zwolseweg 29",
+   "w": "https://bloomyoga.nl/",
+   "o": "node/2729851369",
+   "y": 52.39104,
+   "x": 6.04434
+  },
+  {
+   "n": "De Zendo",
+   "c": "Heilig Landstichting",
+   "a": "",
+   "w": "https://dezendo.nl/",
+   "o": "node/12792309621",
+   "y": 51.815,
+   "x": 5.89
+  },
+  {
+   "n": "Fred Health Studio",
+   "c": "Hengelo",
+   "a": "Molenstraat 17",
+   "w": "",
+   "o": "node/2790483006",
+   "y": 52.26327,
+   "x": 6.79463
+  },
+  {
+   "n": "Ananda Yoga",
+   "c": "Hilversum",
+   "a": "Boomberglaan 18",
+   "w": "",
+   "o": "node/2879003031",
+   "y": 52.22663,
+   "x": 5.16655
+  },
+  {
+   "n": "HoliBody",
+   "c": "Hilversum",
+   "a": "Gijsbrecht van Amstelstraat 244A",
+   "w": "https://holibody.nl/",
+   "o": "node/4898293281",
+   "y": 52.21538,
+   "x": 5.16493
+  },
+  {
+   "n": "Yoga Me",
+   "c": "Hilversum",
+   "a": "Neuweg 134",
+   "w": "https://yoga-me.nl/",
+   "o": "node/2879120179",
+   "y": 52.21635,
+   "x": 5.17157
+  },
+  {
+   "n": "Atlas Gezondheid",
+   "c": "Houten",
+   "a": "Kruisboog 26",
+   "w": "https://atlasgezondheid.nl/",
+   "o": "node/2830737448",
+   "y": 52.02997,
+   "x": 5.18157
+  },
+  {
+   "n": "De Werkplaats",
+   "c": "Joure",
+   "a": "Yndustrywei 13-A",
+   "w": "https://www.werkplaatsjoure.nl/",
+   "o": "node/13065152327",
+   "y": 52.96468,
+   "x": 5.8145
+  },
+  {
+   "n": "Yoga Manoah",
+   "c": "Kerkdriel",
+   "a": "Kromsteeg 15",
+   "w": "https://www.yogamanoah.nl/",
+   "o": "node/2773251966",
+   "y": 51.77316,
+   "x": 5.33303
+  },
+  {
+   "n": "Het Maanhuis",
+   "c": "Koedijk",
+   "a": "Kerkelaan 5",
+   "w": "https://hetmaanhuis.nl/",
+   "o": "node/2907610265",
+   "y": 52.66949,
+   "x": 4.75371
+  },
+  {
+   "n": "YogaDebra",
+   "c": "Kortenhoef",
+   "a": "Meenthof 18",
+   "w": "https://www.yogadebra.nl/",
+   "o": "node/8077614645",
+   "y": 52.23953,
+   "x": 5.11302
+  },
+  {
+   "n": "Sensibile Yoga",
+   "c": "Kralendijk",
+   "a": "Kaya Gobernador N Debrot 73",
+   "w": "https://elisabettamaccari.com/",
+   "o": "node/11866267601",
+   "y": 12.16452,
+   "x": -68.28635
+  },
+  {
+   "n": "Yogacentrum Landgraaf",
+   "c": "Landgraaf",
+   "a": "SUN-plein 47",
+   "w": "https://www.yogacentrumlandgraaf.nl/",
+   "o": "node/2882582462",
+   "y": 50.90816,
+   "x": 6.03568
+  },
+  {
+   "n": "Yoga Samtosa",
+   "c": "Leeuwarden",
+   "a": "Noordvliet 145",
+   "w": "https://www.yogasamtosa.nl/",
+   "o": "node/3066729443",
+   "y": 53.20279,
+   "x": 5.80752
+  },
+  {
+   "n": "Namasté Studio's",
+   "c": "Leiden",
+   "a": "",
+   "w": "",
+   "o": "node/12091995542",
+   "y": 52.15951,
+   "x": 4.49332
+  },
+  {
+   "n": "Tribes",
+   "c": "Leiden",
+   "a": "",
+   "w": "https://www.yourtribes.nl/studios/doezastraat",
+   "o": "way/272495249",
+   "y": 52.15518,
+   "x": 4.48979
+  },
+  {
+   "n": "BEcompany",
+   "c": "Leidschendam",
+   "a": "Westvlietweg 115",
+   "w": "https://becompany.nl/",
+   "o": "node/11239768221",
+   "y": 52.06069,
+   "x": 4.35491
+  },
+  {
+   "n": "Bidalasana - pilates en yoga",
+   "c": "Leidschendam",
+   "a": "Vinkenborghlaan 31",
+   "w": "https://www.bidalasana.nl/",
+   "o": "node/2711565726",
+   "y": 52.08608,
+   "x": 4.39907
+  },
+  {
+   "n": "Ekam Yoga",
+   "c": "Leidschendam",
+   "a": "Prins Hendriklaan 53",
+   "w": "https://www.ekamyoga.nl/",
+   "o": "node/2712888404",
+   "y": 52.08994,
+   "x": 4.39646
+  },
+  {
+   "n": "Yoga Center Karuna",
+   "c": "Leidschendam",
+   "a": "Johann Sebastian Bachlaan 51",
+   "w": "https://www.yogacenterkaruna.nl/",
+   "o": "node/2711670036",
+   "y": 52.08388,
+   "x": 4.3943
+  },
+  {
+   "n": "Yoga Sjoukje",
+   "c": "Lemmer",
+   "a": "Kortestreek 19",
+   "w": "https://www.yogasjoukje.nl/",
+   "o": "node/2904342962",
+   "y": 52.84557,
+   "x": 5.70886
+  },
+  {
+   "n": "& Yoga",
+   "c": "Leusden",
+   "a": "Driftakkerweg 6a",
+   "w": "https://www.yoganatuurcoaching.nl/",
+   "o": "node/2708366976",
+   "y": 52.14465,
+   "x": 5.41337
+  },
+  {
+   "n": "In het moment",
+   "c": "Leusden",
+   "a": "Leusbroekerweg 12a",
+   "w": "https://www.inhetmoment.com/",
+   "o": "node/10559971363",
+   "y": 52.10546,
+   "x": 5.43046
+  },
+  {
+   "n": "Into the Center",
+   "c": "Leusden",
+   "a": "'t Koendert 8",
+   "w": "https://info@intothecenter.nl/",
+   "o": "node/13391608863",
+   "y": 52.14194,
+   "x": 5.42551
+  },
+  {
+   "n": "Titiayoga",
+   "c": "Leusden",
+   "a": "Gironde 28",
+   "w": "https://titiayoga.nl/",
+   "o": "node/4930545331",
+   "y": 52.13594,
+   "x": 5.43549
+  },
+  {
+   "n": "Yoga Centrum Leusden",
+   "c": "Leusden",
+   "a": "Hamersveldseweg 51",
+   "w": "https://yogacentrumleusden.nl/",
+   "o": "node/13048933061",
+   "y": 52.1328,
+   "x": 5.42754
+  },
+  {
+   "n": "Mala Yoga",
+   "c": "Lisse",
+   "a": "Kanaalstraat 23",
+   "w": "",
+   "o": "node/2749935199",
+   "y": 52.26029,
+   "x": 4.5562
+  },
+  {
+   "n": "Yogaplace Maastricht",
+   "c": "Maastricht",
+   "a": "",
+   "w": "https://www.yogaplace.nl/",
+   "o": "node/4138864824",
+   "y": 50.8509,
+   "x": 5.6998
+  },
+  {
+   "n": "In het Nu",
+   "c": "Mijdrecht",
+   "a": "Burgemeester Haitsmaplein 23",
+   "w": "https://www.inhetnu-mijdrecht.nl/",
+   "o": "node/2875315045",
+   "y": 52.20798,
+   "x": 4.86689
+  },
+  {
+   "n": "SAMA",
+   "c": "Mijnsheerenland",
+   "a": "Wilhelminastraat 13",
+   "w": "",
+   "o": "node/2769426690",
+   "y": 51.79766,
+   "x": 4.49214
+  },
+  {
+   "n": "Yoga Studio Santee",
+   "c": "Nietap",
+   "a": "",
+   "w": "https://www.yoga-leek-roden.nl/",
+   "o": "node/8261539085",
+   "y": 53.15893,
+   "x": 6.40222
+  },
+  {
+   "n": "Pilates Studio Claire",
+   "c": "Nieuw-Vennep",
+   "a": "Lireweg 78",
+   "w": "https://www.pilatesstudioclaire.nl/",
+   "o": "node/2734908640",
+   "y": 52.25517,
+   "x": 4.63216
+  },
+  {
+   "n": "Studio Tiaka",
+   "c": "Nieuw-Vennep",
+   "a": "Hugo de Vriesstraat 32",
+   "w": "https://www.studiotiaka.nl/",
+   "o": "node/2736534806",
+   "y": 52.27085,
+   "x": 4.62881
+  },
+  {
+   "n": "Yoga Studio Harsa",
+   "c": "Nijmegen",
+   "a": "",
+   "w": "https://www.yogastudioharsa.nl/",
+   "o": "node/11742232156",
+   "y": 51.84171,
+   "x": 5.86596
+  },
+  {
+   "n": "YogaPoint",
+   "c": "Nijmegen",
+   "a": "van Welderenstraat 29",
+   "w": "https://www.yogapoint.nl/",
+   "o": "node/2847396301",
+   "y": 51.84327,
+   "x": 5.86449
+  },
+  {
+   "n": "Yoga boerderij Oene",
+   "c": "Oene",
+   "a": "Veluwsedijk 4",
+   "w": "https://www.yogaboerderijoene.nl/",
+   "o": "node/2736939443",
+   "y": 52.32558,
+   "x": 6.05195
+  },
+  {
+   "n": "Balans",
+   "c": "Oisterwijk",
+   "a": "Terburghtweg 3",
+   "w": "https://www.balans-oisterwijk.nl/",
+   "o": "node/2823993545",
+   "y": 51.58062,
+   "x": 5.20311
+  },
+  {
+   "n": "Be Fit Oostvoorne",
+   "c": "Oostvoorne",
+   "a": "",
+   "w": "https://www.befitoostvoorne.nl/",
+   "o": "node/2498708339",
+   "y": 51.91429,
+   "x": 4.09583
+  },
+  {
+   "n": "Het Yogahuisje",
+   "c": "Overasselt",
+   "a": "",
+   "w": "https://hetyogahuisje.nl/",
+   "o": "way/56429759",
+   "y": 51.75799,
+   "x": 5.7777
+  },
+  {
+   "n": "Geniet en Ontspan",
+   "c": "Purmerend",
+   "a": "Zwanebloem 11",
+   "w": "https://www.genietenontspan.nl/contact.htm",
+   "o": "node/2878605523",
+   "y": 52.49409,
+   "x": 4.95286
+  },
+  {
+   "n": "Yoga Raalte",
+   "c": "Raalte",
+   "a": "de Waag 11",
+   "w": "https://www.yogaraalte.com/",
+   "o": "node/2504145338",
+   "y": 52.38502,
+   "x": 6.2759
+  },
+  {
+   "n": "Yogastudio Reuver",
+   "c": "Reuver",
+   "a": "Broeklaan 10",
+   "w": "",
+   "o": "node/3000181451",
+   "y": 51.28264,
+   "x": 6.08124
+  },
+  {
+   "n": "Yogacompagnie Rijswijk-Voorburg",
+   "c": "Rijswijk",
+   "a": "Geestbrugkade 35",
+   "w": "https://www.yogacompagnie.nl/",
+   "o": "node/2707161034",
+   "y": 52.05743,
+   "x": 4.34582
+  },
+  {
+   "n": "Yogacentrum In Balans",
+   "c": "Roosendaal",
+   "a": "Egbertdonk 13",
+   "w": "https://yogacentruminbalans.nl/",
+   "o": "node/2817919019",
+   "y": 51.51664,
+   "x": 4.48137
+  },
+  {
+   "n": "LOS",
+   "c": "Rotterdam",
+   "a": "Haringvliet 401",
+   "w": "",
+   "o": "node/2610255849",
+   "y": 51.92069,
+   "x": 4.49538
+  },
+  {
+   "n": "Move Along Studio",
+   "c": "Rotterdam",
+   "a": "Beijingstraat 7",
+   "w": "https://www.movealongstudio.nl/",
+   "o": "node/9101321792",
+   "y": 51.90169,
+   "x": 4.49328
+  },
+  {
+   "n": "RoxZEN",
+   "c": "Santpoort-Noord",
+   "a": "Hoofdstraat 224",
+   "w": "",
+   "o": "node/9107843411",
+   "y": 52.42938,
+   "x": 4.644
+  },
+  {
+   "n": "Moon Yoga Club",
+   "c": "Schoorl",
+   "a": "",
+   "w": "",
+   "o": "node/13021106944",
+   "y": 52.6708,
+   "x": 4.70406
+  },
+  {
+   "n": "Sekoya Center",
+   "c": "Schoorl",
+   "a": "",
+   "w": "https://www.sekoyacenter.com/",
+   "o": "way/1341793635",
+   "y": 52.69472,
+   "x": 4.70064
+  },
+  {
+   "n": "Joga",
+   "c": "Simpson Bay",
+   "a": "",
+   "w": "",
+   "o": "way/521377058",
+   "y": 18.0302,
+   "x": -63.08564
+  },
+  {
+   "n": "Arhanta Yoga Ashram Nederland",
+   "c": "Sinderen",
+   "a": "Sinderenseweg 66",
+   "w": "https://www.arhantayoga.nl/",
+   "o": "node/2758669512",
+   "y": 51.91897,
+   "x": 6.46703
+  },
+  {
+   "n": "Happiness Yogalifestyle",
+   "c": "Surhuisterveen",
+   "a": "De Ketting 1",
+   "w": "https://happiness-yogalifestyle.com/",
+   "o": "node/2798145931",
+   "y": 53.17656,
+   "x": 6.17468
+  },
+  {
+   "n": "Renda Pronk Yoga",
+   "c": "Ter Apel",
+   "a": "Viaductstraat 61",
+   "w": "https://rendapronk.yoga/",
+   "o": "node/2904572189",
+   "y": 52.88298,
+   "x": 7.04962
+  },
+  {
+   "n": "Yogacentrum Tilburg",
+   "c": "Tilburg",
+   "a": "Gasthuisring 11",
+   "w": "https://yogacentrumtilburg.nl/",
+   "o": "node/2850118955",
+   "y": 51.5642,
+   "x": 5.07751
+  },
+  {
+   "n": "Yogacentrum Tilburg",
+   "c": "Tilburg",
+   "a": "Dudokhof 79-01",
+   "w": "https://yogacentrumtilburg.nl/",
+   "o": "node/2850122784",
+   "y": 51.56422,
+   "x": 5.07719
+  },
+  {
+   "n": "Elements",
+   "c": "Uden",
+   "a": "Kerkstraat 19",
+   "w": "",
+   "o": "node/3006491852",
+   "y": 51.65981,
+   "x": 5.61051
+  },
+  {
+   "n": "Amara Studio",
+   "c": "Utrecht",
+   "a": "Europaplein 350",
+   "w": "https://www.amarastudio.nl/",
+   "o": "node/2732311332",
+   "y": 52.06758,
+   "x": 5.10802
+  },
+  {
+   "n": "De Flow Studio",
+   "c": "Utrecht",
+   "a": "Luxemburgpromenade 1",
+   "w": "https://www.deflowstudio.nl/",
+   "o": "node/8585265187",
+   "y": 52.09487,
+   "x": 5.06508
+  },
+  {
+   "n": "Equal yoga",
+   "c": "Utrecht",
+   "a": "Kaatstraat 173",
+   "w": "https://www.equalyoga.com/studios/kaatstraat",
+   "o": "node/4455506932",
+   "y": 52.09851,
+   "x": 5.1134
+  },
+  {
+   "n": "Heart Yoga",
+   "c": "Utrecht",
+   "a": "Samuel van Houtenstraat 28",
+   "w": "https://www.heartyoga.nl/",
+   "o": "node/3043008094",
+   "y": 52.10413,
+   "x": 5.1161
+  },
+  {
+   "n": "iYoga",
+   "c": "Utrecht",
+   "a": "Amsterdamsestraatweg 227",
+   "w": "https://www.iyogautrecht.nl/",
+   "o": "node/2632859888",
+   "y": 52.09997,
+   "x": 5.10153
+  },
+  {
+   "n": "Kinderyoga Utrecht",
+   "c": "Utrecht",
+   "a": "Oudegracht 318",
+   "w": "https://www.kinderyoga-utrecht.nl/",
+   "o": "node/1763428021",
+   "y": 52.08585,
+   "x": 5.12263
+  },
+  {
+   "n": "Studio Natuurlijk",
+   "c": "Utrecht",
+   "a": "Oudegracht 366",
+   "w": "https://studionatuurlijk.nl/",
+   "o": "node/1763007457",
+   "y": 52.08433,
+   "x": 5.12324
+  },
+  {
+   "n": "Yoga Moves FLY",
+   "c": "Utrecht",
+   "a": "Croeselaan 209",
+   "w": "https://www.yogamoves.nl/fly",
+   "o": "node/2716166583",
+   "y": 52.08374,
+   "x": 5.10949
+  },
+  {
+   "n": "Yoga Moves One",
+   "c": "Utrecht",
+   "a": "St.-Janshovenstraat 1",
+   "w": "https://www.yogamoves.nl/one",
+   "o": "node/2679506819",
+   "y": 52.09539,
+   "x": 5.12741
+  },
+  {
+   "n": "Essential Movements",
+   "c": "Valkenburg",
+   "a": "De Leeuwhof 6",
+   "w": "https://www.essentialmovements.nl/",
+   "o": "node/6193479602",
+   "y": 50.86598,
+   "x": 5.82072
+  },
+  {
+   "n": "Yogacentrum Vlaardingen",
+   "c": "Vlaardingen",
+   "a": "Buizengat 10",
+   "w": "https://yogavlaardingen.nl/",
+   "o": "node/8440961249",
+   "y": 51.91348,
+   "x": 4.34573
+  },
+  {
+   "n": "Oohm",
+   "c": "Vogelenzang",
+   "a": "",
+   "w": "https://oohm.nl;https//rijksmonumenten.nl/monument/511316/teylingerbosch:-hoofdgebouw/vogelenzang",
+   "o": "way/52484782",
+   "y": 52.32729,
+   "x": 4.57216
+  },
+  {
+   "n": "Het Reform Atelier",
+   "c": "Voorburg",
+   "a": "Parkweg 17",
+   "w": "https://reformatelier.nl/",
+   "o": "node/2703376990",
+   "y": 52.06807,
+   "x": 4.36026
+  },
+  {
+   "n": "Mijn Yoga Studio",
+   "c": "Voorburg",
+   "a": "Zwartepad 2A",
+   "w": "https://www.mijnyogastudio.nl/",
+   "o": "node/2703380314",
+   "y": 52.06694,
+   "x": 4.36149
+  },
+  {
+   "n": "Unfold yoga studio",
+   "c": "Voorburg",
+   "a": "Rembrandtlaan 61",
+   "w": "https://unfoldyogastudio.com/",
+   "o": "node/2704843808",
+   "y": 52.07543,
+   "x": 4.37391
+  },
+  {
+   "n": "Het Knooppunt",
+   "c": "Voorschoten",
+   "a": "Christiaan Huygensstraat 10c",
+   "w": "https://www.hetknooppunt.nu/",
+   "o": "node/5275802352",
+   "y": 52.1246,
+   "x": 4.44959
+  },
+  {
+   "n": "Ivy Boutique Wellness",
+   "c": "Voorschoten",
+   "a": "Veurseweg 182",
+   "w": "https://www.ivyboutiquewellness.nl/",
+   "o": "node/5275801686",
+   "y": 52.11584,
+   "x": 4.43179
+  },
+  {
+   "n": "Het Yogaschooltje",
+   "c": "Wageningen",
+   "a": "Hoogstraat 48A",
+   "w": "https://www.hetyogaschooltje.nl/",
+   "o": "node/3013390882",
+   "y": 51.9664,
+   "x": 5.66392
+  },
+  {
+   "n": "Yoga Today",
+   "c": "Weesp",
+   "a": "Achtergracht 16a",
+   "w": "https://www.yogatoday.nl/",
+   "o": "node/2860108102",
+   "y": 52.3078,
+   "x": 5.0387
+  },
+  {
+   "n": "Yoga Today",
+   "c": "Weesp",
+   "a": "Blomstraat 34",
+   "w": "",
+   "o": "node/5654459194",
+   "y": 52.30936,
+   "x": 5.04103
+  },
+  {
+   "n": "Yoga&More",
+   "c": "Zeist",
+   "a": "Lageweg 49",
+   "w": "https://www.yogamore.nl/",
+   "o": "node/2788066217",
+   "y": 52.08172,
+   "x": 5.23685
+  },
+  {
+   "n": "Inner Strength",
+   "c": "Zoetermeer",
+   "a": "Rokkeveenseweg 42",
+   "w": "",
+   "o": "node/2607525985",
+   "y": 52.04763,
+   "x": 4.50519
+  },
+  {
+   "n": "Yogastudio Balans",
+   "c": "Zoetermeer",
+   "a": "Algengroen 3",
+   "w": "",
+   "o": "node/3983067959",
+   "y": 52.04066,
+   "x": 4.49563
+  },
+  {
+   "n": "Leef je yoga",
+   "c": "Zuidoostbeemster",
+   "a": "",
+   "w": "https://leefjeyoga.nl/",
+   "o": "node/11834837754",
+   "y": 52.51557,
+   "x": 4.96053
+  },
+  {
+   "n": "BARA",
+   "c": "Zutphen",
+   "a": "Nieuwstad 53",
+   "w": "https://bara-zutphen.nl/",
+   "o": "node/2655951755",
+   "y": 52.14464,
+   "x": 6.19732
+  },
+  {
+   "n": "Stroom & Stilte",
+   "c": "Zutphen",
+   "a": "Spittaalstraat 49",
+   "w": "https://www.stroomenstilte.nl/",
+   "o": "node/2655951109",
+   "y": 52.13798,
+   "x": 6.20028
+  },
+  {
+   "n": "SanaYou Yoga",
+   "c": "Zwolle",
+   "a": "Hasselterdijk 20E",
+   "w": "https://www.sanayou.com/",
+   "o": "node/8108977804",
+   "y": 52.52278,
+   "x": 6.06853
+  },
+  {
+   "n": "Yoga You",
+   "c": "Zwolle",
+   "a": "Burgemeester van Roijensingel 10A",
+   "w": "https://www.yogayou.eu/",
+   "o": "node/5885420481",
+   "y": 52.50813,
+   "x": 6.09211
+  },
+  {
+   "n": "YogaYou",
+   "c": "Zwolle",
+   "a": "Belvédèrelaan 25",
+   "w": "https://www.yogayou.eu/",
+   "o": "node/2879849120",
+   "y": 52.53487,
+   "x": 6.05561
+  },
+  {
+   "n": "Zenmeesters",
+   "c": "Zwolle",
+   "a": "Dokter Stolteweg 62",
+   "w": "https://zenmeesters.nl/",
+   "o": "node/11553819922",
+   "y": 52.5153,
+   "x": 6.12068
+  },
+  {
+   "n": "Rafa Yogacentrum",
+   "c": "",
+   "a": "",
+   "w": "",
+   "o": "node/14134742615",
+   "y": 52.38445,
+   "x": 5.27904
   }
  ]
 }
