@@ -1,6 +1,13 @@
 // Turns content/index.js into the lists of pages the templates loop over.
 import { sections, about } from "../../content/index.js";
 import site from "./site.js";
+import { readFileSync } from "node:fs";
+import { yearCalendar } from "../../lib/festivals.mjs";
+
+const readData = (name, fallback) => {
+  try { return JSON.parse(readFileSync(new URL(name, import.meta.url), "utf8")); } catch { return fallback; }
+};
+const slugify = (s) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 const base = (lang) => (lang === "nl" ? "/" : "/en/");
 const other = (lang) => (lang === "nl" ? "en" : "nl");
@@ -9,6 +16,33 @@ const L = (v, lang) => (v && typeof v === "object" ? v[lang] : v);
 export default function () {
   const homePages = [], sectionPages = [], topicPages = [], newsPages = [], aboutPages = [];
   const nav = {}, search = {}, home = {}, rest = {};
+  const toolPages = { near: [], cities: [], calendar: [], now: [] }, cityPages = [];
+  const tools = {}, cities = {}, kinds = {}, calendar = {};
+
+  // Towns with enough places get their own page.
+  const places = readData("places.json", {});
+  const byCity = new Map();
+  for (const k of site.kinds) {
+    for (const x of places[k.key] || []) {
+      if (!x.c) continue;
+      if (!byCity.has(x.c)) byCity.set(x.c, { name: x.c, slug: slugify(x.c), total: 0, lists: {} });
+      const c = byCity.get(x.c);
+      (c.lists[k.key] ||= []).push(x);
+      c.total++;
+    }
+  }
+  const cityList = [...byCity.values()].filter((c) => c.total >= site.cityMin && c.slug)
+    .sort((a, b) => b.total - a.total || a.name.localeCompare(b.name, "nl"));
+
+  // Festival and holiday dates, calculated for this year and the years after.
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const firstYear = +todayIso.slice(0, 4);
+  const years = Array.from({ length: site.calendarYears }, (_, i) => firstYear + i);
+  const perYear = years.map((y) => yearCalendar(y));
+  const allDays = perYear.flat();
+  const horizon = new Date(Date.now() + 366 * 86400000).toISOString().slice(0, 10);
+  const row = (key) => ({ key, dates: perYear.map((list) => list.find((d) => d.key === key)?.date || "") });
+  const keysOf = (kind) => [...new Set(perYear[0].filter((d) => d.kind === kind).map((d) => d.key))];
 
   for (const lang of site.langs) {
     const alt = other(lang);
@@ -47,6 +81,26 @@ export default function () {
     }));
     const used = site.home.flatMap((h) => h.sections);
     rest[lang] = secs.filter((s) => !used.includes(s.key));
+    const toolUrl = (k, l) => `${base(l)}${site.tools[k].slug[l]}/`;
+    tools[lang] = Object.entries(site.tools).map(([key, t]) => ({ key, icon: t.icon, title: t.title[lang], intro: t.intro[lang], url: toolUrl(key, lang), alt: toolUrl(key, alt) }));
+    for (const t of tools[lang]) toolPages[t.key].push({ lang, url: t.url, alt: t.alt, title: t.title, description: t.intro, tool: t });
+
+    kinds[lang] = site.kinds.map((k) => ({ key: k.key, icon: k.icon, color: k.color, label: k.label[lang], url: topics.find((t) => t.key === k.topic)?.url }));
+    const cityUrl = (c, l) => `${toolUrl("cities", l)}${c.slug}/`;
+    cities[lang] = cityList.map((c) => ({ ...c, url: cityUrl(c, lang), alt: cityUrl(c, alt) }));
+    for (const c of cities[lang]) {
+      cityPages.push({ lang, url: c.url, alt: c.alt, title: `${site.ui[lang].cityTitle} ${c.name}`, description: `${site.ui[lang].cityIntro} ${c.name}.`, city: c });
+    }
+
+    const name = (d) => ({ ...d, name: site.days[d.key][lang], note: site.days[d.key].d?.[lang] || "" });
+    calendar[lang] = {
+      years,
+      upcoming: allDays.filter((d) => d.date >= todayIso && d.date <= horizon).map(name),
+      festivals: keysOf("festival").map(row).map(name),
+      nl: keysOf("nl").map(row).map(name),
+      in: keysOf("in").map(row).map(name),
+    };
+
     const newsUrl = (l) => `${base(l)}${site.newsSlug[l]}/`;
     const aboutUrl = (l) => `${base(l)}${about.slug[l]}/`;
 
@@ -66,6 +120,8 @@ export default function () {
     // Small search index: topics first, then every link.
     search[lang] = [
       ...secs.flatMap((s) => s.topics.map((t) => ({ t: t.title, d: t.intro, u: t.url, k: s.title + " " + t.body.join(" ") }))),
+      ...tools[lang].map((t) => ({ t: t.title, d: t.intro, u: t.url, k: t.key === "calendar" ? Object.values(site.days).map((d) => d[lang]).join(" ") : "" })),
+      ...cities[lang].map((c) => ({ t: `${site.ui[lang].cityTitle} ${c.name}`, d: `${site.ui[lang].cityIntro} ${c.name}.`, u: c.url })),
       ...secs.flatMap((s) => s.topics.flatMap((t) => t.links.map((x) => ({ t: x.t, d: x.d, u: x.u, x: 1 })))),
     ];
   }
@@ -74,6 +130,6 @@ export default function () {
   for (const p of newsPages) urls.news[p.lang] = p.url;
   for (const p of aboutPages) urls.about[p.lang] = p.url;
 
-  const allPages = [...homePages, ...sectionPages, ...topicPages, ...newsPages, ...aboutPages];
-  return { homePages, sectionPages, topicPages, newsPages, aboutPages, allPages, nav, search, urls, home, rest };
+  const allPages = [...homePages, ...sectionPages, ...topicPages, ...Object.values(toolPages).flat(), ...cityPages, ...newsPages, ...aboutPages];
+  return { homePages, sectionPages, topicPages, newsPages, aboutPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar };
 }

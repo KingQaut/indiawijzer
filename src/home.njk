@@ -35,6 +35,15 @@ permalink: "{{ p.url }}"
   </section>
 {%- endfor %}
   <section class="card">
+    <h2><span class="ico" aria-hidden="true">🧭</span> {{ ui.tools }}</h2>
+    <p>{{ ui.toolsIntro }}</p>
+    <ul>
+    {%- for t in catalog.tools[p.lang] %}
+      <li><a href="{{ t.url }}">{{ t.title }}</a></li>
+    {%- endfor %}
+    </ul>
+  </section>
+  <section class="card">
     <h2><a href="{{ catalog.urls.news[p.lang] }}"><span class="ico" aria-hidden="true">📰</span> {{ ui.latest }}</a></h2>
     {%- set items = news[p.lang] %}
     {%- if items.length %}

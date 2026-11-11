@@ -1,0 +1,12 @@
+{#- One list of places (restaurants, temples, …) as used on topic and city pages. -#}
+{%- macro placeList(list, ui, id) %}
+<ul{% if id %} id="{{ id }}"{% endif %} class="places">
+  {%- for x in list %}
+  <li data-s="{{ (x.n + ' ' + x.c + ' ' + x.a) | lower }}">
+    <b>{{ x.n }}</b>
+    <span>{{ x.c or ui.unknownCity }}{% if x.a %} · {{ x.a }}{% endif %}</span>
+    <span class="acts">{% if x.w %}<a href="{{ x.w }}" rel="noopener nofollow">{{ ui.website }}</a>{% endif %}<a href="https://www.openstreetmap.org/{{ x.o }}" rel="noopener">{{ ui.map }}</a></span>
+  </li>
+  {%- endfor %}
+</ul>
+{%- endmacro %}

@@ -36,6 +36,9 @@ jobs:
             --exclude-path _site/nieuws --exclude-path _site/en/news
             --exclude-path _site/india-in-nederland/restaurants --exclude-path _site/en/india-in-the-netherlands/restaurants
             --exclude-path _site/india-in-nederland/tempels --exclude-path _site/en/india-in-the-netherlands/temples
+            --exclude-path _site/india-in-nederland/yoga --exclude-path _site/en/india-in-the-netherlands/yoga
+            --exclude-path _site/india-in-nederland/cricket --exclude-path _site/en/india-in-the-netherlands/cricket
+            --exclude-path _site/steden --exclude-path _site/en/cities
             --exclude-path _site/index.html --exclude-path _site/en/index.html
             --root-dir ${{ github.workspace }}/_site
             '_site/**/*.html'

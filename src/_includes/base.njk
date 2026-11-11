@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="search-index" href="/assets/search-{{ p.lang }}.json" id="search-index">
 <script src="/assets/site.js" defer></script>
+{% if p.tool %}<script src="/assets/tools.js" defer></script>{% endif %}
 </head>
 <body>
 <header class="top">
@@ -34,6 +35,9 @@
     {%- for s in catalog.nav[p.lang] %}
     <a href="{{ s.url }}"{% if p.section and p.section.url == s.url %} aria-current="true"{% endif %}>{{ s.title }}</a>
     {%- endfor %}
+    {%- for t in catalog.tools[p.lang] %}{% if t.key == "near" or t.key == "calendar" %}
+    <a href="{{ t.url }}"{% if p.url == t.url %} aria-current="true"{% endif %}>{{ t.title if t.key == "calendar" else ui.nearNav }}</a>
+    {%- endif %}{% endfor %}
     <a href="{{ catalog.urls.news[p.lang] }}"{% if p.url == catalog.urls.news[p.lang] %} aria-current="true"{% endif %}>{{ ui.news }}</a>
   </nav>
 </header>
@@ -43,6 +47,7 @@
 <footer class="foot">
   <div class="wrap">
     <p>{{ ui.footer }}</p>
+    <p>{% for t in catalog.tools[p.lang] %}<a href="{{ t.url }}">{{ t.title }}</a> · {% endfor %}</p>
     <p><a href="{{ catalog.urls.about[p.lang] }}">{{ ui.about }}</a>{% if p.alt %} · <a href="{{ p.alt }}">{{ ui.otherLang }}</a>{% endif %}</p>
   </div>
 </footer>

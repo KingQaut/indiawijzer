@@ -1,0 +1,43 @@
+---
+layout: base.njk
+pagination: { data: catalog.cityPages, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+{%- from "placelist.njk" import placeList -%}
+{%- set ui = site.ui[p.lang] -%}
+{%- set c = p.city -%}
+{%- set hub = catalog.tools[p.lang][1] -%}
+<nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › <a href="{{ hub.url }}">{{ hub.title }}</a> › {{ c.name }}</nav>
+<article class="topic">
+  <h1>{{ p.title }}</h1>
+  <p class="intro">{{ p.description }}</p>
+  <p class="buttons">
+    <a class="btn" href="{{ catalog.tools[p.lang][0].url }}?q={{ c.name | urlencode }}">📍 {{ ui.onMap }}</a>
+  </p>
+  {%- for k in catalog.kinds[p.lang] %}
+  {%- if c.lists[k.key] %}
+  <h2>{{ k.icon }} {{ k.label }} <small>({{ c.lists[k.key].length }})</small></h2>
+  {{ placeList(c.lists[k.key], ui) }}
+  {%- endif %}
+  {%- endfor %}
+
+  <h2>{{ ui.live }}</h2>
+  <p class="buttons">
+    {%- if p.lang == "nl" %}
+    <a class="btn" href="https://www.google.com/maps/search/{{ ('Indiase winkel toko ' + c.name) | urlencode }}/" rel="noopener">Indiase winkels in {{ c.name }} ↗</a>
+    <a class="btn" href="https://www.google.com/search?q={{ ('Indiase evenementen ' + c.name) | urlencode }}" rel="noopener">Indiase evenementen in {{ c.name }} ↗</a>
+    <a class="btn" href="https://www.google.com/search?q={{ ('Indiase film bioscoop ' + c.name) | urlencode }}" rel="noopener">Indiase films in {{ c.name }} ↗</a>
+    {%- else %}
+    <a class="btn" href="https://www.google.com/maps/search/{{ ('Indian grocery shop ' + c.name) | urlencode }}/" rel="noopener">Indian shops in {{ c.name }} ↗</a>
+    <a class="btn" href="https://www.google.com/search?q={{ ('Indian events ' + c.name) | urlencode }}" rel="noopener">Indian events in {{ c.name }} ↗</a>
+    <a class="btn" href="https://www.google.com/search?q={{ ('Indian film cinema ' + c.name) | urlencode }}" rel="noopener">Indian films in {{ c.name }} ↗</a>
+    {%- endif %}
+  </p>
+  <p class="meta">{{ ui.osm }} · {{ ui.updated }} {{ places.updated | date(p.lang) }}</p>
+</article>
+<aside class="more">
+  <h2>{{ ui.allCities }}</h2>
+  <p>
+  {%- for o in catalog.cities[p.lang] %}{% if o.url != c.url %}<a class="chip" href="{{ o.url }}">{{ o.name }}</a> {% endif %}{% endfor -%}
+  </p>
+</aside>

@@ -26,17 +26,29 @@ Do not add anything that needs regular human upkeep without asking the owner fir
 | Turns content into page lists, nav, search index | `src/_data/catalog.js` |
 | Templates | `src/*.njk`, `src/_includes/base.njk` |
 | Design, search and list filter | `src/assets/style.css`, `src/assets/site.js` |
-| Nightly data fetch (Google News RSS, OpenStreetMap Overpass) | `scripts/fetch-data.mjs` → `src/_data/news.json`, `src/_data/places.json` |
+| Nightly data fetch (Google News RSS, OpenStreetMap Overpass, ECB rate via Frankfurter) | `scripts/fetch-data.mjs` → `src/_data/news.json`, `places.json`, `towns.json`, `rate.json` |
+| Self-updating pages: near me (map), cities, festival calendar, now (clock, weather, rate) | `src/tools/*.njk`, `src/assets/tools.js`; titles and settings under `tools`, `kinds`, `days` in `src/_data/site.js` |
+| Festival and holiday dates, calculated from sun and moon positions (no date tables) | `lib/festivals.mjs` |
+| Map library (Leaflet 1.9.4, copied in, not an npm dependency) | `src/assets/vendor/leaflet/` |
 | Build + publish (on push, nightly 04:17 UTC, manual) | `.github/workflows/deploy.yml` |
 | Weekly link check, opens an issue when links break | `.github/workflows/links.yml` |
 
 - Dutch lives at `/`, English at `/en/`, with translated slugs and hreflang links.
-- Five sections, 22 topics: India in Nederland, Naar Nederland, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
+- Five sections, 24 topics (yoga and cricket added 11 Nov 2026, both with automatic lists): India in Nederland, Naar Nederland, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
 - The data fetch keeps the previous data when a source fails or returns suspiciously little.
 - The nightly workflow commits the refreshed JSON back to `main` (bot commits "Automatic data update"). This also keeps GitHub from pausing the schedule. **Always `git pull --rebase origin main` before pushing.**
 - `PATH_PREFIX=/indiawijzer/` at build time makes the site work under `kingqaut.github.io/indiawijzer/`; not set by default because the site is meant for the root of indiawijzer.nl.
 
 Commands: `npm install`, `npm start` (local preview on port 8080), `npm run build`, `npm run update-data`.
+
+## Added 11 November 2026 (branch `claude/laughing-thompson-2sztxw`, not yet merged to `main` when written)
+
+- **Backlog**: the owner approved a long list of additions, limited to things that cost nothing to maintain. It lives in the requirements document under "Content backlog". The complicated items were built first; the many evergreen text pages and search buttons are still to do.
+- **Built**: yoga and cricket lists; "India near me" (`/in-de-buurt/`) with a Leaflet map; city pages (`/steden/…`, one per town with at least `cityMin` places); festival calendar (`/kalender/`); "now" page (`/nu/`) with clocks, calling hours, live weather and air quality (Open-Meteo, fetched in the visitor's browser) and the euro–rupee rate.
+- **Not yet seen with real data**: OpenStreetMap's servers refuse connections from the cloud session, so the yoga, cricket and towns queries in `scripts/fetch-data.mjs` were written untested. `src/_data/towns.json` is a hand-made seed of 48 towns and places have no coordinates until the first nightly fetch on `main`. After merging, check the "Build and publish" log for the lines `places yoga`, `places cricket` and `towns`; if a list "kept previous data", adjust the query or the `MIN_PLACES` threshold. Until then "India near me" matches on town name and shows no dots.
+- Places without an address get the nearest town centre within 4 km (`fillTowns`), which should shrink the "Plaats onbekend" group.
+- Festival dates were checked against published calendars for 2023–2029. Janmashtami and Raksha Bandhan can differ by a day between traditions; the page says so. Karva Chauth and Paryushan were left out because their rules were not reliable to calculate. Islamic holidays are left out on purpose (moon sighting).
+- Still to build from the "complicated" group: ingredient translator, "this day in shared history", and the Wikidata lists (heritage sites, companies, films, Gandhi statues).
 
 ## Status (10 November 2026)
 

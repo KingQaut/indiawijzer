@@ -114,3 +114,54 @@ main { padding-top: 18px; padding-bottom: 48px; min-height: 60vh; }
 /* footer */
 .foot { border-top: 1px solid var(--line); background: var(--card); padding: 22px 0; color: var(--muted); font-size: .9rem; }
 .foot p { margin: .3em 0; }
+
+/* self-updating pages: near me, cities, calendar, now */
+.topic.wide { max-width: none; }
+.scroll { overflow-x: auto; }
+.near-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.near-bar label { display: grid; gap: 4px; font-size: .85rem; color: var(--muted); flex: 1 1 200px; }
+.near-bar label:nth-of-type(2) { flex: 0 0 auto; }
+.near-bar select, .rate input { padding: 9px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); color: var(--ink); font: inherit; }
+.near-bar input { background: var(--card); }
+button.btn { border: 0; cursor: pointer; font: inherit; font-weight: 600; font-size: .95rem; }
+.near-kinds { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .95rem; }
+.dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; border: 1.5px solid #fff; box-shadow: 0 0 0 1px var(--line); }
+.near-map { height: min(60vh, 440px); border-radius: 14px; border: 1px solid var(--line); margin: 6px 0 12px; z-index: 0; }
+.leaflet-container { font: inherit; font-size: .85rem; }
+.cities .card p { margin: 0; display: flex; gap: 12px; flex-wrap: wrap; }
+.topic h2 small { font-weight: 400; }
+
+.upcoming { list-style: none; padding: 0; margin: 0; }
+.upcoming li { display: grid; grid-template-columns: minmax(11em, 15em) 1fr; gap: 0 16px; padding: 10px 0 10px 12px; border-top: 1px solid var(--line); border-left: 4px solid var(--accent); margin-bottom: 2px; }
+.upcoming li.k-nl { border-left-color: #1d4e89; } .upcoming li.k-in { border-left-color: var(--green); }
+.upcoming time { grid-row: 1 / span 2; font-size: .95rem; }
+.upcoming em { display: block; font-style: normal; color: var(--muted); font-size: .85rem; }
+.upcoming em.soon { color: var(--accent); font-weight: 600; }
+.upcoming span { color: var(--muted); font-size: .92rem; }
+@media (max-width: 560px) { .upcoming li { grid-template-columns: 1fr; } .upcoming time { grid-row: auto; } .upcoming em { display: inline; margin-left: 8px; } }
+.years { border-collapse: collapse; width: 100%; font-size: .93rem; margin-bottom: 14px; }
+.years th, .years td { padding: 8px 10px; border-top: 1px solid var(--line); text-align: left; white-space: nowrap; }
+.years tbody th { font-weight: 600; white-space: normal; min-width: 11em; position: sticky; left: 0; background: var(--bg); }
+.years tbody th small { display: block; font-weight: 400; }
+.years thead th { color: var(--muted); font-size: .85rem; }
+
+.clocks { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 34rem; }
+.clock { border-radius: 14px; padding: 14px 18px; color: #fff; display: grid; }
+.clock.nl { background: #1d4e89; } .clock.in { background: #b84a14; }
+.clock small { color: #fff; text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; }
+.clock b { font-size: clamp(2rem, 8vw, 2.8rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.clock span { font-size: .9rem; }
+.callnow { font-weight: 600; } .callnow.ok { color: var(--green); }
+.hours { border-collapse: collapse; font-size: .82rem; font-variant-numeric: tabular-nums; }
+.hours th { text-align: left; padding: 6px 10px 6px 0; position: sticky; left: 0; background: var(--bg); }
+.hours td { padding: 6px 7px; border: 1px solid var(--bg); background: var(--line); color: var(--muted); }
+.hours td.ok { background: var(--green); color: #fff; }
+.hours td.cur { outline: 2px solid var(--ink); outline-offset: -2px; font-weight: 700; }
+.weather { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.wx { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 2px; }
+.wx b { font-size: 1.35rem; }
+.wx span { font-size: .9rem; color: var(--muted); }
+.wx .air { margin-top: 4px; padding: 2px 8px; border-radius: 999px; justify-self: start; color: #fff; font-size: .8rem; }
+.air.a0 { background: #2e9e6b; } .air.a1 { background: #6b9e2e; } .air.a2 { background: #b8860b; } .air.a3 { background: #c2541a; } .air.a4 { background: #b02a2a; } .air.a5 { background: #6d1f7a; }
+.rate { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 1.15rem; }
+.rate input { width: 9em; font-size: 1.1rem; }

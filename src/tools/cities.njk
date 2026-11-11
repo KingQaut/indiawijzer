@@ -1,0 +1,19 @@
+---
+layout: base.njk
+pagination: { data: catalog.toolPages.cities, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+{%- set ui = site.ui[p.lang] -%}
+<nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › {{ p.title }}</nav>
+<h1>{{ p.tool.icon }} {{ p.title }}</h1>
+<p class="intro">{{ p.description }}</p>
+<div class="grid cities">
+{%- for c in catalog.cities[p.lang] %}
+  <a class="card tile" href="{{ c.url }}">
+    <h2>{{ c.name }}</h2>
+    <p>{% for k in catalog.kinds[p.lang] %}{% if c.lists[k.key] %}<span title="{{ k.label }}">{{ k.icon }} {{ c.lists[k.key].length }}</span> {% endif %}{% endfor %}</p>
+  </a>
+{%- endfor %}
+</div>
+<p class="meta">{{ ui.osm }} · {{ ui.updated }} {{ places.updated | date(p.lang) }}</p>
+<p><a href="{{ catalog.tools[p.lang][0].url }}">{{ catalog.tools[p.lang][0].title }} →</a></p>
