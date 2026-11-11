@@ -4,8 +4,8 @@
   {%- for x in list %}
   <li data-s="{{ (x.n + ' ' + x.c + ' ' + x.a) | lower }}">
     <b>{{ x.n }}</b>
-    <span>{{ x.c or ui.unknownCity }}{% if x.a %} · {{ x.a }}{% endif %}</span>
-    <span class="acts">{% if x.w %}<a href="{{ x.w }}" rel="noopener nofollow">{{ ui.website }}</a>{% endif %}<a href="https://www.openstreetmap.org/{{ x.o }}" rel="noopener">{{ ui.map }}</a></span>
+    <span>{{ x.c or (ui.unknownCity if x.o else '') }}{% if x.a %}{% if x.c or x.o %} · {% endif %}{{ x.a }}{% endif %}</span>
+    <span class="acts">{% if x.w %}<a href="{{ x.w }}" rel="noopener nofollow">{{ ui.website }}</a>{% endif %}{% if x.i %}<a href="{{ x.i }}" rel="noopener">{{ ui.moreInfo }}</a>{% endif %}{% if x.o %}<a href="https://www.openstreetmap.org/{{ x.o }}" rel="noopener">{{ ui.map }}</a>{% elif x.y %}<a href="https://www.openstreetmap.org/?mlat={{ x.y }}&mlon={{ x.x }}#map=16/{{ x.y }}/{{ x.x }}" rel="noopener">{{ ui.map }}</a>{% endif %}</span>
   </li>
   {%- endfor %}
 </ul>

@@ -165,3 +165,5 @@ button.btn { border: 0; cursor: pointer; font: inherit; font-weight: 600; font-s
 .air.a0 { background: #2e9e6b; } .air.a1 { background: #6b9e2e; } .air.a2 { background: #b8860b; } .air.a3 { background: #c2541a; } .air.a4 { background: #b02a2a; } .air.a5 { background: #6d1f7a; }
 .rate { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 1.15rem; }
 .rate input { width: 9em; font-size: 1.1rem; }
+.words td { white-space: normal; }
+.words tbody th { position: static; }

@@ -33,7 +33,8 @@ permalink: "{{ p.url }}"
   {%- endif %}
 
   {%- if t.finder %}
-  {%- set list = places[t.finder] %}
+  {%- set fromWiki = wiki[t.finder] %}
+  {%- set list = fromWiki or places[t.finder] %}
   <section class="finder">
     {%- if list.length %}
     <div class="finder-bar">
@@ -41,7 +42,7 @@ permalink: "{{ p.url }}"
       <span><b id="finder-n">{{ list.length }}</b> {{ ui.results }}</span>
     </div>
     {{ placeList(list, ui, "finder-list") }}
-    <p class="meta">{{ ui.osm }} · {{ ui.updated }} {{ places.updated | date(p.lang) }}</p>
+    <p class="meta">{% if fromWiki %}{{ ui.wikidata }} · {{ ui.updated }} {{ wiki.updated | date(p.lang) }}{% else %}{{ ui.osm }} · {{ ui.updated }} {{ places.updated | date(p.lang) }}{% endif %}</p>
     {%- else %}
     <p class="meta">{{ ui.finderEmpty }}</p>
     {%- endif %}

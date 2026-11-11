@@ -8,6 +8,9 @@
 //
 // Optional per topic:
 //   finder: "restaurants" | "worship" | "yoga" | "cricket"  -> automatic list from OpenStreetMap
+//           "heritage" | "gandhi"                            -> automatic list from Wikidata
+//
+// More topics live in content/extra.js; they are added to the end of their section.
 //   live:   [{ u, t }]                 -> "search now" buttons that always show current results
 
 export const sections = [
@@ -42,6 +45,9 @@ export const sections = [
         live: [
           { u: "https://www.google.com/maps/search/indiaas+restaurant/", t: { nl: "Indiaas restaurant bij mij in de buurt", en: "Indian restaurant near me" } },
           { u: "https://www.google.com/maps/search/roti+restaurant/", t: { nl: "Rotishop bij mij in de buurt", en: "Roti shop near me" } },
+          { u: "https://www.google.com/maps/search/dosa+zuid-indiaas+restaurant/", t: { nl: "Dosa en Zuid-Indiaas", en: "Dosa and South Indian" } },
+          { u: "https://www.google.com/maps/search/indiaas+vegetarisch+restaurant/", t: { nl: "Vegetarisch Indiaas", en: "Vegetarian Indian" } },
+          { u: "https://www.google.com/search?q=indiase+catering+nederland", t: { nl: "Indiase catering", en: "Indian catering" } },
         ],
         links: [
           { u: "https://www.openstreetmap.org/", t: "OpenStreetMap", d: { nl: "Zelf een restaurant toevoegen of verbeteren.", en: "Add or correct a restaurant yourself." } },
@@ -68,6 +74,9 @@ export const sections = [
           { u: "https://www.google.com/maps/search/indiase+supermarkt/", t: { nl: "Indiase supermarkt in de buurt", en: "Indian grocery near me" } },
           { u: "https://www.google.com/maps/search/indiase+kleding+sari/", t: { nl: "Indiase kleding en sari's", en: "Indian clothing and saris" } },
           { u: "https://www.google.com/search?q=indiase+boodschappen+online+bestellen+nederland", t: { nl: "Online Indiase boodschappen", en: "Indian groceries online" } },
+          { u: "https://www.google.com/maps/search/indiase+zoetigheid+mithai/", t: { nl: "Indiase zoetigheid (mithai)", en: "Indian sweets (mithai)" } },
+          { u: "https://www.google.com/search?q=tiffin+service+indiaas+thuisbezorgd+nederland", t: { nl: "Tiffin en maaltijdservice", en: "Tiffin and meal services" } },
+          { u: "https://www.google.com/search?q=mango+alphonso+kesar+kopen+nederland", t: { nl: "Indiase mango's (in het seizoen)", en: "Indian mangoes (in season)" } },
         ],
         links: [],
       },
@@ -461,6 +470,7 @@ export const sections = [
             "Much can still be visited. Kochi has the Mattancherry Palace, known as the 'Dutch Palace', and a Dutch cemetery. Pulicat, Sadras and Chinsurah have cemeteries with richly decorated tombstones and remains of forts. Dutch archives hold kilometres of VOC records on India, part of which can be consulted online.",
           ],
         },
+        finder: "heritage",
         links: [
           { u: "https://www.atlasofmutualheritage.nl/", t: "Atlas of Mutual Heritage", d: { nl: "Kaarten, tekeningen en prenten van VOC-locaties.", en: "Maps, drawings and prints of VOC locations." } },
           { u: "https://www.nationaalarchief.nl/", t: "Nationaal Archief", d: { nl: "Het VOC-archief, deels gedigitaliseerd.", en: "The VOC archives, partly digitised." } },
@@ -718,10 +728,10 @@ export const about = {
       h: { nl: "Bronnen", en: "Sources" },
       p: {
         nl: [
-          "Lijsten met restaurants, gebedshuizen, yogastudio's, cricketclubs en plaatsen, en de kaart: © OpenStreetMap-bijdragers, beschikbaar onder de Open Database License. Weer en luchtkwaliteit: Open-Meteo. Wisselkoers: referentiekoers van de Europese Centrale Bank via Frankfurter. Nieuwskoppen zijn eigendom van de genoemde uitgevers en linken naar het oorspronkelijke artikel.",
+          "Lijsten met restaurants, gebedshuizen, yogastudio's, cricketclubs en plaatsen, en de kaart: © OpenStreetMap-bijdragers, beschikbaar onder de Open Database License. Lijsten met Nederlands erfgoed in India en Gandhi-gedenktekens: Wikidata. Weer en luchtkwaliteit: Open-Meteo. Wisselkoers: referentiekoers van de Europese Centrale Bank via Frankfurter. Nieuwskoppen zijn eigendom van de genoemde uitgevers en linken naar het oorspronkelijke artikel.",
         ],
         en: [
-          "Lists of restaurants, places of worship, yoga studios, cricket clubs and towns, and the map: © OpenStreetMap contributors, available under the Open Database License. Weather and air quality: Open-Meteo. Exchange rate: European Central Bank reference rate via Frankfurter. News headlines belong to the publishers named and link to the original article.",
+          "Lists of restaurants, places of worship, yoga studios, cricket clubs and towns, and the map: © OpenStreetMap contributors, available under the Open Database License. Lists of Dutch heritage in India and Gandhi memorials: Wikidata. Weather and air quality: Open-Meteo. Exchange rate: European Central Bank reference rate via Frankfurter. News headlines belong to the publishers named and link to the original article.",
         ],
       },
     },

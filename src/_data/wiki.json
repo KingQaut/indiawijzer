@@ -1,0 +1,295 @@
+{
+ "updated": "2026-11-11T13:31:15.028Z",
+ "heritage": [
+  {
+   "n": "Dutch Church, Chinsurah",
+   "c": "",
+   "a": "church building",
+   "i": "https://www.wikidata.org/entity/Q99529007",
+   "y": 22.88361,
+   "x": 88.40111
+  },
+  {
+   "n": "Fort Gelderland",
+   "c": "",
+   "a": "fort",
+   "i": "https://www.wikidata.org/entity/Q104534038",
+   "y": 13.4194,
+   "x": 80.3163
+  },
+  {
+   "n": "Fort Gustavus",
+   "c": "",
+   "a": "fort",
+   "i": "https://www.wikidata.org/entity/Q98601402",
+   "y": 22.89056,
+   "x": 88.39194
+  },
+  {
+   "n": "Fort Wilhelmus",
+   "c": "",
+   "a": "fort",
+   "i": "https://www.wikidata.org/entity/Q104534353",
+   "y": 10.5251,
+   "x": 76.0421
+  },
+  {
+   "n": "Fort Zeeborg",
+   "c": "",
+   "a": "fort",
+   "i": "https://www.wikidata.org/entity/Q104534046",
+   "y": 8.88113,
+   "x": 76.5681
+  },
+  {
+   "n": "Mors Janua Vitae",
+   "c": "",
+   "a": "cemetery",
+   "i": "https://www.wikidata.org/entity/Q64208797",
+   "y": 17.71263,
+   "x": 83.30319
+  },
+  {
+   "n": "Dutch Tombs, Ahmedabad",
+   "c": "Ahmedabad",
+   "a": "tomb",
+   "i": "https://en.wikipedia.org/wiki/Dutch_Tombs,_Ahmedabad",
+   "y": 23.00583,
+   "x": 72.5975
+  },
+  {
+   "n": "Dutch Cemetery, Karinga",
+   "c": "Bihar",
+   "a": "cemetery",
+   "i": "https://www.wikidata.org/entity/Q99567452",
+   "y": 25.8,
+   "x": 84.70417
+  },
+  {
+   "n": "Fort Sadras",
+   "c": "Chengalpattu district",
+   "a": "fort",
+   "i": "https://www.wikidata.org/entity/Q98601601",
+   "y": 12.52556,
+   "x": 80.16389
+  },
+  {
+   "n": "Dutch Cemetery",
+   "c": "Cossimbazar",
+   "a": "cemetery",
+   "i": "https://en.wikipedia.org/wiki/Dutch_Cemetery,_Murshidabad",
+   "y": 24.12361,
+   "x": 88.26667
+  },
+  {
+   "n": "Dutch Cemetery, Kochi",
+   "c": "Ernakulam district",
+   "a": "cemetery",
+   "i": "https://en.wikipedia.org/wiki/Dutch_Cemetery,_Fort_Kochi",
+   "y": 9.96424,
+   "x": 76.23839
+  },
+  {
+   "n": "Remains of the Dutch Fort",
+   "c": "Falta community development block",
+   "a": "ruins",
+   "i": "https://www.wikidata.org/entity/Q124247829",
+   "y": 22.28969,
+   "x": 88.10577
+  },
+  {
+   "n": "Tombs of Kankaria Tank",
+   "c": "Gujarat",
+   "a": "tomb",
+   "i": "https://www.wikidata.org/entity/Q141444229",
+   "y": 23.00574,
+   "x": 72.59502
+  },
+  {
+   "n": "Dutch Cemetery",
+   "c": "Hugli-Chuchura",
+   "a": "cemetery",
+   "i": "https://en.wikipedia.org/wiki/Dutch_Cemetery,_Chinsurah",
+   "y": 22.89014,
+   "x": 88.39179
+  },
+  {
+   "n": "Dutch Memorial Monument of Susanna Anna Maria",
+   "c": "Hugli-Chuchura",
+   "a": "monument",
+   "i": "https://www.wikidata.org/entity/Q29960686",
+   "y": 22.8835,
+   "x": 88.38004
+  },
+  {
+   "n": "Mattancherry Palace",
+   "c": "Kerala",
+   "a": "palace",
+   "i": "https://en.wikipedia.org/wiki/Mattancherry_Palace",
+   "y": 9.95827,
+   "x": 76.25936
+  },
+  {
+   "n": "Dutch Church, Munroe Island",
+   "c": "Kollam district",
+   "a": "church building",
+   "i": "https://en.wikipedia.org/wiki/Dutch_Church,_Munroe_Island",
+   "y": 8.9815,
+   "x": 76.60858
+  },
+  {
+   "n": "Masulipathnam Dutch cemetery",
+   "c": "Krishna district",
+   "a": "cemetery",
+   "i": "https://www.wikidata.org/entity/Q17783524",
+   "y": 16.19868,
+   "x": 81.14312
+  },
+  {
+   "n": "CSI St. Peter's Church",
+   "c": "Nagapattinam district",
+   "a": "church building",
+   "i": "https://www.wikidata.org/entity/Q140364404",
+   "y": 10.76092,
+   "x": 79.84499
+  },
+  {
+   "n": "Dutch Tombs",
+   "c": "Nagapattinam district",
+   "a": "tomb",
+   "i": "https://www.wikidata.org/entity/Q97144412",
+   "y": 10.75524,
+   "x": 79.84753
+  },
+  {
+   "n": "Karikop Cemetery",
+   "c": "Nagapattinam district",
+   "a": "cemetery",
+   "i": "https://www.wikidata.org/entity/Q140365311",
+   "y": 10.75858,
+   "x": 79.8472
+  },
+  {
+   "n": "Dutch Vakhar",
+   "c": "Sindhudurg district",
+   "a": "warehouse",
+   "i": "https://www.wikidata.org/entity/Q97342342",
+   "y": 15.85921,
+   "x": 73.6308
+  },
+  {
+   "n": "Dutch Cemetery, Surat",
+   "c": "Surat",
+   "a": "cemetery",
+   "i": "https://en.wikipedia.org/wiki/Dutch_Cemetery,_Surat",
+   "y": 21.2096,
+   "x": 72.8264
+  },
+  {
+   "n": "Dutch and Armenian Cemetery, Surat",
+   "c": "Surat City Taluka",
+   "a": "cemetery",
+   "i": "https://www.wikidata.org/entity/Q63347538",
+   "y": 21.20972,
+   "x": 72.82639
+  },
+  {
+   "n": "Dutch Cemetery of Thoothukudi",
+   "c": "Tamil Nadu",
+   "a": "cemetery",
+   "i": "https://www.wikidata.org/entity/Q140193696",
+   "y": 8.80094,
+   "x": 78.15647
+  },
+  {
+   "n": "Fort Vijf Sinnen",
+   "c": "Tamil Nadu",
+   "a": "fort",
+   "i": "https://en.wikipedia.org/wiki/Fort_Vijf_Sinnen",
+   "y": 10.75,
+   "x": 79.8333
+  },
+  {
+   "n": "Dutch Cemetery, Pulicat",
+   "c": "Tiruvallur district",
+   "a": "cemetery",
+   "i": "https://www.wikidata.org/entity/Q97481229",
+   "y": 13.41889,
+   "x": 80.31528
+  }
+ ],
+ "gandhi": [
+  {
+   "n": "M. Gandhilaan",
+   "c": "Amsterdam",
+   "a": "straat",
+   "i": "https://www.wikidata.org/entity/Q19332615",
+   "y": 52.3545,
+   "x": 4.7779
+  },
+  {
+   "n": "Mahatma Gandhi Plantsoen",
+   "c": "Amsterdam",
+   "a": "beeldenpark",
+   "i": "https://www.wikidata.org/entity/Q122818171",
+   "y": 52.36819,
+   "x": 4.91369
+  },
+  {
+   "n": "Standbeeld van Mahatma Gandhi",
+   "c": "Amsterdam",
+   "a": "standbeeld",
+   "i": "https://nl.wikipedia.org/wiki/Standbeeld_van_Mahatma_Gandhi_(Amsterdam)",
+   "y": 52.34682,
+   "x": 4.89786
+  },
+  {
+   "n": "Mahatma Gandhirotonde",
+   "c": "Assen",
+   "a": "rotonde",
+   "i": "https://www.wikidata.org/entity/Q97011838",
+   "y": 53.01081,
+   "x": 6.57623
+  },
+  {
+   "n": "Mahatma Gandhiweg",
+   "c": "Assen",
+   "a": "straat",
+   "i": "https://www.wikidata.org/entity/Q97011450",
+   "y": 53.01386,
+   "x": 6.58018
+  },
+  {
+   "n": "Mohandas K. Gandhi",
+   "c": "Den Haag",
+   "a": "sculptuur",
+   "i": "https://www.wikidata.org/entity/Q110526774",
+   "y": 52.06667,
+   "x": 4.29667
+  },
+  {
+   "n": "M.K. Gandhiplein",
+   "c": "Groningen",
+   "a": "straat",
+   "i": "https://www.wikidata.org/entity/Q19332695",
+   "y": 53.1865,
+   "x": 6.557
+  },
+  {
+   "n": "Gandhistraat",
+   "c": "Haarlem",
+   "a": "straat",
+   "i": "https://www.wikidata.org/entity/Q19161611",
+   "y": 52.3568,
+   "x": 4.6669
+  },
+  {
+   "n": "Mahatma Gandhi",
+   "c": "Helmond",
+   "a": "spoorbrug",
+   "i": "https://www.wikidata.org/entity/Q127414864",
+   "y": 51.4713,
+   "x": 5.64456
+  }
+ ]
+}

@@ -1,5 +1,10 @@
 // Turns content/index.js into the lists of pages the templates loop over.
-import { sections, about } from "../../content/index.js";
+import { sections as baseSections, about } from "../../content/index.js";
+import { extra } from "../../content/extra.js";
+import { ingredients } from "../../content/ingredients.js";
+
+// Topics from content/extra.js are added to the end of their section.
+const sections = baseSections.map((s) => ({ ...s, topics: [...s.topics, ...(extra[s.slug.nl] || [])] }));
 import site from "./site.js";
 import { readFileSync } from "node:fs";
 import { yearCalendar } from "../../lib/festivals.mjs";
@@ -16,7 +21,7 @@ const L = (v, lang) => (v && typeof v === "object" ? v[lang] : v);
 export default function () {
   const homePages = [], sectionPages = [], topicPages = [], newsPages = [], aboutPages = [];
   const nav = {}, search = {}, home = {}, rest = {};
-  const toolPages = { near: [], cities: [], calendar: [], now: [] }, cityPages = [];
+  const toolPages = Object.fromEntries(Object.keys(site.tools).map((k) => [k, []])), cityPages = [];
   const tools = {}, cities = {}, kinds = {}, calendar = {};
 
   // Towns with enough places get their own page.
@@ -121,7 +126,7 @@ export default function () {
     // Small search index: topics first, then every link.
     search[lang] = [
       ...secs.flatMap((s) => s.topics.map((t) => ({ t: t.title, d: t.intro, u: t.url, k: s.title + " " + t.body.join(" ") }))),
-      ...tools[lang].map((t) => ({ t: t.title, d: t.intro, u: t.url, k: t.key === "calendar" ? Object.values(site.days).map((d) => d[lang]).join(" ") : "" })),
+      ...tools[lang].map((t) => ({ t: t.title, d: t.intro, u: t.url, k: t.key === "calendar" ? Object.values(site.days).map((d) => d[lang]).join(" ") : t.key === "ingredients" ? ingredients.flat().join(" ") : "" })),
       ...cities[lang].map((c) => ({ t: `${site.ui[lang].cityTitle} ${c.name}`, d: `${site.ui[lang].cityIntro} ${c.name}.`, u: c.url })),
       ...secs.flatMap((s) => s.topics.flatMap((t) => t.links.map((x) => ({ t: x.t, d: x.d, u: x.u, x: 1 })))),
     ];
@@ -132,5 +137,5 @@ export default function () {
   for (const p of aboutPages) urls.about[p.lang] = p.url;
 
   const allPages = [...homePages, ...sectionPages, ...topicPages, ...Object.values(toolPages).flat(), ...cityPages, ...newsPages, ...aboutPages];
-  return { homePages, sectionPages, topicPages, newsPages, aboutPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar };
+  return { homePages, sectionPages, topicPages, newsPages, aboutPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar, ingredients };
 }

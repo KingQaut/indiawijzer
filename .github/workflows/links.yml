@@ -32,7 +32,7 @@ jobs:
           args: >-
             --no-progress --max-retries 3 --timeout 30
             --accept 200..=299,403,429
-            --exclude 'google\.com' --exclude 'openstreetmap\.org/(node|way|relation)'
+            --exclude 'google\.com' --exclude 'openstreetmap\.org/(node|way|relation|\?mlat)' --exclude 'wikidata\.org/entity'
             --exclude-path _site/nieuws --exclude-path _site/en/news
             --exclude-path _site/india-in-nederland/restaurants --exclude-path _site/en/india-in-the-netherlands/restaurants
             --exclude-path _site/india-in-nederland/tempels --exclude-path _site/en/india-in-the-netherlands/temples
