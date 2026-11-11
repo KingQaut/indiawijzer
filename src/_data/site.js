@@ -183,7 +183,7 @@ export default {
     },
     now: {
       icon: "🕰️", slug: { nl: "nu", en: "now" },
-      title: { nl: "Nu in India en Nederland", en: "Right now in India and the Netherlands" },
+      title: { nl: "Weer, Tijd en Valuta", en: "Weather, Time and Currency" },
       intro: { nl: "De tijd in beide landen, het beste moment om te bellen, het weer, de luchtkwaliteit en de koers van de roepie.", en: "The time in both countries, the best moment to call, the weather, air quality and the rupee rate." },
     },
   },

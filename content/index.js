@@ -823,11 +823,11 @@ export const about = {
       p: {
         nl: [
           "Deze website plaatst geen cookies, gebruikt geen trackers en verzamelt geen persoonsgegevens. Er zijn geen accounts, formulieren of advertenties.",
-          "Twee pagina's halen gegevens rechtstreeks bij een andere dienst op: de kaart op ‘India bij mij in de buurt’ komt van OpenStreetMap en het weer op ‘Nu in India en Nederland’ van Open-Meteo. Die diensten zien daarbij uw IP-adres, zoals elke website die u bezoekt. Gebruikt u de knop ‘Gebruik mijn locatie’, dan blijft uw locatie in uw eigen browser; wij ontvangen of bewaren die niet.",
+          "Twee pagina's halen gegevens rechtstreeks bij een andere dienst op: de kaart op ‘India bij mij in de buurt’ komt van OpenStreetMap en het weer op ‘Weer, Tijd en Valuta’ van Open-Meteo. Die diensten zien daarbij uw IP-adres, zoals elke website die u bezoekt. Gebruikt u de knop ‘Gebruik mijn locatie’, dan blijft uw locatie in uw eigen browser; wij ontvangen of bewaren die niet.",
         ],
         en: [
           "This website sets no cookies, uses no trackers and collects no personal data. There are no accounts, forms or advertisements.",
-          "Two pages fetch data directly from another service: the map on ‘India near me’ comes from OpenStreetMap and the weather on ‘Right now in India and the Netherlands’ from Open-Meteo. Those services see your IP address when they do, like any website you visit. If you use the ‘Use my location’ button, your location stays in your own browser; we do not receive or store it.",
+          "Two pages fetch data directly from another service: the map on ‘India near me’ comes from OpenStreetMap and the weather on ‘Weather, Time and Currency’ from Open-Meteo. Those services see your IP address when they do, like any website you visit. If you use the ‘Use my location’ button, your location stays in your own browser; we do not receive or store it.",
         ],
       },
     },
