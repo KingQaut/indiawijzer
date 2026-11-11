@@ -29,10 +29,10 @@ const NL = 'area["ISO3166-1"="NL"][admin_level=2]->.nl;';
 const QUERIES = {
   restaurants: `[out:json][timeout:120];${NL}nwr["amenity"~"^(restaurant|fast_food|cafe)$"]["cuisine"~"indian"](area.nl);out center tags;`,
   worship: `[out:json][timeout:120];${NL}nwr["amenity"="place_of_worship"]["religion"~"^(hindu|sikh|jain)$"](area.nl);out center tags;`,
-  yoga: `[out:json][timeout:120];${NL}(nwr["sport"~"yoga"]["name"](area.nl);nwr["leisure"="fitness_centre"]["name"~"yoga",i](area.nl););out center tags;`,
+  yoga: `[out:json][timeout:120];${NL}(nwr["sport"="yoga"]["name"](area.nl);nwr["leisure"~"^(fitness_centre|sports_centre)$"]["name"~"[Yy]oga"](area.nl););out center tags;`,
   cricket: `[out:json][timeout:120];${NL}(nwr["club"="sport"]["sport"~"cricket"]["name"](area.nl);nwr["leisure"~"^(sports_centre|pitch)$"]["sport"="cricket"]["name"](area.nl););out center tags;`,
 };
-const MIN_PLACES = { restaurants: 50, worship: 10, yoga: 20, cricket: 5 }; // fewer than this = treat as a failed fetch
+const MIN_PLACES = { restaurants: 50, worship: 10, yoga: 10, cricket: 5 }; // fewer than this = treat as a failed fetch
 
 // Town centres, used to let visitors pick a town and to name the town of
 // places that have no address in OpenStreetMap.
@@ -100,6 +100,18 @@ export function parsePlaces(json) {
   }).sort(byTown);
 }
 const byTown = (a, b) => !a.c - !b.c || a.c.localeCompare(b.c, "nl") || a.n.localeCompare(b.n, "nl"); // no town = last
+
+// Cricket grounds are often mapped several times (club, ground, each pitch):
+// keep one entry per club and drop bare pitch names such as "Veld 13".
+export function clubsOnly(list) {
+  const seen = new Set();
+  return list.filter((x) => {
+    const key = x.n.toLowerCase().replace(/\b(cricket|ground|club|cricketclub)\b/g, "").replace(/[^a-z0-9]/g, "") || x.n.toLowerCase();
+    if (/^veld\s*\d*$/i.test(x.n) || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
 
 export function parseTowns(json) {
   const seen = new Set();
@@ -178,7 +190,8 @@ async function updatePlaces() {
 
   for (const [key, query] of Object.entries(QUERIES)) {
     try {
-      const list = parsePlaces(await overpass(query));
+      let list = parsePlaces(await overpass(query));
+      if (key === "cricket") list = clubsOnly(list);
       if (list.length < MIN_PLACES[key]) throw new Error(`only ${list.length} results`);
       places[key] = fillTowns(list, towns);
       changed = true;
