@@ -22,7 +22,7 @@ export default function () {
   const homePages = [], sectionPages = [], topicPages = [], newsPages = [], aboutPages = [];
   const nav = {}, search = {}, home = {}, rest = {};
   const toolPages = Object.fromEntries(Object.keys(site.tools).map((k) => [k, []])), cityPages = [];
-  const tools = {}, cities = {}, kinds = {}, calendar = {};
+  const tools = {}, toolBy = {}, cities = {}, kinds = {}, calendar = {}, guides = {};
 
   // Towns with enough places get their own page.
   const places = readData("places.json", {});
@@ -86,8 +86,10 @@ export default function () {
     }));
     const used = site.home.flatMap((h) => h.sections);
     rest[lang] = secs.filter((s) => !used.includes(s.key));
+    guides[lang] = site.guides.map((gd) => ({ icon: gd.icon, title: gd.title[lang], topics: gd.topics.map((k) => must(topics.find((t) => t.key === k), `guide topic "${k}"`)) }));
     const toolUrl = (k, l) => `${base(l)}${site.tools[k].slug[l]}/`;
     tools[lang] = Object.entries(site.tools).map(([key, t]) => ({ key, icon: t.icon, title: t.title[lang], intro: t.intro[lang], url: toolUrl(key, lang), alt: toolUrl(key, alt) }));
+    toolBy[lang] = Object.fromEntries(tools[lang].map((t) => [t.key, t]));
     for (const t of tools[lang]) toolPages[t.key].push({ lang, url: t.url, alt: t.alt, title: t.title, description: t.intro, tool: t });
 
     kinds[lang] = site.kinds.map((k) => ({ key: k.key, icon: k.icon, color: k.color, label: k.label[lang], url: topics.find((t) => t.key === k.topic)?.url }));
@@ -137,5 +139,5 @@ export default function () {
   for (const p of aboutPages) urls.about[p.lang] = p.url;
 
   const allPages = [...homePages, ...sectionPages, ...topicPages, ...Object.values(toolPages).flat(), ...cityPages, ...newsPages, ...aboutPages];
-  return { homePages, sectionPages, topicPages, newsPages, aboutPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar, ingredients };
+  return { homePages, sectionPages, topicPages, newsPages, aboutPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar, ingredients, guides, toolBy };
 }

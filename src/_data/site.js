@@ -171,6 +171,11 @@ export default {
       title: { nl: "Feestkalender", en: "Festival calendar" },
       intro: { nl: "Wanneer is het Diwali, Holi of Navratri? De Indiase feesten en de vrije dagen in Nederland en India, jaren vooruit.", en: "When is Diwali, Holi or Navratri? Indian festivals and the public holidays of the Netherlands and India, for years ahead." },
     },
+    start: {
+      icon: "🧭", slug: { nl: "wegwijzer", en: "start-here" },
+      title: { nl: "Wegwijzer: wie bent u?", en: "Start here: who are you?" },
+      intro: { nl: "Kies wat het best bij u past en ga direct naar de onderwerpen die voor u van belang zijn.", en: "Pick what fits you best and go straight to the topics that matter to you." },
+    },
     ingredients: {
       icon: "🌶️", slug: { nl: "ingredienten", en: "ingredients" },
       title: { nl: "Ingrediëntenvertaler", en: "Ingredient translator" },
@@ -182,6 +187,21 @@ export default {
       intro: { nl: "De tijd in beide landen, het beste moment om te bellen, het weer, de luchtkwaliteit en de koers van de roepie.", en: "The time in both countries, the best moment to call, the weather, air quality and the rupee rate." },
     },
   },
+
+  // The "start here" page: for each kind of visitor, the topics that matter most.
+  // Topics are named by their Dutch slug.
+  guides: [
+    { icon: "🎓", title: { nl: "Ik kom uit India om te studeren", en: "I am coming from India to study" }, topics: ["studeren", "visum-verblijf", "eerste-stappen", "oplichting-noodgevallen", "nederlandse-gewoonten", "winkels"] },
+    { icon: "💼", title: { nl: "Ik kom uit India om te werken", en: "I am coming from India to work" }, topics: ["werken", "visum-verblijf", "eerste-stappen", "diploma-rijbewijs", "familie-laten-overkomen", "school-kinderopvang", "meenemen-douane", "belasting-pensioen"] },
+    { icon: "👪", title: { nl: "Ik woon hier met mijn gezin", en: "I live here with my family" }, topics: ["school-kinderopvang", "geboorte", "familie-laten-overkomen", "talen", "consulaire-zaken", "nationaliteit-oci", "tempels", "feesten-evenementen"] },
+    { icon: "🪔", title: { nl: "Ik heb Hindostaanse of Indiase wortels", en: "I have Hindustani or Indian roots" }, topics: ["hindostaanse-geschiedenis", "musea-archieven", "gemeenschap", "nationaliteit-oci", "talen", "bruiloft", "overlijden"] },
+    { icon: "🔎", title: { nl: "Ik ben geadopteerd uit India", en: "I was adopted from India" }, topics: ["adoptie-roots", "nationaliteit-oci", "visum-reisadvies", "musea-archieven"] },
+    { icon: "✈️", title: { nl: "Ik ga op reis naar India", en: "I am travelling to India" }, topics: ["visum-reisadvies", "gezondheid", "beste-reistijd", "praktisch-reizen", "verantwoord-reizen", "spiritueel-reizen", "nederlands-erfgoed"] },
+    { icon: "🏠", title: { nl: "Ik ga in India wonen of werken", en: "I am moving to India" }, topics: ["wonen-werken-studeren", "nederlanders-in-india", "gezondheid", "belasting-pensioen", "huwelijk-documenten"] },
+    { icon: "🤝", title: { nl: "Ik doe zaken tussen beide landen", en: "I do business between the two countries" }, topics: ["zakendoen-in-india", "ondernemen-in-nederland", "importeren-uit-india", "indiaas-talent", "sectoren-etiquette", "netwerken"] },
+    { icon: "🍛", title: { nl: "Ik wil India in Nederland beleven", en: "I want to enjoy India in the Netherlands" }, topics: ["restaurants", "eten-thuis", "film-bollywood", "feesten-evenementen", "dans-muziek", "yoga", "ayurveda", "cricket"] },
+    { icon: "💶", title: { nl: "Ik heb geld, bezit of pensioen in beide landen", en: "I have money, property or a pension in both countries" }, topics: ["belasting-pensioen", "bezit-erfenis-india", "nationaliteit-oci", "scheiding-kinderen", "overlijden"] },
+  ],
 
   // The automatic place lists. `topic` is the Dutch slug of the topic page that shows the full list.
   kinds: [

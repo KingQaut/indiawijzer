@@ -32,4 +32,4 @@ permalink: "{{ p.url }}"
   <div id="near-out"></div>
   <p class="meta">{{ ui.nearPrivacy }} {{ ui.osm }} · {{ ui.updated }} {{ places.updated | date(p.lang) }}</p>
 </section>
-<p><a href="{{ catalog.tools[p.lang][1].url }}">{{ catalog.tools[p.lang][1].title }} →</a></p>
+<p><a href="{{ catalog.toolBy[p.lang].cities.url }}">{{ catalog.toolBy[p.lang].cities.title }} →</a></p>
