@@ -1,0 +1,21 @@
+---
+layout: base.njk
+pagination: { data: catalog.toolPages.start, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+{%- set ui = site.ui[p.lang] -%}
+<nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › {{ p.title }}</nav>
+<h1>{{ p.tool.icon }} {{ p.title }}</h1>
+<p class="intro">{{ p.description }}</p>
+<div class="grid">
+{%- for gd in catalog.guides[p.lang] %}
+  <section class="card">
+    <h2><span class="ico" aria-hidden="true">{{ gd.icon }}</span> {{ gd.title }}</h2>
+    <ul>
+    {%- for t in gd.topics %}
+      <li><a href="{{ t.url }}">{{ t.title }}</a></li>
+    {%- endfor %}
+    </ul>
+  </section>
+{%- endfor %}
+</div>

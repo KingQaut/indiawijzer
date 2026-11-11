@@ -16,4 +16,4 @@ permalink: "{{ p.url }}"
 {%- endfor %}
 </div>
 <p class="meta">{{ ui.osm }} · {{ ui.updated }} {{ places.updated | date(p.lang) }}</p>
-<p><a href="{{ catalog.tools[p.lang][0].url }}">{{ catalog.tools[p.lang][0].title }} →</a></p>
+<p><a href="{{ catalog.toolBy[p.lang].near.url }}">{{ catalog.toolBy[p.lang].near.title }} →</a></p>

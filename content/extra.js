@@ -478,3 +478,310 @@ export const extra = {
     },
   ],
 };
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Third batch (11 November 2026)
+
+extra["india-in-nederland"].push(
+  {
+    slug: { nl: "eten-thuis", en: "eating-at-home" },
+    title: { nl: "Vegetarisch, chai en mango's", en: "Vegetarian food, chai and mangoes" },
+    intro: {
+      nl: "Vegetarisch en jaïn eten, Indiase thee en het mangoseizoen.",
+      en: "Vegetarian and Jain food, Indian tea and the mango season.",
+    },
+    body: {
+      nl: [
+        "Een groot deel van India eet vegetarisch, en de Indiase keuken is daardoor een van de rijkste ter wereld voor wie geen vlees eet. Jaïns mijden bovendien wortelgroenten zoals ui, knoflook en aardappel; sattvisch eten, bekend uit yoga en ayurveda, laat ook ui en knoflook weg. In Indiase restaurants kunt u hier gewoon om vragen. Let in Nederlandse winkels op gelatine, stremsel in kaas en ei in gebak.",
+        "Chai is zwarte thee die met melk, suiker en specerijen als kardemom, gember en kruidnagel wordt gekookt. India is een van de grootste theeproducenten ter wereld, met Assam, Darjeeling en Nilgiri als bekendste streken.",
+        "Indiase mango's zoals Alphonso en Kesar zijn er maar kort, ruwweg van april tot juni. Indiase winkels verkopen ze dan per doos. Weet u niet hoe een ingrediënt in het Nederlands heet? Gebruik de ingrediëntenvertaler onder 'Handig'.",
+      ],
+      en: [
+        "A large part of India eats vegetarian, which makes Indian cooking one of the richest in the world for anyone who avoids meat. Jains also avoid root vegetables such as onion, garlic and potato; sattvic food, known from yoga and ayurveda, leaves out onion and garlic as well. In Indian restaurants you can simply ask for this. In Dutch shops, watch for gelatine, rennet in cheese and egg in baked goods.",
+        "Chai is black tea boiled with milk, sugar and spices such as cardamom, ginger and cloves. India is one of the world's largest tea producers; Assam, Darjeeling and Nilgiri are the best-known regions.",
+        "Indian mangoes such as Alphonso and Kesar are available only briefly, roughly from April to June. Indian shops then sell them by the box. Not sure what an ingredient is called in Dutch? Use the ingredient translator under 'Handy tools'.",
+      ],
+    },
+    live: [
+      { u: m("indiaas vegetarisch restaurant"), t: { nl: "Vegetarisch Indiaas eten", en: "Vegetarian Indian food" } },
+      { u: g("jain food Nederland"), t: { nl: "Jaïn-eten in Nederland", en: "Jain food in the Netherlands" } },
+      { u: g("Indiase kookworkshop"), t: { nl: "Indiase kookworkshops", en: "Indian cooking classes" } },
+      { u: g("Alphonso mango kopen Nederland"), t: { nl: "Alphonso-mango's kopen", en: "Buy Alphonso mangoes" } },
+    ],
+    links: [
+      { u: "https://www.teaboard.gov.in/", t: "Tea Board of India", d: { nl: "Over Indiase thee en de theestreken.", en: "About Indian tea and its regions." } },
+      { u: "https://www.vegetariers.nl/", t: "Vegetariërsbond", d: { nl: "Praktische informatie over vegetarisch eten in Nederland.", en: "Practical information on vegetarian food in the Netherlands (in Dutch)." } },
+    ],
+  },
+  {
+    slug: { nl: "hindostaanse-geschiedenis", en: "hindustani-history" },
+    title: { nl: "Van India via Suriname naar Nederland", en: "From India via Suriname to the Netherlands" },
+    intro: {
+      nl: "De geschiedenis van de Hindostanen, de grootste groep met Indiase wortels in Nederland.",
+      en: "The history of the Hindustanis, the largest group with Indian roots in the Netherlands.",
+    },
+    body: {
+      nl: [
+        "Op 5 juni 1873 kwam het zeilschip Lalla Rookh in Suriname aan met de eerste contractarbeiders uit Brits-Indië. Tot 1916 volgden ongeveer 34.000 mannen, vrouwen en kinderen, vooral uit het huidige Uttar Pradesh en Bihar, om op de plantages te werken. Ongeveer een derde keerde terug; de anderen bleven en bouwden een eigen gemeenschap op, met het Sarnami als taal.",
+        "Rond de Surinaamse onafhankelijkheid in 1975 vertrokken veel Hindostanen naar Nederland. Hun nakomelingen wonen door het hele land, met Den Haag als onbetwist centrum. Elk jaar op 5 juni wordt de Hindostaanse immigratie herdacht.",
+        "Wie zijn voorouders zoekt, begint bij het Nationaal Archief: de gegevens van vrijwel alle contractarbeiders, met hun dorp van herkomst, zijn daar gratis online doorzoekbaar.",
+      ],
+      en: [
+        "On 5 June 1873 the sailing ship Lalla Rookh arrived in Suriname with the first indentured labourers from British India. Until 1916 about 34,000 men, women and children followed, mostly from present-day Uttar Pradesh and Bihar, to work on the plantations. About a third returned; the others stayed and built a community of their own, with Sarnami as its language.",
+        "Around Suriname's independence in 1975, many Hindustanis left for the Netherlands. Their descendants live all over the country, with The Hague as the undisputed centre. Every year on 5 June the Hindustani immigration is commemorated.",
+        "Anyone tracing their ancestors starts at the National Archives: the records of almost all indentured labourers, including their village of origin, can be searched online there for free.",
+      ],
+    },
+    live: [
+      { u: g("Hindostaanse immigratie herdenking 5 juni"), t: { nl: "Herdenking 5 juni", en: "5 June commemoration" } },
+      { u: g("roots reis India Hindostaanse voorouders"), t: { nl: "Rootsreizen naar India", en: "Roots trips to India" } },
+    ],
+    links: [
+      { u: "https://www.nationaalarchief.nl/", t: "Nationaal Archief", d: { nl: "Index van Hindostaanse contractarbeiders in Suriname.", en: "Index of Hindustani indentured labourers in Suriname." } },
+      { u: "https://www.denhaag.nl/", t: { nl: "Gemeente Den Haag", en: "City of The Hague" }, d: { nl: "De stad met de grootste Hindostaanse gemeenschap van Nederland.", en: "The city with the largest Hindustani community in the Netherlands." } },
+    ],
+  },
+  {
+    slug: { nl: "goede-doelen", en: "charities-volunteering" },
+    title: { nl: "Goede doelen en vrijwilligerswerk", en: "Charities and volunteering" },
+    intro: {
+      nl: "Geven aan projecten in India en zelf meehelpen in Nederland.",
+      en: "Giving to projects in India and lending a hand in the Netherlands.",
+    },
+    body: {
+      nl: [
+        "Tientallen Nederlandse stichtingen steunen onderwijs, zorg of kinderen in India. Controleer voordat u geeft of een organisatie een CBF-erkenning heeft en de ANBI-status van de Belastingdienst; met die laatste is uw gift bovendien aftrekbaar. Goede organisaties publiceren een jaarverslag en laten zien wat er met het geld gebeurt.",
+        "Zelf iets doen kan dichtbij. In elke gurdwara draait de langar, de gratis gemeenschappelijke maaltijd, volledig op vrijwilligers (seva), en iedereen is welkom om mee te eten of te helpen. Ook tempels en verenigingen zoeken helpers rond feesten als Diwali en Holi.",
+      ],
+      en: [
+        "Dozens of Dutch foundations support education, healthcare or children in India. Before you give, check whether an organisation holds CBF recognition and the tax office's ANBI status; the latter also makes your gift tax-deductible. Good organisations publish an annual report and show what happens with the money.",
+        "You can also help close to home. In every gurdwara the langar, the free communal meal, is run entirely by volunteers (seva), and everyone is welcome to eat or help. Temples and associations look for helpers too around festivals such as Diwali and Holi.",
+      ],
+    },
+    live: [
+      { u: g("goede doelen India CBF erkend"), t: { nl: "Erkende goede doelen voor India", en: "Recognised charities for India" } },
+    ],
+    links: [
+      { u: "https://www.cbf.nl/", t: "CBF", d: { nl: "Register van erkende goede doelen.", en: "Register of recognised charities (in Dutch)." } },
+      { u: "https://www.belastingdienst.nl/", t: "Belastingdienst", d: { nl: "ANBI opzoeken en regels voor giftenaftrek.", en: "Look up ANBI status and the rules for deducting gifts." } },
+    ],
+  },
+);
+
+extra["naar-nederland"].push(
+  {
+    slug: { nl: "school-kinderopvang", en: "schools-childcare" },
+    title: { nl: "School en kinderopvang", en: "Schools and childcare" },
+    intro: {
+      nl: "Het Nederlandse schoolsysteem, internationale scholen en opvang.",
+      en: "The Dutch school system, international schools and childcare.",
+    },
+    body: {
+      nl: [
+        "Kinderen gaan in Nederland meestal vanaf hun vierde naar de basisschool en zijn vanaf hun vijfde leerplichtig. Na groep 8 volgt, op advies van de school, een van de vormen van voortgezet onderwijs. Openbare en bijzondere scholen zijn vrijwel gratis; er zijn ook enkele hindoeïstische basisscholen.",
+        "Blijft u kort, dan kan een internationale school aantrekkelijk zijn, met Engelstalig onderwijs en vaak een wachtlijst. Voor kinderen die nog geen Nederlands spreken bestaan er taal- of schakelklassen.",
+        "Kinderopvang is duur, maar werkende ouders krijgen via de kinderopvangtoeslag een deel terug. Daarnaast is er kinderbijslag van de SVB. Controleer altijd zelf uw recht op toeslagen en geef wijzigingen direct door.",
+      ],
+      en: [
+        "Children in the Netherlands usually start primary school at four and school is compulsory from five. After the final year, on the school's advice, they move on to one of the types of secondary education. State and denominational schools are almost free; there are also a few Hindu primary schools.",
+        "If you are staying only briefly, an international school may be attractive, with English-language teaching and often a waiting list. Children who do not yet speak Dutch can attend language or bridging classes.",
+        "Childcare is expensive, but working parents get part of it back through the childcare benefit. There is also child benefit from the SVB. Always check your own entitlement to benefits and report changes straight away.",
+      ],
+    },
+    live: [
+      { u: m("internationale school"), t: { nl: "Internationale scholen in de buurt", en: "International schools near me" } },
+      { u: g("hindoe basisschool Nederland"), t: { nl: "Hindoeïstische basisscholen", en: "Hindu primary schools" } },
+    ],
+    links: [
+      { u: "https://www.government.nl/topics/education", t: "Government.nl", d: { nl: "Het onderwijs in Nederland uitgelegd, in het Engels.", en: "Education in the Netherlands explained, in English." } },
+      { u: "https://www.svb.nl/", t: "SVB", d: { nl: "Kinderbijslag.", en: "Child benefit." } },
+      { u: "https://www.belastingdienst.nl/", t: "Belastingdienst / Dienst Toeslagen", d: { nl: "Kinderopvangtoeslag en andere toeslagen.", en: "Childcare benefit and other allowances." } },
+    ],
+  },
+  {
+    slug: { nl: "meenemen-douane", en: "what-you-can-bring" },
+    title: { nl: "Wat mag u meenemen?", en: "What can you bring?" },
+    intro: {
+      nl: "Voedsel, medicijnen, goud, geld en huisdieren van India naar Nederland.",
+      en: "Food, medicines, gold, cash and pets from India to the Netherlands.",
+    },
+    body: {
+      nl: [
+        "Vlees, melk en zuivelproducten mag u van buiten de Europese Unie niet meenemen; dat geldt ook voor zelfgemaakte gerechten, ghee en zoetigheid met melk. Voor fruit, groenten en planten gelden beperkingen. Droge kruiden, thee en rijst voor eigen gebruik zijn in de regel geen probleem.",
+        "Medicijnen voor eigen gebruik mag u meenemen, liefst in de originele verpakking met een recept of doktersverklaring. Voor sterke pijnstillers, slaapmiddelen en andere middelen die onder de Opiumwet vallen hebt u een officiële verklaring nodig. Contant geld van 10.000 euro of meer moet u aangeven, en boven de vrijstelling betaalt u invoerrechten en btw over nieuwe aankopen, ook over goud en sieraden.",
+        "Honden en katten uit India hebben een chip, een rabiësvaccinatie, een bloedtest en een gezondheidscertificaat nodig. Dat traject duurt maanden, dus begin op tijd. De NVWA beschrijft de stappen.",
+      ],
+      en: [
+        "You may not bring meat, milk or dairy products from outside the European Union; this includes home-made dishes, ghee and sweets made with milk. Fruit, vegetables and plants are restricted. Dry spices, tea and rice for your own use are generally no problem.",
+        "You may bring medicines for personal use, preferably in the original packaging with a prescription or doctor's letter. Strong painkillers, sleeping pills and other drugs covered by the Opium Act require an official certificate. Cash of 10,000 euros or more must be declared, and above the allowance you pay import duty and VAT on new purchases, gold and jewellery included.",
+        "Dogs and cats from India need a microchip, a rabies vaccination, a blood test and a health certificate. The process takes months, so start in good time. The NVWA sets out the steps.",
+      ],
+    },
+    links: [
+      { u: "https://www.belastingdienst.nl/", t: { nl: "Douane", en: "Dutch Customs" }, d: { nl: "Wat u mag meenemen, vrijstellingen en geld aangeven.", en: "What you may bring, allowances and declaring cash." } },
+      { u: "https://www.nvwa.nl/", t: "NVWA", d: { nl: "Voedsel, planten en huisdieren meenemen.", en: "Bringing food, plants and pets." } },
+      { u: "https://www.hetcak.nl/", t: "CAK", d: { nl: "Verklaring voor medicijnen die onder de Opiumwet vallen.", en: "Certificate for medicines covered by the Opium Act." } },
+    ],
+  },
+);
+
+extra["naar-india"].push(
+  {
+    slug: { nl: "nederlanders-in-india", en: "dutch-nationals-in-india" },
+    title: { nl: "Als Nederlander in India wonen", en: "Living in India as a Dutch national" },
+    intro: {
+      nl: "Paspoort, stemmen, DigiD, AOW en Nederlands onderwijs vanuit India.",
+      en: "Passport, voting, DigiD, state pension and Dutch education from India.",
+    },
+    body: {
+      nl: [
+        "Een nieuw paspoort vraagt u aan bij de Nederlandse ambassade in New Delhi of een van de consulaten; maak ruim van tevoren een afspraak. Verhuist u naar India, schrijf u dan uit bij uw gemeente. Om vanuit het buitenland te stemmen bij landelijke en Europese verkiezingen registreert u zich eenmalig bij de gemeente Den Haag.",
+        "Uw DigiD kunt u ook in het buitenland aanvragen of behouden, wat nodig is voor pensioen en belastingzaken. De AOW wordt in India uitbetaald, maar de hoogte kan afhangen van afspraken tussen beide landen, en de SVB vraagt regelmatig om een bewijs van in leven zijn.",
+        "Kinderen houden hun Nederlands bij via Nederlands onderwijs op afstand of op een NTC-locatie; de Stichting NOB heeft een overzicht. Nederlandse verenigingen in de grote steden organiseren onder meer Koningsdag en Sinterklaas.",
+      ],
+      en: [
+        "You apply for a new passport at the Dutch embassy in New Delhi or one of the consulates; book an appointment well ahead. If you move to India, deregister from your municipality. To vote from abroad in national and European elections you register once with the municipality of The Hague.",
+        "You can apply for or keep your DigiD abroad, which you need for pension and tax matters. The Dutch state pension (AOW) is paid out in India, but the amount can depend on agreements between the two countries, and the SVB regularly asks for proof that you are alive.",
+        "Children keep up their Dutch through distance learning or at a Dutch language and culture school; the NOB foundation has an overview. Dutch associations in the big cities organise King's Day and Sinterklaas, among other things.",
+      ],
+    },
+    live: [
+      { u: g("Nederlandse vereniging India Koningsdag"), t: { nl: "Nederlandse verenigingen in India", en: "Dutch associations in India" } },
+    ],
+    links: [
+      { u: "https://www.netherlandsworldwide.nl/", t: "Netherlands Worldwide", d: { nl: "Paspoort, DigiD en andere zaken regelen vanuit het buitenland.", en: "Passports, DigiD and other matters from abroad." } },
+      { u: "https://www.stemmenvanuithetbuitenland.nl/", t: "Stemmen vanuit het buitenland", d: { nl: "Registreren als kiezer buiten Nederland.", en: "Register as a voter outside the Netherlands." } },
+      { u: "https://www.svb.nl/", t: "SVB", d: { nl: "AOW in het buitenland en het levensbewijs.", en: "State pension abroad and the life certificate." } },
+      { u: "https://www.stichtingnob.nl/", t: "Stichting NOB", d: { nl: "Nederlands onderwijs in het buitenland.", en: "Dutch education abroad." } },
+    ],
+  },
+  {
+    slug: { nl: "spiritueel-reizen", en: "spiritual-travel" },
+    title: { nl: "Bedevaart, ashrams en retreats", en: "Pilgrimage, ashrams and retreats" },
+    intro: {
+      nl: "Heilige plaatsen, yoga in Rishikesh, ayurveda in Kerala en hoe u zich gedraagt.",
+      en: "Holy places, yoga in Rishikesh, ayurveda in Kerala and how to behave.",
+    },
+    body: {
+      nl: [
+        "India telt talloze bedevaartsoorden. Varanasi aan de Ganges is de heiligste stad van het hindoeïsme, de Gouden Tempel in Amritsar het hart van het sikhisme, Bodh Gaya de plaats waar de Boeddha verlichting bereikte. De Kumbh Mela, die bij toerbeurt in vier steden wordt gehouden, is de grootste religieuze bijeenkomst ter wereld.",
+        "Rishikesh, aan de voet van de Himalaya, staat bekend als hoofdstad van de yoga, en Kerala als bakermat van ayurvedische kuren. De kwaliteit van scholen en klinieken loopt sterk uiteen: kijk naar erkenning, vraag naar de opleiding van docenten en artsen, en wees voorzichtig met beloften van genezing.",
+        "In een ashram leeft u volgens het ritme van de gemeenschap: vroeg op, eenvoudig vegetarisch eten, geen alcohol of tabak, bedekte kleding en vaak stilte op vaste uren. Doneren is gebruikelijk; opdringerige 'gidsen' en 'priesters' bij tempels kunt u vriendelijk weigeren.",
+      ],
+      en: [
+        "India has countless places of pilgrimage. Varanasi on the Ganges is the holiest city of Hinduism, the Golden Temple in Amritsar the heart of Sikhism, Bodh Gaya the place where the Buddha attained enlightenment. The Kumbh Mela, held in rotation in four cities, is the largest religious gathering in the world.",
+        "Rishikesh, at the foot of the Himalaya, is known as the capital of yoga, and Kerala as the home of ayurvedic treatments. The quality of schools and clinics varies widely: look for accreditation, ask about the training of teachers and doctors, and be wary of promises of a cure.",
+        "In an ashram you live by the rhythm of the community: early rising, simple vegetarian food, no alcohol or tobacco, modest clothing and often silence at set hours. Donations are customary; pushy 'guides' and 'priests' at temples can be politely refused.",
+      ],
+    },
+    live: [
+      { u: g("yoga teacher training Rishikesh"), t: { nl: "Yoga in Rishikesh", en: "Yoga in Rishikesh" } },
+      { u: g("ayurveda retreat Kerala"), t: { nl: "Ayurveda in Kerala", en: "Ayurveda in Kerala" } },
+      { u: g("vipassana meditation course India"), t: { nl: "Vipassana-cursussen", en: "Vipassana courses" } },
+    ],
+    links: [
+      { u: "https://www.incredibleindia.gov.in/", t: "Incredible India", d: { nl: "Bedevaartsoorden en spirituele bestemmingen.", en: "Pilgrimage sites and spiritual destinations." } },
+      { u: "https://yoga.ayush.gov.in/", t: { nl: "Yogaportaal van de Indiase overheid", en: "Yoga portal of the Indian government" }, d: { nl: "Erkende yoga-instellingen en certificering.", en: "Recognised yoga institutions and certification." } },
+    ],
+  },
+  {
+    slug: { nl: "nederland-india-geschiedenis", en: "dutch-indian-history" },
+    title: { nl: "Vier eeuwen Nederland en India", en: "Four centuries of the Netherlands and India" },
+    intro: {
+      nl: "Van de VOC en de Hortus Malabaricus tot de banden van nu.",
+      en: "From the Dutch East India Company and the Hortus Malabaricus to today's ties.",
+    },
+    body: {
+      nl: [
+        "De VOC, opgericht in 1602, vestigde zich al in de eerste jaren van de zeventiende eeuw aan de Coromandelkust, met Pulicat als hoofdkwartier. Daarna volgden handelsposten in Surat in Gujarat, in Bengalen rond Chinsurah en aan de Malabarkust, waar de Nederlanders in 1663 Cochin op de Portugezen veroverden. Ze kwamen voor textiel, peper, salpeter en opium.",
+        "Het mooiste dat uit die tijd is voortgekomen is de Hortus Malabaricus: twaalf delen over de planten van Kerala, samengesteld onder leiding van gouverneur Hendrik Adriaan van Rheede met hulp van lokale geleerden en tussen 1678 en 1693 in Amsterdam gedrukt.",
+        "In 1741 versloeg het koninkrijk Travancore de VOC bij Colachel, en in de achttiende eeuw nam de Britse macht het over. Met het Verdrag van Londen van 1824 droeg Nederland zijn laatste bezittingen in India over aan Groot-Brittannië. In 1920 bezocht de dichter Rabindranath Tagore Nederland; sinds India's onafhankelijkheid in 1947 onderhouden beide landen diplomatieke betrekkingen.",
+      ],
+      en: [
+        "The Dutch East India Company (VOC), founded in 1602, established itself on the Coromandel Coast in the first years of the seventeenth century, with Pulicat as its headquarters. Trading posts followed in Surat in Gujarat, in Bengal around Chinsurah and on the Malabar Coast, where the Dutch took Cochin from the Portuguese in 1663. They came for textiles, pepper, saltpetre and opium.",
+        "The finest legacy of that era is the Hortus Malabaricus: twelve volumes on the plants of Kerala, compiled under governor Hendrik Adriaan van Rheede with the help of local scholars and printed in Amsterdam between 1678 and 1693.",
+        "In 1741 the kingdom of Travancore defeated the VOC at Colachel, and in the eighteenth century British power took over. Under the Treaty of London of 1824 the Netherlands handed its last possessions in India to Great Britain. In 1920 the poet Rabindranath Tagore visited the Netherlands; since India's independence in 1947 the two countries have maintained diplomatic relations.",
+      ],
+    },
+    links: [
+      { u: "https://www.nationaalarchief.nl/", t: "Nationaal Archief", d: { nl: "Het archief van de VOC.", en: "The archives of the VOC." } },
+      { u: "https://www.atlasofmutualheritage.nl/", t: "Atlas of Mutual Heritage", d: { nl: "Kaarten, tekeningen en plattegronden van VOC-vestigingen.", en: "Maps, drawings and plans of VOC settlements." } },
+      { u: "https://www.rijksmuseum.nl/", t: "Rijksmuseum", d: { nl: "Voorwerpen en schilderijen uit de VOC-tijd.", en: "Objects and paintings from the VOC era." } },
+    ],
+  },
+);
+
+extra.zakendoen.push(
+  {
+    slug: { nl: "sectoren-etiquette", en: "sectors-etiquette" },
+    title: { nl: "Kansrijke sectoren en zakelijke omgangsvormen", en: "Promising sectors and business etiquette" },
+    intro: {
+      nl: "Waar Nederland en India elkaar zakelijk vinden, en hoe u misverstanden voorkomt.",
+      en: "Where the Netherlands and India meet in business, and how to avoid misunderstandings.",
+    },
+    body: {
+      nl: [
+        "De samenwerking tussen beide landen concentreert zich op water en delta-technologie, landbouw en tuinbouw, havens en logistiek, gezondheid en life sciences, energie en hightech, waaronder halfgeleiders. Omgekeerd zijn Indiase IT-, farmacie- en staalbedrijven grote investeerders in Nederland. RVO en de ambassade publiceren per sector de actuele kansen.",
+        "In India gaat de relatie voor de transactie: neem de tijd, verwacht meerdere gesprekken en respecteer hiërarchie, want besluiten vallen aan de top. Een direct 'nee' is ongebruikelijk; 'we zullen het proberen' kan een beleefde afwijzing zijn. Nederlanders komen juist snel ter zake, spreken tegen in vergaderingen en verwachten dat afspraken en deadlines letterlijk worden genomen. Spreek daarom verwachtingen uit en leg ze vast.",
+      ],
+      en: [
+        "Cooperation between the two countries centres on water and delta technology, agriculture and horticulture, ports and logistics, health and life sciences, energy and high tech, including semiconductors. In the other direction, Indian IT, pharmaceutical and steel companies are major investors in the Netherlands. RVO and the embassy publish current opportunities per sector.",
+        "In India the relationship comes before the deal: take your time, expect several meetings and respect hierarchy, because decisions are taken at the top. A direct 'no' is unusual; 'we will try' can be a polite refusal. The Dutch get to the point quickly, disagree openly in meetings and expect agreements and deadlines to be taken literally. So state expectations out loud and put them in writing.",
+      ],
+    },
+    links: [
+      { u: "https://www.rvo.nl/", t: "RVO", d: { nl: "Landeninformatie India en kansen per sector.", en: "Country information on India and opportunities per sector." } },
+      { u: "https://investinholland.com/", t: "Invest in Holland (NFIA)", d: { nl: "Voor Indiase bedrijven die zich in Nederland vestigen.", en: "For Indian companies setting up in the Netherlands." } },
+      { u: "https://www.investindia.gov.in/", t: "Invest India", d: { nl: "Het Indiase investeringsagentschap, met sectorinformatie.", en: "India's investment agency, with sector information." } },
+    ],
+  },
+);
+
+extra["familie-recht"].push(
+  {
+    slug: { nl: "geboorte", en: "birth" },
+    title: { nl: "Een kind krijgen in Nederland", en: "Having a child in the Netherlands" },
+    intro: {
+      nl: "Aangifte, nationaliteit en paspoort van uw kind.",
+      en: "Registration, nationality and passport of your child.",
+    },
+    body: {
+      nl: [
+        "Een geboorte geeft u binnen drie dagen aan bij de gemeente waar het kind is geboren. Zwangerschap en bevalling worden in Nederland begeleid door een verloskundige, en na de geboorte komt er een week lang kraamzorg aan huis; regel die vroeg in de zwangerschap.",
+        "Een kind wordt niet Nederlander doordat het in Nederland is geboren: de nationaliteit volgt die van de ouders. Is een van de ouders Indiaas staatsburger, dan registreert u de geboorte bij de Indiase ambassade om de Indiase nationaliteit vast te leggen en een paspoort aan te vragen; daarvoor geldt een termijn. Het kind heeft daarnaast een eigen verblijfsvergunning nodig, die u bij de IND aanvraagt.",
+      ],
+      en: [
+        "You register a birth within three days at the municipality where the child was born. Pregnancy and birth in the Netherlands are supervised by a midwife, and after the birth a maternity nurse comes to your home for a week (kraamzorg); arrange this early in the pregnancy.",
+        "A child does not become Dutch by being born in the Netherlands: nationality follows that of the parents. If one of the parents is an Indian citizen, you register the birth at the Indian embassy to establish Indian nationality and apply for a passport; a time limit applies. The child also needs its own residence permit, which you request from the IND.",
+      ],
+    },
+    links: [
+      { u: "https://www.government.nl/topics/registering-a-birth-and-acknowledging-a-child", t: "Government.nl", d: { nl: "Aangifte van geboorte, in het Engels.", en: "Registering a birth, in English." } },
+      { u: "https://www.indianembassynetherlands.gov.in/", t: { nl: "Indiase ambassade in Den Haag", en: "Embassy of India, The Hague" }, d: { nl: "Geboorteregistratie en eerste paspoort.", en: "Birth registration and first passport." } },
+      { u: "https://ind.nl/", t: "IND", d: { nl: "Verblijfsvergunning voor een in Nederland geboren kind.", en: "Residence permit for a child born in the Netherlands." } },
+    ],
+  },
+  {
+    slug: { nl: "scheiding-kinderen", en: "divorce-children" },
+    title: { nl: "Scheiding en kinderen over de grens", en: "Divorce and children across borders" },
+    intro: {
+      nl: "Scheiden met een Indiase band, gezag en internationale kinderontvoering.",
+      en: "Divorce with an Indian connection, custody and international child abduction.",
+    },
+    body: {
+      nl: [
+        "Bent u in India getrouwd en woont u in Nederland, dan kan de Nederlandse rechter de scheiding meestal uitspreken. Of die uitspraak ook in India wordt erkend, hangt onder meer af van de grond voor de scheiding en van de vraag of beide partners aan de procedure hebben deelgenomen. Laat u adviseren door een advocaat met kennis van beide rechtsstelsels voordat u iets tekent.",
+        "Wie een kind zonder toestemming van de andere ouder meeneemt naar het buitenland, kan zich schuldig maken aan kinderontvoering. India is niet aangesloten bij het Haags Kinderontvoeringsverdrag, waardoor terugkeer van een kind vanuit India juridisch moeilijk is. Neem bij zorgen direct contact op met het Centrum Internationale Kinderontvoering, dat gratis en vertrouwelijk adviseert.",
+      ],
+      en: [
+        "If you married in India and live in the Netherlands, a Dutch court can usually grant the divorce. Whether that decision is also recognised in India depends, among other things, on the ground for divorce and on whether both partners took part in the proceedings. Get advice from a lawyer who knows both legal systems before you sign anything.",
+        "Taking a child abroad without the other parent's consent can amount to child abduction. India is not a party to the Hague Child Abduction Convention, which makes the return of a child from India legally difficult. If you are worried, contact the Dutch Centre for International Child Abduction straight away; its advice is free and confidential.",
+      ],
+    },
+    links: [
+      { u: "https://www.kinderontvoering.org/", t: "Centrum Internationale Kinderontvoering", d: { nl: "Advies bij (dreigende) kinderontvoering.", en: "Advice on (threatened) child abduction." } },
+      { u: "https://www.rechtspraak.nl/", t: "De Rechtspraak", d: { nl: "Scheiden via de Nederlandse rechter.", en: "Divorce through the Dutch courts (in Dutch)." } },
+      { u: "https://www.juridischloket.nl/", t: "Juridisch Loket", d: { nl: "Gratis eerste juridisch advies.", en: "Free initial legal advice (in Dutch)." } },
+    ],
+  },
+);
