@@ -785,3 +785,202 @@ extra["familie-recht"].push(
     ],
   },
 );
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Fourth batch (11 November 2026)
+
+extra["india-in-nederland"].push(
+  {
+    slug: { nl: "recepten", en: "recipes" },
+    title: { nl: "Drie basisrecepten", en: "Three basic recipes" },
+    intro: {
+      nl: "Masala chai, dal en raita met ingrediënten uit de Nederlandse supermarkt.",
+      en: "Masala chai, dal and raita with ingredients from a Dutch supermarket.",
+    },
+    body: {
+      nl: [
+        "Masala chai (2 koppen). Breng een kop water aan de kook met twee gekneusde kardemompeulen, een plakje gember, een kruidnagel en een stukje kaneel. Voeg twee theelepels losse zwarte thee toe (of twee zakjes) en laat twee minuten koken. Giet er een kop volle melk bij, breng opnieuw aan de kook, laat even pruttelen, zeef en zoet naar smaak.",
+        "Dal (4 personen). Spoel 200 gram rode linzen en kook ze in 20 minuten gaar in 700 milliliter water met een halve theelepel kurkuma en zout. Verhit in een pannetje twee eetlepels olie of ghee, bak een theelepel komijnzaad tot het knettert, voeg een gesnipperde ui, twee tenen knoflook en een fijngesneden groene peper toe en bak goudbruin. Roer er een gesneden tomaat door, laat kort meebakken en giet alles bij de linzen. Maak af met verse koriander en een kneepje citroen.",
+        "Raita. Roer een beker volle yoghurt los met een geraspte, uitgeknepen komkommer, een snuf zout en een halve theelepel geroosterd komijnpoeder. Lekker verkoelend bij elk gekruid gerecht. Weet u niet hoe een Indiaas ingrediënt in het Nederlands heet? Kijk in de ingrediëntenvertaler onder 'Handig'.",
+      ],
+      en: [
+        "Masala chai (2 cups). Bring a cup of water to the boil with two crushed cardamom pods, a slice of ginger, a clove and a small piece of cinnamon. Add two teaspoons of loose black tea (or two bags) and boil for two minutes. Pour in a cup of whole milk, bring back to the boil, simmer briefly, strain and sweeten to taste.",
+        "Dal (serves 4). Rinse 200 grams of red lentils and cook them for 20 minutes in 700 millilitres of water with half a teaspoon of turmeric and salt. In a small pan heat two tablespoons of oil or ghee, fry a teaspoon of cumin seeds until they crackle, add a chopped onion, two cloves of garlic and a finely sliced green chilli and fry until golden. Stir in a chopped tomato, fry briefly and pour everything into the lentils. Finish with fresh coriander and a squeeze of lemon.",
+        "Raita. Whisk a tub of whole yoghurt with a grated, squeezed cucumber, a pinch of salt and half a teaspoon of roasted cumin powder. A cooling side with any spiced dish. Not sure what an Indian ingredient is called in Dutch? Look it up in the ingredient translator under 'Handy tools'.",
+      ],
+    },
+    live: [
+      { u: g("Indiase recepten"), t: { nl: "Meer Indiase recepten", en: "More Indian recipes" } },
+      { u: g("Indiase kookworkshop"), t: { nl: "Indiase kookworkshops", en: "Indian cooking classes" } },
+    ],
+    links: [
+      { u: "https://www.voedingscentrum.nl/", t: "Voedingscentrum", d: { nl: "Veilig en gezond koken.", en: "Safe and healthy cooking (in Dutch)." } },
+    ],
+  },
+  {
+    slug: { nl: "boeken", en: "books" },
+    title: { nl: "India lezen", en: "Reading India" },
+    intro: {
+      nl: "Een leeslijst om mee te beginnen, van Tagore tot nu.",
+      en: "A reading list to start with, from Tagore to today.",
+    },
+    body: {
+      nl: [
+        "Rabindranath Tagore kreeg in 1913 als eerste niet-Europeaan de Nobelprijs voor Literatuur; zijn dichtbundel Gitanjali werd in het Nederlands vertaald door Frederik van Eeden. Voor het India van na de onafhankelijkheid zijn Middernachtskinderen van Salman Rushdie en Een geschikte jongen van Vikram Seth de klassiekers.",
+        "Andere romans die in het Nederlands zijn verschenen en een goed begin vormen: De god van kleine dingen van Arundhati Roy, Een wankel evenwicht van Rohinton Mistry, De witte tijger van Aravind Adiga en de verhalen van Jhumpa Lahiri over Indiase gezinnen in het buitenland. Wie liever kort leest, begint bij de dorpsverhalen van R.K. Narayan.",
+        "De openbare bibliotheek heeft de meeste titels, vaak ook als e-book of luisterboek.",
+      ],
+      en: [
+        "Rabindranath Tagore became the first non-European to win the Nobel Prize in Literature in 1913; his poetry collection Gitanjali was translated into Dutch by Frederik van Eeden. For India after independence, Midnight's Children by Salman Rushdie and A Suitable Boy by Vikram Seth are the classics.",
+        "Other novels that make a good start: The God of Small Things by Arundhati Roy, A Fine Balance by Rohinton Mistry, The White Tiger by Aravind Adiga, and Jhumpa Lahiri's stories about Indian families abroad. If you prefer something short, begin with R.K. Narayan's small-town stories.",
+        "Dutch public libraries hold most of these titles, often as e-books or audiobooks too.",
+      ],
+    },
+    live: [
+      { u: g("Indiase literatuur Nederlandse vertaling"), t: { nl: "Indiase literatuur in vertaling", en: "Indian literature in Dutch translation" } },
+    ],
+    links: [
+      { u: "https://www.bibliotheek.nl/", t: { nl: "De Bibliotheek", en: "Dutch public libraries" }, d: { nl: "Zoeken in de collectie en lid worden.", en: "Search the catalogue and become a member (in Dutch)." } },
+      { u: "https://www.onlinebibliotheek.nl/", t: "Online Bibliotheek", d: { nl: "E-books en luisterboeken lenen.", en: "Borrow e-books and audiobooks (in Dutch)." } },
+    ],
+  },
+  {
+    slug: { nl: "hockey-sport", en: "hockey-sport" },
+    title: { nl: "Hockey, kabaddi en schaken", en: "Hockey, kabaddi and chess" },
+    intro: {
+      nl: "De sporten die Nederland en India delen, naast cricket.",
+      en: "The sports the Netherlands and India share, besides cricket.",
+    },
+    body: {
+      nl: [
+        "Hockey is de sport waarin Nederland en India elkaar al een eeuw treffen. India won acht keer olympisch goud en domineerde het hockey tot ver in de twintigste eeuw; Nederland behoort bij mannen en vrouwen al decennia tot de wereldtop. Nederlandse trainers en spelers werken geregeld in India, onder meer in de Hockey India League.",
+        "Kabaddi, een contactsport zonder bal die in India stadions vult, wordt in Nederland op kleine schaal gespeeld, vooral binnen de Punjabi gemeenschap. Schaken, dat zijn oorsprong in India heeft, beleeft daar een bloeitijd met een nieuwe generatie wereldtoppers; het jaarlijkse schaaktoernooi in Wijk aan Zee trekt steevast Indiase deelnemers. Badminton en het bordspel carrom zijn in Indiase verenigingen populair.",
+      ],
+      en: [
+        "Hockey is the sport in which the Netherlands and India have met for a century. India won Olympic gold eight times and dominated hockey well into the twentieth century; the Netherlands has been among the world's best in both the men's and women's game for decades. Dutch coaches and players regularly work in India, including in the Hockey India League.",
+        "Kabaddi, a contact sport without a ball that fills stadiums in India, is played on a small scale in the Netherlands, mainly within the Punjabi community. Chess, which originated in India, is flourishing there with a new generation of world-class players; the annual tournament in Wijk aan Zee always draws Indian participants. Badminton and the board game carrom are popular in Indian associations.",
+      ],
+    },
+    live: [
+      { u: m("hockeyclub"), t: { nl: "Hockeyclub in de buurt", en: "Hockey club near me" } },
+      { u: g("kabaddi Nederland"), t: { nl: "Kabaddi in Nederland", en: "Kabaddi in the Netherlands" } },
+      { u: m("badmintonvereniging"), t: { nl: "Badminton in de buurt", en: "Badminton near me" } },
+    ],
+    links: [
+      { u: "https://www.knhb.nl/", t: "KNHB", d: { nl: "De Nederlandse hockeybond.", en: "The Royal Dutch Hockey Association." } },
+      { u: "https://www.hockeyindia.org/", t: "Hockey India", d: { nl: "De Indiase hockeybond.", en: "India's hockey federation." } },
+      { u: "https://www.fih.hockey/", t: "FIH", d: { nl: "Internationale wedstrijden en ranglijsten.", en: "International fixtures and rankings." } },
+    ],
+  },
+);
+
+extra["naar-nederland"].push(
+  {
+    slug: { nl: "eerste-30-dagen", en: "first-30-days" },
+    title: { nl: "Checklist: uw eerste 30 dagen", en: "Checklist: your first 30 days" },
+    intro: {
+      nl: "Wat u in welke volgorde regelt nadat u in Nederland bent aangekomen.",
+      en: "What to arrange, and in which order, after arriving in the Netherlands.",
+    },
+    body: {
+      nl: [
+        "Week 1. Maak een afspraak bij uw gemeente om u in te schrijven; dat moet binnen vijf dagen na aankomst als u langer dan vier maanden blijft. Neem uw paspoort, huurcontract en een gelegaliseerde geboorteakte mee. Bij inschrijving krijgt u uw burgerservicenummer (BSN). Haal ook uw verblijfsdocument op bij de IND en laat zo nodig uw biometrische gegevens afnemen.",
+        "Week 2. Open met uw BSN een Nederlandse bankrekening en sluit een zorgverzekering af: dat is verplicht binnen vier maanden, en de premie gaat met terugwerkende kracht in. Schrijf u in bij een huisarts in uw buurt, want zonder huisarts komt u niet bij een specialist.",
+        "Week 3 en 4. Vraag een DigiD aan, waarmee u bij alle overheidsdiensten inlogt. Controleer of u een tbc-test moet doen bij de GGD. Regel een aansprakelijkheidsverzekering, een ov-chipkaart of betaalpas voor het openbaar vervoer en een fiets. Werkt u hier, vraag dan samen met uw werkgever de 30%-regeling aan als u daarvoor in aanmerking komt.",
+      ],
+      en: [
+        "Week 1. Book an appointment at your municipality to register; this must be done within five days of arrival if you are staying longer than four months. Bring your passport, rental contract and a legalised birth certificate. On registration you receive your citizen service number (BSN). Also collect your residence document from the IND and have your biometrics taken if required.",
+        "Week 2. Use your BSN to open a Dutch bank account and take out health insurance: this is compulsory within four months, and the premium applies retroactively. Register with a GP in your neighbourhood, because without a GP you cannot see a specialist.",
+        "Weeks 3 and 4. Apply for a DigiD, which you use to log in to all government services. Check whether you need a tuberculosis test at the municipal health service (GGD). Arrange liability insurance, a public transport card or contactless bank card, and a bicycle. If you work here, apply for the 30% ruling together with your employer if you qualify.",
+      ],
+    },
+    links: [
+      { u: "https://www.government.nl/topics/immigration-to-the-netherlands", t: "Government.nl", d: { nl: "Naar Nederland komen: het overzicht van de overheid.", en: "Coming to the Netherlands: the government's overview." } },
+      { u: "https://ind.nl/", t: "IND", d: { nl: "Verblijfsdocument, biometrie en tbc-test.", en: "Residence document, biometrics and TB test." } },
+      { u: "https://www.digid.nl/", t: "DigiD", d: { nl: "DigiD aanvragen.", en: "Apply for a DigiD." } },
+    ],
+  },
+);
+
+extra["naar-india"].push(
+  {
+    slug: { nl: "checklist-vertrek", en: "pre-departure-checklist" },
+    title: { nl: "Checklist: zes weken voor vertrek", en: "Checklist: six weeks before you fly" },
+    intro: {
+      nl: "Wat u wanneer regelt voor een reis naar India.",
+      en: "What to arrange, and when, for a trip to India.",
+    },
+    body: {
+      nl: [
+        "Zes weken vooraf. Controleer of uw paspoort bij aankomst nog minstens zes maanden geldig is en twee lege pagina's heeft. Maak een afspraak bij de GGD of een reizigerspoli voor vaccinaties; sommige moeten weken van tevoren worden gezet. Lees het reisadvies van het ministerie van Buitenlandse Zaken en sluit een reisverzekering af die India en uw activiteiten dekt.",
+        "Twee tot vier weken vooraf. Vraag uw e-visum aan via de officiële Indiase website; er bestaan veel dure nepsites. Neemt u medicijnen mee, controleer dan of u een verklaring nodig hebt. Boek treinen voor populaire trajecten en geef uw reis door aan uw bank, zodat uw pas niet wordt geblokkeerd.",
+        "De laatste week. Download de Reisapp van Buitenlandse Zaken en registreer uw reis, maak kopieën van paspoort, visum en verzekering, en zet ze ook in uw telefoon. Neem een wereldstekker, een basis-reisapotheek met ORS en muggenwerend middel mee, en wat contant geld om bij aankomst te wisselen.",
+      ],
+      en: [
+        "Six weeks ahead. Check that your passport is valid for at least six more months on arrival and has two blank pages. Book an appointment at the municipal health service (GGD) or a travel clinic for vaccinations; some must be given weeks in advance. Read the travel advice of the Ministry of Foreign Affairs and take out travel insurance that covers India and your activities.",
+        "Two to four weeks ahead. Apply for your e-visa through the official Indian website; there are many expensive fake sites. If you are taking medicines, check whether you need a certificate. Book trains for popular routes and tell your bank about your trip so your card is not blocked.",
+        "The final week. Download the Foreign Ministry's travel app and register your trip, make copies of your passport, visa and insurance, and store them on your phone too. Pack a universal adapter, a basic medical kit with oral rehydration salts and insect repellent, and some cash to change on arrival.",
+      ],
+    },
+    links: [
+      { u: "https://indianvisaonline.gov.in/evisa/", t: { nl: "Officiële e-visumsite van India", en: "India's official e-visa site" }, d: { nl: "Alleen hier vraagt u het e-visum rechtstreeks aan.", en: "The only place to apply for the e-visa directly." } },
+      { u: "https://www.nederlandwereldwijd.nl/reisadvies/india", t: { nl: "Reisadvies India", en: "Dutch travel advice for India" }, d: { nl: "Actuele veiligheidssituatie, in het Nederlands.", en: "Current safety situation, in Dutch." } },
+      { u: "https://www.ggdreisvaccinaties.nl/", t: "GGD Reisvaccinaties", d: { nl: "Vaccinatieadvies en afspraken.", en: "Vaccination advice and appointments (in Dutch)." } },
+    ],
+  },
+  {
+    slug: { nl: "reizen-voor-iedereen", en: "travel-for-everyone" },
+    title: { nl: "Reizen met kinderen, een beperking of als lhbti'er", en: "Travelling with children, a disability or as an LGBTQ+ traveller" },
+    intro: {
+      nl: "Waar u extra rekening mee houdt in India.",
+      en: "What to keep in mind in India.",
+    },
+    body: {
+      nl: [
+        "Met kinderen. Indiërs zijn dol op kinderen, en u wordt overal geholpen. Plan korte reisdagen, vermijd de heetste maanden en wees streng op drinkwater, handen wassen en ongeschild fruit. Bespreek vaccinaties en malariapreventie ruim van tevoren met de GGD; voor jonge kinderen gelden soms andere adviezen.",
+        "Met een beperking. Stoepen, treinen en oudere gebouwen zijn zelden rolstoeltoegankelijk, maar moderne luchthavens, metro's en internationale hotels wel. Een auto met chauffeur is betaalbaar en maakt veel mogelijk. Gespecialiseerde reisorganisaties kennen toegankelijke routes en hotels.",
+        "Als lhbti'er. Seks tussen mensen van hetzelfde geslacht is in India sinds 2018 niet meer strafbaar, maar het homohuwelijk wordt niet erkend en de samenleving is buiten de grote steden behoudend. Openlijke genegenheid in het openbaar is ook voor heteroparen ongebruikelijk. Het Nederlandse reisadvies gaat hier apart op in.",
+      ],
+      en: [
+        "With children. Indians adore children, and you will be helped everywhere. Plan short travel days, avoid the hottest months and be strict about drinking water, hand washing and unpeeled fruit. Discuss vaccinations and malaria prevention with a travel clinic well in advance; advice for young children sometimes differs.",
+        "With a disability. Pavements, trains and older buildings are rarely wheelchair accessible, but modern airports, metros and international hotels are. A car with a driver is affordable and makes a lot possible. Specialised tour operators know accessible routes and hotels.",
+        "As an LGBTQ+ traveller. Sex between people of the same sex has not been a criminal offence in India since 2018, but same-sex marriage is not recognised and society is conservative outside the big cities. Public displays of affection are unusual for straight couples too. The Dutch travel advice covers this separately.",
+      ],
+    },
+    live: [
+      { u: g("India reis met kinderen"), t: { nl: "India met kinderen", en: "India with children" } },
+      { u: g("accessible travel India wheelchair tour"), t: { nl: "Toegankelijk reizen in India", en: "Accessible travel in India" } },
+    ],
+    links: [
+      { u: "https://www.nederlandwereldwijd.nl/reisadvies/india", t: { nl: "Reisadvies India", en: "Dutch travel advice for India" }, d: { nl: "Met een aparte passage voor lhbtiq+-reizigers.", en: "With a separate passage for LGBTQ+ travellers (in Dutch)." } },
+      { u: "https://www.ggdreisvaccinaties.nl/", t: "GGD Reisvaccinaties", d: { nl: "Advies voor kinderen en reizigers met een aandoening.", en: "Advice for children and travellers with a medical condition (in Dutch)." } },
+    ],
+  },
+);
+
+extra["familie-recht"].push(
+  {
+    slug: { nl: "namen", en: "names" },
+    title: { nl: "Indiase namen op Nederlandse formulieren", en: "Indian names on Dutch forms" },
+    intro: {
+      nl: "Geen achternaam, initialen of een naam die na het huwelijk verandert: zo voorkomt u problemen.",
+      en: "No surname, initials, or a name that changes after marriage: how to avoid trouble.",
+    },
+    body: {
+      nl: [
+        "Nederlandse systemen gaan uit van één of meer voornamen en één vaste achternaam. Indiase namen passen daar lang niet altijd in. In Zuid-India is de naam van de vader of het dorp vaak een initiaal vóór de eigen naam, veel sikhs heten Singh of Kaur zonder familienaam, en sommige mensen hebben maar één naam.",
+        "De gemeente neemt uw naam over zoals die in uw paspoort en geboorteakte staat. Staat daar geen achternaam, dan kan uw enige naam als achternaam worden geregistreerd, wat later verwarring geeft bij bank, werkgever en vliegtickets. Zorg daarom dat paspoort, geboorteakte, diploma's en huwelijksakte dezelfde schrijfwijze hebben voordat u vertrekt, en laat het Indiase paspoort zo nodig eerst aanpassen.",
+        "In Nederland verandert uw naam niet door een huwelijk: u mag de naam van uw partner gebruiken, maar officieel houdt u uw eigen naam. Voor een kind kiezen de ouders bij de aangifte een achternaam; lees vooraf hoe dat uitpakt als het Indiase recht ook van toepassing is.",
+      ],
+      en: [
+        "Dutch systems assume one or more given names and one fixed surname. Indian names do not always fit. In South India the father's or village name is often an initial before the personal name, many Sikhs are called Singh or Kaur without a family name, and some people have only one name.",
+        "The municipality copies your name as it appears in your passport and birth certificate. If there is no surname, your only name may be registered as the surname, which later causes confusion with banks, employers and airline tickets. So make sure your passport, birth certificate, diplomas and marriage certificate use the same spelling before you leave, and have the Indian passport amended first if necessary.",
+        "In the Netherlands your name does not change through marriage: you may use your partner's name, but officially you keep your own. For a child, the parents choose a surname when registering the birth; read beforehand how this works out if Indian law also applies.",
+      ],
+    },
+    links: [
+      { u: "https://www.rijksoverheid.nl/onderwerpen/naamrecht", t: { nl: "Rijksoverheid: naamrecht", en: "Dutch government: law on names" }, d: { nl: "Achternaam kiezen, naamgebruik en naamswijziging.", en: "Choosing a surname, name use and name changes (in Dutch)." } },
+      { u: "https://www.passportindia.gov.in/", t: "Passport Seva", d: { nl: "Naam in het Indiase paspoort laten wijzigen.", en: "Changing the name in an Indian passport." } },
+    ],
+  },
+);
