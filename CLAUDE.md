@@ -58,6 +58,12 @@ Commands: `npm install`, `npm start` (local preview on port 8080), `npm run buil
 - **Merging while a publish run is going** makes that run's "save refreshed data" step fail (it cannot push to a moved `main`), so the fetched data is published but not saved. Leave about 10 minutes between merges when the data matters.
 - To run the fetch script by hand inside a cloud session, prefix it with `NODE_USE_ENV_PROXY=1`; Wikidata, Frankfurter and Open-Meteo are reachable there, OpenStreetMap is not.
 
+## Added 13 November 2026: About the author
+
+- Page about founder Wahid Saleh at `/over-de-auteur/` and `/en/about-the-author/`, from the owner's Word document "About the author - Wahid Saleh". English is the owner's text; the Dutch is a translation that the owner has not yet reviewed.
+- Content in `content/author.js` (each source link once, in `sources`), template `src/author.njk`; linked from the About page and the footer.
+- Several source links are old (De Heraut, IndiaNet, mailing-list archive) and may be flagged by the weekly link check.
+
 ## Status (10 November 2026)
 
 Done:

@@ -1,0 +1,37 @@
+---
+layout: base.njk
+pagination: { data: catalog.authorPages, size: 1, alias: p }
+permalink: "{{ p.url }}"
+---
+{%- set ui = site.ui[p.lang] -%}
+{%- macro srcLine(list) -%}
+<p class="src">{{ p.sourcesLabel }}: {% for s in list %}<a href="{{ s.u }}" rel="noopener">{{ s.t }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+{%- endmacro -%}
+<nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › <a href="{{ catalog.urls.about[p.lang] }}">{{ ui.about }}</a> › {{ ui.author }}</nav>
+<article class="topic">
+  <h1>{{ p.title }}</h1>
+  <p class="intro">{{ p.intro }}</p>
+  {{ srcLine(p.introSrc) }}
+  {%- for b in p.blocks %}
+  <h2>{{ b.h }}</h2>
+  {%- for part in b.parts %}
+  {%- if part.p %}{% for para in part.p %}<p>{{ para }}</p>{% endfor %}{% endif %}
+  {%- if part.ul %}<ul>{% for x in part.ul %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}
+  {%- if part.ol %}<ol>{% for x in part.ol %}<li>{{ x }}</li>{% endfor %}</ol>{% endif %}
+  {%- if part.table %}
+  <div class="scroll"><table class="facts">
+    <thead><tr>{% for h in part.table.head %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead>
+    <tbody>{% for r in part.table.rows %}<tr>{% for c in r %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+  </table></div>
+  {%- endif %}
+  {%- endfor %}
+  {{ srcLine(b.src) }}
+  {%- endfor %}
+  <h2>{{ p.sourcesTitle }}</h2>
+  <ol class="refs">
+    {%- for s in p.sources %}
+    {%- set title %}<a href="{{ s.u }}" rel="noopener">{% if s.noquote %}{{ s.title }}{% else %}“{{ s.title }}”{% endif %}</a>{% endset %}
+    <li>{% if s.by %}{{ s.by }}, {{ title | safe }}, {{ s.outlet }}{% else %}{{ s.outlet }}, {{ title | safe }}{% endif %}{% if s.date %}, {{ s.date }}{% endif %}</li>
+    {%- endfor %}
+  </ol>
+</article>

@@ -1,5 +1,6 @@
 // Turns content/index.js into the lists of pages the templates loop over.
 import { sections as baseSections, about } from "../../content/index.js";
+import { author, sources as authorSources, sourceOrder } from "../../content/author.js";
 import { extra } from "../../content/extra.js";
 import { ingredients } from "../../content/ingredients.js";
 
@@ -19,7 +20,7 @@ const other = (lang) => (lang === "nl" ? "en" : "nl");
 const L = (v, lang) => (v && typeof v === "object" ? v[lang] : v);
 
 export default function () {
-  const homePages = [], sectionPages = [], topicPages = [], newsPages = [], aboutPages = [];
+  const homePages = [], sectionPages = [], topicPages = [], newsPages = [], aboutPages = [], authorPages = [];
   const nav = {}, search = {}, home = {}, rest = {};
   const toolPages = Object.fromEntries(Object.keys(site.tools).map((k) => [k, []])), cityPages = [];
   const tools = {}, toolBy = {}, cities = {}, kinds = {}, calendar = {}, guides = {};
@@ -118,6 +119,18 @@ export default function () {
       lang, url: aboutUrl(lang), alt: aboutUrl(alt), title: about.title[lang], description: about.blocks[0].p[lang][0],
       blocks: about.blocks.map((b) => ({ h: b.h[lang], p: b.p[lang] })),
     });
+    const authorUrl = (l) => `${base(l)}${author.slug[l]}/`;
+    const tr = (x) => (x && typeof x === "object" ? x[lang] : x);
+    const src = (k) => ({ t: tr(authorSources[k].t), u: authorSources[k].u });
+    authorPages.push({
+      lang, url: authorUrl(lang), alt: authorUrl(alt), title: author.title[lang], description: author.intro[lang],
+      intro: author.intro[lang], introSrc: author.introSrc.map(src), sourcesTitle: author.sourcesTitle[lang], sourcesLabel: author.sourcesLabel[lang],
+      blocks: author[lang].map((b) => ({ ...b, src: b.src.map(src) })),
+      sources: sourceOrder.map((k) => {
+        const c = authorSources[k].cite;
+        return { u: authorSources[k].u, by: c.by, title: tr(c.title), noquote: c.noquote, outlet: c.outlet || tr(authorSources[k].t), date: tr(c.date) };
+      }),
+    });
     for (const s of secs) {
       sectionPages.push({ lang, url: s.url, alt: s.alt, title: s.title, description: s.intro, section: s });
       for (const t of s.topics) {
@@ -144,10 +157,11 @@ export default function () {
     }
   }
 
-  const urls = { news: {}, about: {} };
+  const urls = { news: {}, about: {}, author: {} };
   for (const p of newsPages) urls.news[p.lang] = p.url;
   for (const p of aboutPages) urls.about[p.lang] = p.url;
+  for (const p of authorPages) urls.author[p.lang] = p.url;
 
-  const allPages = [...homePages, ...sectionPages, ...topicPages, ...Object.values(toolPages).flat(), ...cityPages, ...newsPages, ...aboutPages];
-  return { homePages, sectionPages, topicPages, newsPages, aboutPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar, ingredients, guides, toolBy, redirects };
+  const allPages = [...homePages, ...sectionPages, ...topicPages, ...Object.values(toolPages).flat(), ...cityPages, ...newsPages, ...aboutPages, ...authorPages];
+  return { homePages, sectionPages, topicPages, newsPages, aboutPages, authorPages, toolPages, cityPages, allPages, nav, search, urls, home, rest, tools, cities, kinds, calendar, ingredients, guides, toolBy, redirects };
 }
