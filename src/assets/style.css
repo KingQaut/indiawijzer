@@ -38,6 +38,14 @@ input[type=search]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 .nav a { padding: 6px 12px; border-radius: 999px; color: var(--ink); text-decoration: none; white-space: nowrap; font-size: .95rem; }
 .nav a:hover { background: var(--soft); }
 .nav a[aria-current] { background: var(--accent); color: var(--accent-ink); }
+/* With a mouse or on a wide screen the menu wraps onto a second line, so nothing is cut off.
+   On narrow touch screens it stays one swipeable row, with a fade on the right as a hint. */
+@media (min-width: 761px), (hover: hover) and (pointer: fine) {
+  .nav { flex-wrap: wrap; overflow-x: visible; row-gap: 2px; }
+}
+@media (max-width: 760px) and (pointer: coarse) {
+  .nav { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); padding-right: 24px; }
+}
 
 /* home */
 main { padding-top: 18px; padding-bottom: 48px; min-height: 60vh; }
