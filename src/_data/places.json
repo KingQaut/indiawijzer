@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T05:23:41.379Z",
+ "updated": "2026-11-13T05:22:05.066Z",
  "restaurants": [
   {
    "n": "Himalaya Palace",
@@ -2430,6 +2430,15 @@
    "o": "node/2829623889",
    "y": 51.3937,
    "x": 4.32984
+  },
+  {
+   "n": "Saffron Haveli",
+   "c": "Ouderkerk aan de Amstel",
+   "a": "Ambachtenstraat 46",
+   "w": "https://saffronhaveli.nl/",
+   "o": "node/14369558923",
+   "y": 52.29443,
+   "x": 4.89776
   },
   {
    "n": "Restaurant China",
