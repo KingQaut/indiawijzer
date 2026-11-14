@@ -124,7 +124,7 @@ export default function () {
     const src = (k) => ({ t: tr(authorSources[k].t), u: authorSources[k].u });
     authorPages.push({
       lang, url: authorUrl(lang), alt: authorUrl(alt), title: author.title[lang], description: author.intro[lang],
-      intro: author.intro[lang], introSrc: author.introSrc.map(src), sourcesTitle: author.sourcesTitle[lang], sourcesLabel: author.sourcesLabel[lang],
+      intro: author.intro[lang], photo: { ...author.photo, alt: author.photo.alt[lang] }, introSrc: author.introSrc.map(src), sourcesTitle: author.sourcesTitle[lang], sourcesLabel: author.sourcesLabel[lang],
       blocks: author[lang].map((b) => ({ ...b, src: b.src.map(src) })),
       sources: sourceOrder.map((k) => {
         const c = authorSources[k].cite;
