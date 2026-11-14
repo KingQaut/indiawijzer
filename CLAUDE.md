@@ -63,6 +63,7 @@ Commands: `npm install`, `npm start` (local preview on port 8080), `npm run buil
 - Page about founder Wahid Saleh at `/over-de-auteur/` and `/en/about-the-author/`, from the owner's Word document "About the author - Wahid Saleh". English is the owner's text; the Dutch is a translation that the owner has not yet reviewed.
 - Content in `content/author.js` (each source link once, in `sources`), template `src/author.njk`; linked from the About page and the footer.
 - Portrait photo (added 14 Nov 2026, from the owner): `src/assets/wahid-saleh.jpg`, metadata stripped; path, size and alt text under `photo` in `content/author.js`.
+- **Dutch and English must always match** (owner, 14 Nov 2026): every text edit the owner asks for in one language is made in the other too, on every page.
 - Several source links are old (De Heraut, IndiaNet, mailing-list archive) and may be flagged by the weekly link check.
 
 ## Status (10 November 2026)
