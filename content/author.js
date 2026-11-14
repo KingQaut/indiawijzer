@@ -40,7 +40,7 @@ export const author = {
       parts: [{ p: [
         "Wahid Saleh groeide op in Jorhat, in Rajabari. Door de standplaatsen van zijn vader verhuisde het gezin naar Kohima, waar hij de middelbare school afmaakte. Hij keerde terug naar Jorhat voor zijn eerste studie aan het J.B. College en volgde daarna in Kerala een opleiding tot onderhoudstechnicus voor vliegtuigen. Voordat hij India verliet, werkte hij korte tijd als trainee bij Kalinga Airlines en als leraar in Kohima.",
         "In november 1963 voer hij van Bombay naar Italië en reisde hij door naar München om bij BMW een opleiding voor straalmotoren te volgen. Een krant in Kolkata meldde dat hij de eerste Assamees was die voor zo'n opleiding naar het buitenland werd gestuurd. Daarna werkte hij voor Lufthansa in Hamburg, waar hij 's avonds lessen volgde in programmeren en IT-management.",
-        "Duitsland wilde hem geen verblijfsvergunning geven voor IT-werk. Via een headhunter vond hij een IT-baan in Nederland, waar hij in 1968 naartoe verhuisde. Ook zijn hart speelde mee: hij schreef al enige tijd met Hannie, die later zijn vrouw werd. Het echtpaar woont sinds 1973 in Berkel en Rodenrijs.",
+        "Duitsland wilde hem geen verblijfsvergunning geven voor IT-werk. Via een headhunter vond hij een IT-baan in Nederland, waar hij in 1968 naartoe verhuisde. Ook zijn hart speelde mee: hij schreef al enige tijd met Hannie, die later zijn vrouw werd.",
       ] }],
       src: ["assamTimes", "mailingList", "heraut"],
     },
@@ -48,7 +48,7 @@ export const author = {
       h: "Een loopbaan in de informatietechnologie",
       parts: [{ p: [
         "Wahid Saleh werkte 38 jaar in de IT en doorliep bijna elke functie die het vak kende. Hij was computeroperator, programmeur, systeemanalist, systeemontwerper, manager datacommunicatie, hoofd van een rekencentrum en IT-manager. Bij hetzelfde bedrijf vierde hij zijn 25-jarig dienstjubileum.",
-        "Zijn laatste functie was hoofd van de afdeling Kwaliteit en Onderzoek bij een groot Nederlands bedrijf. Daar ontwierp, kocht en bouwde hij een datacommunicatienetwerk voor meer dan 5.000 online gebruikers. Daarna ging hij vervroegd met pensioen om zich op sociaal en cultureel werk te richten.",
+        "Hij ontwierp, kocht en bouwde een datacommunicatienetwerk voor meer dan 5.000 online gebruikers. Daarna ging hij vervroegd met pensioen om zich op sociaal en cultureel werk te richten.",
       ] }],
       src: ["mailingList", "assamTimes"],
     },
@@ -161,7 +161,7 @@ export const author = {
       parts: [{ p: [
         "Wahid Saleh grew up in Jorhat, in Rajabari. His father’s postings took the family to Kohima, where he finished school. He returned to Jorhat for his first degree at J.B. College and then trained in aircraft maintenance engineering in Kerala. Before leaving India he worked briefly as a trainee with Kalinga Airlines and as a teacher in Kohima.",
         "In November 1963 he sailed from Bombay to Italy and travelled on to Munich to train on jet engines with BMW. A Kolkata newspaper reported him as the first Assamese sent abroad for jet engine training. He then worked for Lufthansa in Hamburg, taking evening classes in programming and IT management.",
-        "Germany would not give him a residence permit for IT work, so he found an IT job in the Netherlands through a headhunter and moved there in 1968. His heart played a part too: he had been writing for some time to Hannie, who became his wife. The couple have lived in Berkel en Rodenrijs since 1973.",
+        "Germany would not give him a residence permit for IT work, so he found an IT job in the Netherlands through a headhunter and moved there in 1968. His heart played a part too: he had been writing for some time to Hannie, who became his wife.",
       ] }],
       src: ["assamTimes", "mailingList", "heraut"],
     },
@@ -169,7 +169,7 @@ export const author = {
       h: "A career in information technology",
       parts: [{ p: [
         "Wahid Saleh spent 38 years in IT and worked his way through almost every role the field had. He was a computer operator, programmer, systems analyst, system designer, data communication manager, computer centre manager and IT manager. He marked 25 years of service with the same company.",
-        "His last position was head of the Quality and Research department at a major Dutch company. There he designed, procured and implemented a data communication network for more than 5,000 online users. He then took early retirement to focus on social and cultural work.",
+        "He designed, procured and implemented a data communication network for more than 5,000 online users. He then took early retirement to focus on social and cultural work.",
       ] }],
       src: ["mailingList", "assamTimes"],
     },
