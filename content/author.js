@@ -27,6 +27,10 @@ export const author = {
     en: "Wahid Saleh is a social entrepreneur and community leader based in the Netherlands, and the founder of Indiawijzer. Born in 1941 in Jorhat, Assam, he came to Europe in 1963 and has lived in the Netherlands since 1968. After 38 years in information technology he retired early and devoted himself to bringing India and the Netherlands closer together. That work has earned him both a Dutch royal honour and the highest award India gives to its overseas citizens.",
   },
   introSrc: ["assamTimes", "indianet"],
+  photo: {
+    src: "/assets/wahid-saleh.jpg", width: 282, height: 610,
+    alt: { nl: "Wahid Saleh, met een Assamese gamosa om zijn schouders", en: "Wahid Saleh, wearing an Assamese gamosa around his shoulders" },
+  },
   sourcesTitle: { nl: "Bronnen", en: "Sources" },
   sourcesLabel: { nl: "Bronnen", en: "Sources" },
 

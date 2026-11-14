@@ -10,6 +10,7 @@ permalink: "{{ p.url }}"
 <nav class="crumbs"><a href="{{ '/' if p.lang == 'nl' else '/en/' }}">{{ ui.home }}</a> › <a href="{{ catalog.urls.about[p.lang] }}">{{ ui.about }}</a> › {{ ui.author }}</nav>
 <article class="topic">
   <h1>{{ p.title }}</h1>
+  <img class="portrait" src="{{ p.photo.src }}" width="{{ p.photo.width }}" height="{{ p.photo.height }}" alt="{{ p.photo.alt }}">
   <p class="intro">{{ p.intro }}</p>
   {{ srcLine(p.introSrc) }}
   {%- for b in p.blocks %}
