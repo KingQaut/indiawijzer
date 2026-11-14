@@ -111,7 +111,7 @@ export const author = {
       h: "Werk voor Assam",
       parts: [
         { p: [
-          "Wahid Saleh is zijn hele leven in het buitenland nauw betrokken gebleven bij Assam. Samen met zijn vrouw richtte hij een liefdadigheidsfonds op, vernoemd naar zijn ouders, dat studenten in nood steunt. Het echtpaar steunt ook Parijat Academy en Prajnalaya, en zijn vrouw steunt het onderwijscentrum Matoekoe in Suriname.",
+          "Wahid Saleh is zijn hele leven in het buitenland nauw betrokken gebleven bij Assam. Samen met zijn vrouw richtte hij een liefdadigheidsfonds op, vernoemd naar zijn ouders, dat studenten in nood steunt. Hij steunt daarnaast Parijat Academy en SHED in Guwahati.",
           "Zijn andere werk voor Assam:",
         ] },
         { ul: [
@@ -232,7 +232,7 @@ export const author = {
       h: "Work for Assam",
       parts: [
         { p: [
-          "Wahid Saleh has stayed closely involved with Assam throughout his life abroad. He and his wife set up a charitable trust, named after his parents, that supports students in need. The couple also support Parijat Academy and Prajnalaya, and his wife supports the Matoekoe education centre in Suriname.",
+          "Wahid Saleh has stayed closely involved with Assam throughout his life abroad. He and his wife set up a charitable trust, named after his parents, that supports students in need. He also supports Parijat Academy and SHED in Guwahati.",
           "His other work for Assam includes:",
         ] },
         { ul: [
