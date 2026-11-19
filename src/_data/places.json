@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T05:24:21.100Z",
+ "updated": "2026-11-19T05:28:44.405Z",
  "restaurants": [
   {
    "n": "Himalaya Palace",
@@ -81,6 +81,15 @@
    "o": "node/10282691130",
    "y": 52.39475,
    "x": 5.2766
+  },
+  {
+   "n": "Taj Mahal aan den Rijn",
+   "c": "Alphen aan den Rijn",
+   "a": "A. van Leeuwenhoekweg 38D-10",
+   "w": "https://www.tajmahaladrijn.nl/",
+   "o": "node/2877457507",
+   "y": 52.12802,
+   "x": 4.63793
   },
   {
    "n": "Tamarinde",
