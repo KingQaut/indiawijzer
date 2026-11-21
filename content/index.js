@@ -342,10 +342,12 @@ export const sections = [
           nl: [
             "Wie langer dan vier maanden blijft, schrijft zich in bij de gemeente en krijgt daarbij een burgerservicenummer (BSN). Dat nummer heeft u nodig voor vrijwel alles: salaris, bankrekening, zorgverzekering en DigiD, uw digitale inlog bij de overheid.",
             "Een Nederlandse zorgverzekering is verplicht zodra u hier woont en werkt. Met een Indiaas rijbewijs mag u na inschrijving nog een beperkte periode rijden; omwisselen voor een Nederlands rijbewijs kan alleen in bepaalde gevallen. In de grote steden helpen expatcenters met de formaliteiten, vaak in één afspraak samen met de IND.",
+            { see: "nederlands-leren" },
           ],
           en: [
             "Anyone staying longer than four months registers with the municipality and receives a citizen service number (BSN). You need that number for almost everything: salary, bank account, health insurance and DigiD, your digital login for government services.",
             "Dutch health insurance is mandatory as soon as you live and work here. With an Indian driving licence you may drive for a limited period after registering; exchanging it for a Dutch licence is only possible in certain cases. In the larger cities, expat centres help with the formalities, often in a single appointment together with the IND.",
+            { see: "nederlands-leren" },
           ],
         },
         links: [
