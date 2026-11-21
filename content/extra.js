@@ -1026,3 +1026,41 @@ extra["naar-india"].push(
 const moved = ["nederland-india-geschiedenis", "nederlanders-in-india"];
 extra["nederland-in-india"] = extra["naar-india"].filter((t) => moved.includes(t.slug.nl)).sort((a, b) => moved.indexOf(a.slug.nl) - moved.indexOf(b.slug.nl));
 extra["naar-india"] = extra["naar-india"].filter((t) => !moved.includes(t.slug.nl));
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Added 21 November 2026: the Ter Schelling shipwreck and the Assam campaign.
+extra["nederland-in-india"].push(
+  {
+    slug: { nl: "glanius-assam", en: "glanius-assam" },
+    title: { nl: "Glanius, Van der Heiden en Assam", en: "Glanius, Van der Heiden and Assam" },
+    intro: {
+      nl: "Hoe Nederlandse schipbreukelingen in 1662 met het Mogolleger tot diep in Assam trokken, en wie dat opschreef.",
+      en: "How shipwrecked Dutch sailors marched deep into Assam with the Mughal army in 1662, and who wrote it down.",
+    },
+    body: {
+      nl: [
+        "In 1661 voer het VOC-jacht Ter Schelling van Batavia naar de handelspost aan de Hooghly in Bengalen. Een storm dreef het schip op een zandbank voor de kust. Volgens het latere verslag bereikten 32 schipbreukelingen met een vlot een onbewoond eiland, waar ze vreselijke honger leden voordat ze het vasteland van Bengalen haalden.",
+        "Daar kwamen ze terecht in het leger van Mir Jumla, de Mogolgouverneur van Bengalen, die net een veldtocht begon tegen het Ahom-koninkrijk in Assam. De Nederlanders moesten mee, als ingelijfde soldaten. Ongeveer vijftien maanden trokken ze met het leger op, langs de Brahmaputra tot aan Garhgaon, de Ahom-hoofdstad, die de Mogols in maart 1662 innamen. Het leger had daarna zwaar te lijden onder de regentijd en ziekte; begin 1663 sloot de Ahom-koning vrede en Mir Jumla stierf op de terugweg. De meeste Nederlanders keerden rond 1663 terug naar Batavia.",
+        "Een van hen, de matroos Frans Jansz. van der Heiden (1638–1681), schreef het avontuur op. Zijn boek Vervarelyke schip-breuk van 't Oost-Indisch jacht Ter Schelling verscheen in 1675 in Amsterdam en werd tot zeker 1698 herdrukt. Het beschrijft niet alleen de schipbreuk en de oorlog, maar ook het land en de mensen: de Ahom-hoofdstad, de begrafenisgebruiken van Ahom-koningen en edelen, en de koninkrijken Arakan, Bengalen, Martaban en Tenasserim.",
+        "In 1682 verscheen in Londen een Engelse bewerking onder de naam W. Glanius: A Relation of an Unfortunate Voyage to the Kingdom of Bengala, met in de titel de oorlog 'tegen de koningen van Azo en Assam'. Daardoor noemen veel geschiedschrijvers van Assam, onder wie S.K. Bhuyan en Jadunath Sarkar, Glanius als de ooggetuige. Nieuwer onderzoek laat zien dat Glanius de vertaler was en Van der Heiden de man die er zelf bij was. Het verslag is een van de weinige Europese ooggetuigenverslagen van deze oorlog en wordt in Assam nog steeds als bron gebruikt.",
+      ],
+      en: [
+        "In 1661 the Dutch East India Company (VOC) yacht Ter Schelling sailed from Batavia for the trading post on the Hooghly in Bengal. A storm drove the ship onto a sandbank off the coast. According to the later account, 32 survivors reached an uninhabited island on a raft, where they suffered terrible hunger before making it to the Bengal mainland.",
+        "There they ended up in the army of Mir Jumla, the Mughal governor of Bengal, who was just starting a campaign against the Ahom kingdom of Assam. The Dutchmen had to go along as conscripted soldiers. For about fifteen months they marched with the army, up the Brahmaputra as far as Garhgaon, the Ahom capital, which the Mughals took in March 1662. The army then suffered badly from the monsoon and disease; early in 1663 the Ahom king made peace and Mir Jumla died on the way back. Most of the Dutchmen returned to Batavia around 1663.",
+        "One of them, the sailor Frans Jansz. van der Heiden (1638–1681), wrote the adventure down. His book Vervarelyke schip-breuk van 't Oost-Indisch jacht Ter Schelling ('Terrible shipwreck of the East India yacht Ter Schelling') appeared in Amsterdam in 1675 and was reprinted until at least 1698. It describes not only the wreck and the war but also the land and its people: the Ahom capital, the burial customs of Ahom kings and nobles, and the kingdoms of Arakan, Bengal, Martaban and Tenasserim.",
+        "In 1682 an English version appeared in London under the name W. Glanius: A Relation of an Unfortunate Voyage to the Kingdom of Bengala, whose title mentions the war 'against the kings of Azo and Assam'. Because of this, many historians of Assam, among them S.K. Bhuyan and Jadunath Sarkar, name Glanius as the eyewitness. More recent research shows that Glanius was the translator and Van der Heiden the man who was actually there. The account is one of the few European eyewitness reports of this war and is still used as a source in Assam.",
+      ],
+    },
+    live: [
+      { u: g("Glanius Relation of an Unfortunate Voyage to the Kingdom of Bengala 1682"), t: { nl: "Het Engelse boek van Glanius (1682)", en: "Glanius's English book (1682)" } },
+      { u: g("Vervarelyke schip-breuk Ter Schelling Van der Heiden"), t: { nl: "Het Nederlandse boek van Van der Heiden (1675)", en: "Van der Heiden's Dutch book (1675)" } },
+    ],
+    links: [
+      { u: "https://sonaricollege.in/images/Pub_Paranan_Mir_Jumlas_Invasion.pdf", t: { nl: "P. Konwar: Mir Jumla's Invasion of Assam (1662–63)", en: "P. Konwar: Mir Jumla's Invasion of Assam (1662–63)" }, d: { nl: "Artikel over de oorlogservaring van Van der Heiden en de rol van vertaler Glanius (Engels, pdf).", en: "Article on Van der Heiden's war experience and the role of translator Glanius (PDF)." } },
+      { u: "https://doi.org/10.1177/0376983619856149", t: "The Indian Historical Review (2019)", d: { nl: "Wetenschappelijk artikel dat aantoont dat Glanius de vertaler was (Engels).", en: "Scholarly article showing that Glanius was the translator." } },
+      { u: "https://studenttheses.universiteitleiden.nl/access/item%3A2608801/view", t: { nl: "Scriptie Universiteit Leiden over het reisverslag", en: "Leiden University thesis on the travel account" }, d: { nl: "M.M. Azizul Islam Rasel over het boek als bron van kennis over India (Engels).", en: "M.M. Azizul Islam Rasel on the book as a source of knowledge about India." } },
+      { u: "https://data.cerl.org/stcn/095919031", t: { nl: "Short-Title Catalogue Netherlands: de uitgave van 1675", en: "Short-Title Catalogue Netherlands: the 1675 edition" }, d: { nl: "Bibliografische gegevens van het Nederlandse origineel.", en: "Bibliographic record of the Dutch original." } },
+      { u: "https://onlinebooks.library.upenn.edu/webbin/who/Glanius%2c%20W%2e", t: "The Online Books Page: W. Glanius", d: { nl: "Waar de Engelse uitgave van 1682 gratis online te lezen is.", en: "Where the 1682 English edition can be read free online." } },
+    ],
+  },
+);
