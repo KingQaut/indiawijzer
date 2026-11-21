@@ -34,7 +34,7 @@ Do not add anything that needs regular human upkeep without asking the owner fir
 | Weekly link check, opens an issue when links break | `.github/workflows/links.yml` |
 
 - Dutch lives at `/`, English at `/en/`, with translated slugs and hreflang links.
-- Six sections, 65 topics (yoga and cricket added 11 Nov 2026 with automatic lists; 36 more that day in `content/extra.js`; Glanius and Assam plus historical figures added 21 Nov 2026): India in Nederland, Naar Nederland, Nederland in India, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
+- Six sections, 66 topics (yoga and cricket added 11 Nov 2026 with automatic lists; 36 more that day in `content/extra.js`; Glanius and Assam plus historical figures and learning Dutch added 21 Nov 2026): India in Nederland, Naar Nederland, Nederland in India, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
 - The data fetch keeps the previous data when a source fails or returns suspiciously little.
 - The nightly workflow commits the refreshed JSON back to `main` (bot commits "Automatic data update"). This also keeps GitHub from pausing the schedule. **Always `git pull --rebase origin main` before pushing.**
 - `PATH_PREFIX=/indiawijzer/` at build time makes the site work under `kingqaut.github.io/indiawijzer/`; not set by default because the site is meant for the root of indiawijzer.nl.
@@ -78,6 +78,10 @@ Commands: `npm install`, `npm start` (local preview on port 8080), `npm run buil
 - New topic in "Nederland in India": `/nederland-in-india/historische-figuren/` and `/en/the-netherlands-in-india/historical-figures/` ("Nederlanders in de Indiase geschiedenis"), at the bottom of `content/extra.js`. One page with a short paragraph each on 13 people the owner chose: Van Linschoten, Pelsaert, Schouten, Haafner, Bolts, Rogerius, Baldaeus, Van Rheede, Kern, Vogel, Van Goens, De Lannoy (Flemish; the page says so) and Van Eeden. One source link per person.
 - Body items `{ h: "…" }` are subheadings (Reizigers en schrijvers, Geleerden, Soldaten en bestuurders, Cultuur). The page links to the Glanius page after Schouten, and "Vier eeuwen" ends with a link to this page.
 - Facts come from web-search summaries (the cloud session could not open the pages). Uncertain points written cautiously: Bolts's birthplace ("according to most sources" Amsterdam), Pelsaert's report date ("around 1626"), Baldaeus relying on an older Portuguese Tamil grammar.
+
+## Added 21 November 2026: Learning Dutch and civic integration
+
+- New topic in "Naar Nederland": `/naar-nederland/nederlands-leren/` and `/en/moving-to-the-netherlands/learning-dutch/`, at the bottom of `content/extra.js`. Covers who has to complete civic integration (kept general: depends on the residence permit; DUO sends a letter), free and paid ways to learn Dutch, and the NT2 state exam (programme I = B1, II = B2). No fees, deadlines or exam dates. Four "search now" buttons (courses, language cafés, Taalhuis, free online courses). "Eerste stappen in Nederland" links to it with a body `{ see }` item.
 
 ## Status (10 November 2026)
 

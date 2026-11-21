@@ -1140,3 +1140,50 @@ extra["nederland-in-india"].push(
     ],
   },
 );
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Added 21 November 2026: learning Dutch and civic integration in the Netherlands.
+extra["naar-nederland"].push(
+  {
+    slug: { nl: "nederlands-leren", en: "learning-dutch" },
+    title: { nl: "Nederlands leren en inburgeren", en: "Learning Dutch and civic integration" },
+    intro: {
+      nl: "Moet u inburgeren, en hoe leert u Nederlands als u hier woont? Van gratis oefenen tot staatsexamen.",
+      en: "Do you have to complete civic integration, and how do you learn Dutch while living here? From free practice to the state exam.",
+    },
+    body: {
+      nl: [
+        { h: "Inburgeren: verplicht of niet?" },
+        "Of u moet inburgeren, hangt af van uw verblijfsvergunning. De plicht geldt vooral voor mensen die voor langere tijd komen om bij hun partner of familie te wonen, en voor vluchtelingen. Wie hier is als kennismigrant, voor ander werk of om te studeren, hoeft meestal niet in te burgeren. Bent u inburgeringsplichtig, dan krijgt u daarover een brief van DUO en helpt de gemeente u met een plan. De precieze regels en termijnen staan op inburgeren.nl.",
+        "Ook als inburgeren niet verplicht is, telt Nederlands later mee: wie Nederlander wil worden (naturalisatie) moet aantonen dat hij of zij de taal beheerst.",
+        { h: "Zelf Nederlands leren" },
+        "Veel bibliotheken hebben een Taalhuis of taalpunt waar u gratis kunt oefenen, vaak met hulp van vrijwilligers. Online is gratis oefenmateriaal te vinden, zoals Oefenen.nl, en sommige universiteiten bieden gratis online beginnerscursussen aan. In taalcafés praat u ongedwongen met andere leerders en vrijwilligers; via Het Begint met Taal vindt u een taalmaatje.",
+        "Wilt u sneller vooruit, dan zijn er betaalde cursussen bij taalscholen en volksuniversiteiten, overdag, 's avonds of online. Werkgevers betalen soms mee; vraag ernaar bij uw HR-afdeling. De beste oefening blijft de praktijk: vraag Nederlanders om niet meteen over te schakelen op Engels.",
+        { h: "Voor werk en studie" },
+        "Voor een mbo-opleiding of veel banen is het Staatsexamen Nederlands als tweede taal (NT2) programma I nuttig, op niveau B1. Voor hbo en universiteit in het Nederlands vragen instellingen meestal programma II, op niveau B2.",
+      ],
+      en: [
+        { h: "Civic integration: compulsory or not?" },
+        "Whether you have to complete civic integration (inburgering) depends on your residence permit. The obligation mainly applies to people who come for a longer stay to live with their partner or family, and to refugees. People here as highly skilled migrants, for other work or to study usually do not have to. If you are required to integrate, you will receive a letter from DUO and the municipality will help you with a plan. The exact rules and deadlines are on inburgeren.nl.",
+        "Even when integration is not compulsory, Dutch counts later on: anyone who wants to become a Dutch citizen (naturalisation) has to show they can speak the language.",
+        { h: "Learning Dutch on your own" },
+        "Many libraries have a Taalhuis or language point where you can practise for free, often with help from volunteers. Free practice material is available online, such as Oefenen.nl, and some universities offer free online beginners' courses. At language cafés you chat informally with other learners and volunteers; through Het Begint met Taal you can find a language buddy.",
+        "If you want to progress faster, there are paid courses at language schools and adult education centres (volksuniversiteiten), during the day, in the evening or online. Employers sometimes contribute; ask your HR department. The best practice is still real life: ask Dutch people not to switch to English straight away.",
+        { h: "For work and study" },
+        "For vocational training (mbo) or many jobs, the State Exam Dutch as a Second Language (NT2) programme I, at level B1, is useful. For higher education taught in Dutch, institutions usually ask for programme II, at level B2.",
+      ],
+    },
+    live: [
+      { u: m("taalcursus Nederlands"), t: { nl: "Taalcursus Nederlands bij mij in de buurt", en: "Dutch courses near me" } },
+      { u: m("taalcafé"), t: { nl: "Taalcafé bij mij in de buurt", en: "Language café near me" } },
+      { u: m("bibliotheek taalhuis"), t: { nl: "Taalhuis in de bibliotheek", en: "Taalhuis at the library" } },
+      { u: g("gratis online cursus Nederlands voor beginners"), t: { nl: "Gratis online cursussen Nederlands", en: "Free online Dutch courses" } },
+    ],
+    links: [
+      { u: "https://www.inburgeren.nl/", t: "Inburgeren.nl", d: { nl: "Officiële informatie van DUO: wie moet inburgeren, examens en termijnen.", en: "Official DUO information: who must integrate, exams and deadlines (also in English)." } },
+      { u: "https://www.staatsexamensnt2.nl/", t: "Staatsexamens NT2", d: { nl: "Uitleg over programma I en II, oefenexamens en aanmelden.", en: "About programmes I and II, practice exams and registration (in Dutch)." } },
+      { u: "https://oefenen.nl/", t: "Oefenen.nl", d: { nl: "Gratis online oefenen met lezen, luisteren en spreken.", en: "Free online practice in reading, listening and speaking (in Dutch)." } },
+      { u: "https://www.hetbegintmettaal.nl/", t: "Het Begint met Taal", d: { nl: "Vrijwillige taalmaatjes en taalcafés door het hele land.", en: "Volunteer language buddies and language cafés across the country (in Dutch)." } },
+    ],
+  },
+);
