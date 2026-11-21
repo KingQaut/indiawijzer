@@ -34,7 +34,7 @@ Do not add anything that needs regular human upkeep without asking the owner fir
 | Weekly link check, opens an issue when links break | `.github/workflows/links.yml` |
 
 - Dutch lives at `/`, English at `/en/`, with translated slugs and hreflang links.
-- Six sections, 63 topics (yoga and cricket added 11 Nov 2026 with automatic lists; 36 more that day in `content/extra.js`): India in Nederland, Naar Nederland, Nederland in India, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
+- Six sections, 64 topics (yoga and cricket added 11 Nov 2026 with automatic lists; 36 more that day in `content/extra.js`; Glanius and Assam added 21 Nov 2026): India in Nederland, Naar Nederland, Nederland in India, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
 - The data fetch keeps the previous data when a source fails or returns suspiciously little.
 - The nightly workflow commits the refreshed JSON back to `main` (bot commits "Automatic data update"). This also keeps GitHub from pausing the schedule. **Always `git pull --rebase origin main` before pushing.**
 - `PATH_PREFIX=/indiawijzer/` at build time makes the site work under `kingqaut.github.io/indiawijzer/`; not set by default because the site is meant for the root of indiawijzer.nl.
@@ -65,6 +65,13 @@ Commands: `npm install`, `npm start` (local preview on port 8080), `npm run buil
 - Portrait photo (added 14 Nov 2026, from the owner): `src/assets/wahid-saleh.jpg`, metadata stripped; path, size and alt text under `photo` in `content/author.js`.
 - **Dutch and English must always match** (owner, 14 Nov 2026): every text edit the owner asks for in one language is made in the other too, on every page.
 - Several source links are old (De Heraut, IndiaNet, mailing-list archive) and may be flagged by the weekly link check.
+
+## Added 21 November 2026: Glanius, Van der Heiden and Assam
+
+- New topic in "Nederland in India": `/nederland-in-india/glanius-assam/` and `/en/the-netherlands-in-india/glanius-assam/`, at the bottom of `content/extra.js`. It covers the 1661 wreck of the VOC yacht *Ter Schelling* off Bengal, the survivors' forced march with Mir Jumla's Mughal army into Assam (1662–63), sailor Frans Jansz. van der Heiden's Dutch account (1675) and its English version (1682) under the name of translator W. Glanius. The owner asked about "the Dutch sailor Glanius"; the page explains that Glanius was the translator, not the sailor.
+- The "Vier eeuwen Nederland en India" topic has a short paragraph on the same story and a "Lees verder" / "Read more" link to the new page.
+- New optional topic field `see: ["dutch-slug", …]` (resolved in `src/_data/catalog.js`, shown in `src/topic.njk`, heading `ui.see` in `src/_data/site.js`) for links between topics on the site. Use it instead of putting internal pages under `links`, which is for outside sources.
+- The cloud session could not open any of the sources (all blocked by the network policy), so the facts come from search-result summaries only and the five source links are unverified. The owner was asked to click each link and check the claims (32 survivors, about fifteen months in the army, the Leiden thesis link).
 
 ## Status (10 November 2026)
 
