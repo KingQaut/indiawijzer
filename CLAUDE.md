@@ -69,8 +69,8 @@ Commands: `npm install`, `npm start` (local preview on port 8080), `npm run buil
 ## Added 21 November 2026: Glanius, Van der Heiden and Assam
 
 - New topic in "Nederland in India": `/nederland-in-india/glanius-assam/` and `/en/the-netherlands-in-india/glanius-assam/`, at the bottom of `content/extra.js`. It covers the 1661 wreck of the VOC yacht *Ter Schelling* off Bengal, the survivors' forced march with Mir Jumla's Mughal army into Assam (1662–63), sailor Frans Jansz. van der Heiden's Dutch account (1675) and its English version (1682) under the name of translator W. Glanius. The owner asked about "the Dutch sailor Glanius"; the page explains that Glanius was the translator, not the sailor.
-- The "Vier eeuwen Nederland en India" topic has a short paragraph on the same story and a "Lees verder" / "Read more" link to the new page.
-- New optional topic field `see: ["dutch-slug", …]` (resolved in `src/_data/catalog.js`, shown in `src/topic.njk`, heading `ui.see` in `src/_data/site.js`) for links between topics on the site. Use it instead of putting internal pages under `links`, which is for outside sources.
+- The "Vier eeuwen Nederland en India" topic has a short paragraph on the same story, followed directly by a link to the new page (owner request). This uses a body item `{ see: "glanius-assam" }`: a `{ see: "dutch-slug" }` item in a topic's `body` becomes a link to that topic at that spot in the text (resolved in `src/_data/catalog.js`, rendered in `src/topic.njk`).
+- Optional topic field `see: ["dutch-slug", …]` (resolved in `src/_data/catalog.js`, shown in `src/topic.njk`, heading `ui.see` in `src/_data/site.js`) for a "Lees verder" / "Read more" block under the text (currently unused). Use these instead of putting internal pages under `links`, which is for outside sources.
 - The cloud session could not open any of the sources (all blocked by the network policy), so the facts come from search-result summaries only and the five source links are unverified. The owner was asked to click each link and check the claims (32 survivors, about fifteen months in the army, the Leiden thesis link).
 
 ## Status (10 November 2026)

@@ -695,12 +695,14 @@ extra["naar-india"].push(
       nl: [
         "De VOC, opgericht in 1602, vestigde zich al in de eerste jaren van de zeventiende eeuw aan de Coromandelkust, met Pulicat als hoofdkwartier. Daarna volgden handelsposten in Surat in Gujarat, in Bengalen rond Chinsurah en aan de Malabarkust, waar de Nederlanders in 1663 Cochin op de Portugezen veroverden. Ze kwamen voor textiel, peper, salpeter en opium.",
         "Niet iedere Nederlander kwam vrijwillig ver het land in. In 1661 strandde het VOC-jacht Ter Schelling voor de kust van Bengalen; de overlevenden moesten met het Mogolleger van Mir Jumla mee op veldtocht tegen het Ahom-koninkrijk in Assam (1662–1663). Matroos Frans Jansz. van der Heiden schreef het op; in het Engels werd zijn verslag bekend onder de naam van de vertaler, Glanius.",
+        { see: "glanius-assam" },
         "Het mooiste dat uit die tijd is voortgekomen is de Hortus Malabaricus: twaalf delen over de planten van Kerala, samengesteld onder leiding van gouverneur Hendrik Adriaan van Rheede met hulp van lokale geleerden en tussen 1678 en 1693 in Amsterdam gedrukt.",
         "In 1741 versloeg het koninkrijk Travancore de VOC bij Colachel, en in de achttiende eeuw nam de Britse macht het over. Met het Verdrag van Londen van 1824 droeg Nederland zijn laatste bezittingen in India over aan Groot-Brittannië. In 1920 bezocht de dichter Rabindranath Tagore Nederland; sinds India's onafhankelijkheid in 1947 onderhouden beide landen diplomatieke betrekkingen.",
       ],
       en: [
         "The Dutch East India Company (VOC), founded in 1602, established itself on the Coromandel Coast in the first years of the seventeenth century, with Pulicat as its headquarters. Trading posts followed in Surat in Gujarat, in Bengal around Chinsurah and on the Malabar Coast, where the Dutch took Cochin from the Portuguese in 1663. They came for textiles, pepper, saltpetre and opium.",
         "Not every Dutchman went inland by choice. In 1661 the VOC yacht Ter Schelling was wrecked off the coast of Bengal; the survivors had to join Mir Jumla's Mughal army on its campaign against the Ahom kingdom of Assam (1662–1663). Sailor Frans Jansz. van der Heiden wrote it down; in English his account became known under the name of its translator, Glanius.",
+        { see: "glanius-assam" },
         "The finest legacy of that era is the Hortus Malabaricus: twelve volumes on the plants of Kerala, compiled under governor Hendrik Adriaan van Rheede with the help of local scholars and printed in Amsterdam between 1678 and 1693.",
         "In 1741 the kingdom of Travancore defeated the VOC at Colachel, and in the eighteenth century British power took over. Under the Treaty of London of 1824 the Netherlands handed its last possessions in India to Great Britain. In 1920 the poet Rabindranath Tagore visited the Netherlands; since India's independence in 1947 the two countries have maintained diplomatic relations.",
       ],
@@ -710,7 +712,6 @@ extra["naar-india"].push(
       { u: "https://www.atlasofmutualheritage.nl/", t: "Atlas of Mutual Heritage", d: { nl: "Kaarten, tekeningen en plattegronden van VOC-vestigingen.", en: "Maps, drawings and plans of VOC settlements." } },
       { u: "https://www.rijksmuseum.nl/", t: "Rijksmuseum", d: { nl: "Voorwerpen en schilderijen uit de VOC-tijd.", en: "Objects and paintings from the VOC era." } },
     ],
-  see: ["glanius-assam"],
   },
 );
 
