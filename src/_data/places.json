@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T05:28:44.405Z",
+ "updated": "2026-11-21T14:58:00.588Z",
  "restaurants": [
   {
    "n": "Himalaya Palace",
@@ -535,8 +535,8 @@
   {
    "n": "Miri Mary",
    "c": "Amsterdam",
-   "a": "Van der Helstplein 15-H",
-   "w": "https://www.mirimary.com/",
+   "a": "Van der Helstplein 15H",
+   "w": "https://mirimary.com/",
    "o": "node/2817777568",
    "y": 52.35158,
    "x": 4.89517
