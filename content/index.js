@@ -12,6 +12,7 @@
 //
 // More topics live in content/extra.js; they are added to the end of their section.
 //   live:   [{ u, t }]                 -> "search now" buttons that always show current results
+//   see:    ["dutch-slug", …]          -> "read more" links to other topics on this site
 
 export const sections = [
   // ───────────────────────────────────────────────────────────────────────────

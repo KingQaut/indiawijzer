@@ -70,10 +70,17 @@ export default function () {
         finder: t.finder,
         live: (t.live || []).map((x) => ({ u: x.u, t: L(x.t, lang) })),
         links: (t.links || []).map((x) => ({ u: x.u, t: L(x.t, lang), d: L(x.d, lang) })),
+        see: t.see || [],
         url: topicUrl(s, t, lang),
         alt: topicUrl(s, t, alt),
       })),
     }));
+
+    // "Read more" links to other topics on this site, given by Dutch slug in `see`.
+    const byKey = new Map(secs.flatMap((s) => s.topics.map((t) => [t.key, t])));
+    for (const t of secs.flatMap((s) => s.topics)) {
+      t.see = t.see.map((k) => byKey.get(k)).filter(Boolean).map((x) => ({ title: x.title, intro: x.intro, url: x.url }));
+    }
 
     nav[lang] = secs;
 
