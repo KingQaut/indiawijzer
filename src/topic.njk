@@ -11,7 +11,13 @@ permalink: "{{ p.url }}"
   <h1>{{ t.title }}</h1>
   <p class="intro">{{ t.intro }}</p>
   {%- for para in t.body %}
+  {%- if para.h %}
+  <h2>{{ para.h }}</h2>
+  {%- elif para.url %}
+  <p class="see"><a href="{{ para.url }}">→ {{ para.title }}</a></p>
+  {%- else %}
   <p>{{ para }}</p>
+  {%- endif %}
   {%- endfor %}
 
   {%- if t.see.length %}
