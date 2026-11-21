@@ -81,8 +81,9 @@ export default function () {
     for (const t of secs.flatMap((s) => s.topics)) {
       t.see = t.see.map((k) => byKey.get(k)).filter(Boolean).map((x) => ({ title: x.title, intro: x.intro, url: x.url }));
       // A body item { see: "dutch-slug" } becomes a link to that topic, placed right there in the text.
-      t.body = t.body.map((b) => (typeof b === "string" ? b : byKey.get(b.see))).filter(Boolean)
-        .map((b) => (typeof b === "string" ? b : { title: b.title, url: b.url }));
+      // A body item { h: "…" } is a subheading.
+      t.body = t.body.map((b) => (typeof b === "string" || b.h ? b : byKey.get(b.see))).filter(Boolean)
+        .map((b) => (typeof b === "string" || b.h ? b : { title: b.title, url: b.url }));
     }
 
     nav[lang] = secs;

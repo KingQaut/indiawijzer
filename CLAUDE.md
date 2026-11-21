@@ -34,7 +34,7 @@ Do not add anything that needs regular human upkeep without asking the owner fir
 | Weekly link check, opens an issue when links break | `.github/workflows/links.yml` |
 
 - Dutch lives at `/`, English at `/en/`, with translated slugs and hreflang links.
-- Six sections, 64 topics (yoga and cricket added 11 Nov 2026 with automatic lists; 36 more that day in `content/extra.js`; Glanius and Assam added 21 Nov 2026): India in Nederland, Naar Nederland, Nederland in India, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
+- Six sections, 65 topics (yoga and cricket added 11 Nov 2026 with automatic lists; 36 more that day in `content/extra.js`; Glanius and Assam plus historical figures added 21 Nov 2026): India in Nederland, Naar Nederland, Nederland in India, Naar India, Zakendoen, Familie en recht; plus news, about/disclaimer/privacy, search, sitemap, 404.
 - The data fetch keeps the previous data when a source fails or returns suspiciously little.
 - The nightly workflow commits the refreshed JSON back to `main` (bot commits "Automatic data update"). This also keeps GitHub from pausing the schedule. **Always `git pull --rebase origin main` before pushing.**
 - `PATH_PREFIX=/indiawijzer/` at build time makes the site work under `kingqaut.github.io/indiawijzer/`; not set by default because the site is meant for the root of indiawijzer.nl.
@@ -72,6 +72,12 @@ Commands: `npm install`, `npm start` (local preview on port 8080), `npm run buil
 - The "Vier eeuwen Nederland en India" topic has a short paragraph on the same story, followed directly by a link to the new page (owner request). This uses a body item `{ see: "glanius-assam" }`: a `{ see: "dutch-slug" }` item in a topic's `body` becomes a link to that topic at that spot in the text (resolved in `src/_data/catalog.js`, rendered in `src/topic.njk`).
 - Optional topic field `see: ["dutch-slug", …]` (resolved in `src/_data/catalog.js`, shown in `src/topic.njk`, heading `ui.see` in `src/_data/site.js`) for a "Lees verder" / "Read more" block under the text (currently unused). Use these instead of putting internal pages under `links`, which is for outside sources.
 - The cloud session could not open any of the sources (all blocked by the network policy), so the facts come from search-result summaries only and the five source links are unverified. The owner was asked to click each link and check the claims (32 survivors, about fifteen months in the army, the Leiden thesis link).
+
+## Added 21 November 2026: Dutch figures in Indian history
+
+- New topic in "Nederland in India": `/nederland-in-india/historische-figuren/` and `/en/the-netherlands-in-india/historical-figures/` ("Nederlanders in de Indiase geschiedenis"), at the bottom of `content/extra.js`. One page with a short paragraph each on 13 people the owner chose: Van Linschoten, Pelsaert, Schouten, Haafner, Bolts, Rogerius, Baldaeus, Van Rheede, Kern, Vogel, Van Goens, De Lannoy (Flemish; the page says so) and Van Eeden. One source link per person.
+- Body items `{ h: "…" }` are subheadings (Reizigers en schrijvers, Geleerden, Soldaten en bestuurders, Cultuur). The page links to the Glanius page after Schouten, and "Vier eeuwen" ends with a link to this page.
+- Facts come from web-search summaries (the cloud session could not open the pages). Uncertain points written cautiously: Bolts's birthplace ("according to most sources" Amsterdam), Pelsaert's report date ("around 1626"), Baldaeus relying on an older Portuguese Tamil grammar.
 
 ## Status (10 November 2026)
 

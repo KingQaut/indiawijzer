@@ -14,6 +14,7 @@
 //   live:   [{ u, t }]                 -> "search now" buttons that always show current results
 //   see:    ["dutch-slug", …]          -> "read more" links to other topics on this site
 //   body may also hold { see: "dutch-slug" } -> a link to that topic at that spot in the text
+//                  and { h: "…" }           -> a subheading
 
 export const sections = [
   // ───────────────────────────────────────────────────────────────────────────
