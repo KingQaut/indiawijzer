@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T05:33:56.763Z",
+ "updated": "2026-11-27T05:33:15.954Z",
  "restaurants": [
   {
    "n": "Himalaya Palace",
@@ -261,15 +261,6 @@
    "o": "node/497194300",
    "y": 52.36223,
    "x": 4.87592
-  },
-  {
-   "n": "Annavilaas",
-   "c": "Amsterdam",
-   "a": "Van Woustraat 117-119",
-   "w": "https://www.annavilaas.com/nl/",
-   "o": "node/2507159711",
-   "y": 52.35368,
-   "x": 4.90237
   },
   {
    "n": "Ashoka",
@@ -2610,15 +2601,6 @@
    "o": "node/2610267734",
    "y": 51.91266,
    "x": 4.48081
-  },
-  {
-   "n": "Curry's",
-   "c": "Rotterdam",
-   "a": "Oudedijk 152",
-   "w": "https://www.currys.nl/",
-   "o": "node/1743186800",
-   "y": 51.92717,
-   "x": 4.50968
   },
   {
    "n": "Gate of India",
