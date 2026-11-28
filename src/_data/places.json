@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T05:33:15.954Z",
+ "updated": "2026-11-28T05:26:00.709Z",
  "restaurants": [
   {
    "n": "Himalaya Palace",
@@ -1787,7 +1787,7 @@
    "n": "Warung to go",
    "c": "Haarlem",
    "a": "Casablancastraat 4",
-   "w": "",
+   "w": "https://www.warungtogo-haarlem.nl/",
    "o": "node/1828426104",
    "y": 52.35916,
    "x": 4.65479
@@ -2227,8 +2227,8 @@
   {
    "n": "7 Spices",
    "c": "Maastricht",
-   "a": "",
-   "w": "",
+   "a": "Sint Bernardusstraat 4A",
+   "w": "https://sevenspicesmaastricht.nl/",
    "o": "node/13664594893",
    "y": 50.84686,
    "x": 5.69406
